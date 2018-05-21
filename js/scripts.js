@@ -65,7 +65,7 @@ function showDivGraph(currentElement) {
   function ChartMam1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 518]
+      ['Representatividad de especies', 528]
     ]);
 
     var options = {
@@ -93,8 +93,7 @@ function showDivGraph(currentElement) {
   function ChartMam1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 409],
-      ['Especies sin datos SiB Colombia', 109]
+      ['Especies con evidencia en el SiB Colombia', 528],
     ]);
 
     var options = {
@@ -122,7 +121,7 @@ function showDivGraph(currentElement) {
   function ChartMam2() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['En peligro crítico', 5],
+      ['En peligro crítico', 7],
       ['En peligro', 10],
       ['Vulnerable', 25]
     ]);
@@ -161,20 +160,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        2,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 2</br>Registros: 23</div>'
+        3,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 3</br>Registros: 347</div>'
       ],
       [
         'En peligro SiB',
-        5,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 5</br>Registros: 44</div>'
+        10,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 10</br>Registros: 97</div>'
       ],
       [
         'Vulnerable SiB',
-        11,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 11</br>Registros: 574</div>'
+        21,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 21</br>Registros: 1.245</div>'
       ],
-      ['Especies sin datos SiB Colombia', 22, '']
+      ['Especies sin datos SiB Colombia', 8, '']
     ]);
 
     var options = {
@@ -207,8 +206,8 @@ function showDivGraph(currentElement) {
   function ChartMam3() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Apéndice I', 33],
-      ['Apéndice II', 67],
+      ['Apéndice I', 31],
+      ['Apéndice II', 65],
       ['Apéndice III', 11]
     ]);
 
@@ -246,20 +245,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'Apéndice I en SiB',
-        18,
-        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 18</br>Registros: 797</div>'
+        27,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 27</br>Registros: 1.830</div>'
       ],
       [
         'Apéndice II en SiB',
-        28,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 28</br>Registros: 2403</div>'
+        48,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 48</br>Registros: 3.504</div>'
       ],
       [
         'Apéndice III en SiB',
         11,
-        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 11</br>Registros: 1204</div>'
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 11</br>Registros: 2.947</div>'
       ],
-      ['Especies sin datos SiB Colombia', 54, '']
+      ['Especies sin datos SiB Colombia', 21, '']
     ]);
 
     var options = {
@@ -523,7 +522,7 @@ function showDivGraph(currentElement) {
   function Chartplantas1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 25163]
+      ['Representatividad de especies', 28000]
     ]);
 
     var options = {
@@ -551,8 +550,8 @@ function showDivGraph(currentElement) {
   function Chartplantas1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 20299],
-      ['Especies sin datos SiB Colombia', 4864]
+      ['Especies con evidencia en el SiB Colombia', 23036],
+      ['Especies sin datos SiB Colombia', 4964]
     ]);
 
     var options = {
@@ -752,7 +751,7 @@ function showDivGraph(currentElement) {
   function Chartave1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1937]
+      ['Representatividad de especies', 1909]
     ]);
 
     var options = {
@@ -780,8 +779,8 @@ function showDivGraph(currentElement) {
   function Chartave1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 1900],
-      ['Especies sin datos SiB Colombia', 37]
+      ['Especies con evidencia en el SiB Colombia', 1861],
+      ['Especies sin datos SiB Colombia', 48]
     ]);
 
     var options = {
@@ -848,20 +847,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        17,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 17</br>Registros: 673</div>'
+        14,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 14</br>Registros: 688</div>'
       ],
       [
         'En peligro SiB',
-        44,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 44</br>Registros: 2.356</div>'
+        47,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 47</br>Registros: 3.143</div>'
       ],
       [
         'Vulnerable SiB',
-        50,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 50</br>Registros: 2.950</div>'
+        59,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 59</br>Registros: 2.328</div>'
       ],
-      ['Especies sin datos SiB Colombia', 29, '']
+      ['Especies sin datos SiB Colombia', 20, '']
     ]);
 
     var options = {
@@ -894,7 +893,7 @@ function showDivGraph(currentElement) {
   function Chartave3() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Apéndice I', 11],
+      ['Apéndice I', 10],
       ['Apéndice II', 306],
       ['Apéndice III', 14]
     ]);
@@ -933,20 +932,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'Apéndice I en SiB',
-        10,
-        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 10</br>Registros: 937</div>'
+        9,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 9</br>Registros: 753</div>'
       ],
       [
         'Apéndice II en SiB',
-        266,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 266</br>Registros: 46.376</div>'
+        268,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 268</br>Registros: 51.890</div>'
       ],
       [
         'Apéndice III en SiB',
-        14,
-        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 14</br>Registros: 2.710</div>'
+        13,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 13</br>Registros: 4.685</div>'
       ],
-      ['Especies sin datos SiB Colombia', 41, '']
+      ['Especies sin datos SiB Colombia', 40, '']
     ]);
 
     var options = {
@@ -981,7 +980,7 @@ function showDivGraph(currentElement) {
   function Chartanfibio1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1937]
+      ['Representatividad de especies', 814]
     ]);
 
     var options = {
@@ -1009,8 +1008,8 @@ function showDivGraph(currentElement) {
   function Chartanfibio1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 692],
-      ['Especies sin datos SiB Colombia', 113]
+      ['Especies con evidencia en el SiB Colombia', 657],
+      ['Especies sin datos SiB Colombia', 157]
     ]);
 
     var options = {
@@ -1077,20 +1076,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        11,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 11</br>Registros: 338</div>'
+        13,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 13</br>Registros: 361</div>'
       ],
       [
         'En peligro SiB',
-        24,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 24</br>Registros: 396</div>'
+        23,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 23</br>Registros: 415</div>'
       ],
       [
         'Vulnerable SiB',
         14,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 14</br>Registros: 779</div>'
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 14</br>Registros: 852</div>'
       ],
-      ['Especies sin datos SiB Colombia', 6, '']
+      ['Especies sin datos SiB Colombia', 5, '']
     ]);
 
     var options = {
@@ -1124,7 +1123,7 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['Apéndice I', 0],
-      ['Apéndice II', 37],
+      ['Apéndice II', 38],
       ['Apéndice III', 0]
     ]);
 
@@ -1167,8 +1166,8 @@ function showDivGraph(currentElement) {
       ],
       [
         'Apéndice II en SiB',
-        26,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 26</br>Registros: 2.321</div>'
+        27,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 27</br>Registros: 2.672</div>'
       ],
       [
         'Apéndice III en SiB',
@@ -1238,8 +1237,8 @@ function showDivGraph(currentElement) {
   function Chartreptil1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 507],
-      ['Especies sin datos SiB Colombia', 30]
+      ['Especies con evidencia en el SiB Colombia', 534],
+      ['Especies sin datos SiB Colombia', 3]
     ]);
 
     var options = {
@@ -1306,20 +1305,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        7,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 7</br>Registros: 538</div>'
+        9,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 7</br>Registros: 1.611</div>'
       ],
       [
         'En peligro SiB',
-        7,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 7</br>Registros: 1.560</div>'
+        14,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 7</br>Registros: 972</div>'
       ],
       [
         'Vulnerable SiB',
-        4,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 4</br>Registros: 31</div>'
+        13,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 4</br>Registros: 819</div>'
       ],
-      ['Especies sin datos SiB Colombia', 26, '']
+      ['Especies sin datos SiB Colombia', 8, '']
     ]);
 
     var options = {
@@ -1352,8 +1351,8 @@ function showDivGraph(currentElement) {
   function Chartreptil3() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Apéndice I', 12],
-      ['Apéndice II', 29],
+      ['Apéndice I', 9],
+      ['Apéndice II', 28],
       ['Apéndice III', 2]
     ]);
 
@@ -1391,20 +1390,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'Apéndice I en SiB',
-        10,
-        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 10</br>Registros: 652</div>'
+        7,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 7</br>Registros: 961</div>'
       ],
       [
         'Apéndice II en SiB',
-        27,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 27</br>Registros: 2.356</div>'
+        28,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 28</br>Registros: 3.180</div>'
       ],
       [
         'Apéndice III en SiB',
-        1,
-        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 1</br>Registros: 75</div>'
+        2,
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 2</br>Registros: 156</div>'
       ],
-      ['Especies sin datos SiB Colombia', 5, '']
+      ['Especies sin datos SiB Colombia', 2, '']
     ]);
 
     var options = {
@@ -1439,7 +1438,7 @@ function showDivGraph(currentElement) {
   function Chartpeces1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 2425]
+      ['Representatividad de especies', 4076]
     ]);
 
     var options = {
@@ -1467,8 +1466,8 @@ function showDivGraph(currentElement) {
   function Chartpeces1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 1960],
-      ['Especies sin datos SiB Colombia', 465]
+      ['Especies con evidencia en el SiB Colombia', 2759],
+      ['Especies sin datos SiB Colombia', 1317]
     ]);
 
     var options = {
@@ -1497,8 +1496,8 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 7],
-      ['En peligro', 11],
-      ['Vulnerable', 91]
+      ['En peligro', 10],
+      ['Vulnerable', 92]
     ]);
 
     var options = {
@@ -1535,20 +1534,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        1,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 1</br>Registros: 1987</div>'
+        4,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 4</br>Registros: 2.069</div>'
       ],
       [
         'En peligro SiB',
-        3,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 3</br>Registros: 37</div>'
+        8,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 8</br>Registros: 156</div>'
       ],
       [
         'Vulnerable SiB',
-        41,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 41</br>Registros: 1385</div>'
+        80,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 80</br>Registros: 3.196</div>'
       ],
-      ['Especies sin datos SiB Colombia', 64, '']
+      ['Especies sin datos SiB Colombia', 17, '']
     ]);
 
     var options = {
@@ -1582,7 +1581,7 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['Apéndice I', 3],
-      ['Apéndice II', 12],
+      ['Apéndice II', 17],
       ['Apéndice III', 3]
     ]);
 
@@ -1625,15 +1624,15 @@ function showDivGraph(currentElement) {
       ],
       [
         'Apéndice II en SiB',
-        7,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 7</br>Registros: 12</div>'
+        13,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 13</br>Registros: 20</div>'
       ],
       [
         'Apéndice III en SiB',
         3,
-        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 3</br>Registros: 197</div>'
+        '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 3</br>Registros: 219</div>'
       ],
-      ['Especies sin datos SiB Colombia', 8, '']
+      ['Especies sin datos SiB Colombia', 7, '']
     ]);
 
     var options = {
@@ -1696,8 +1695,8 @@ function showDivGraph(currentElement) {
   function Chartinsecto1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 3463],
-      ['Especies sin datos SiB Colombia', 61537]
+      ['Especies con evidencia en el SiB Colombia', 4170],
+      ['Especies sin datos SiB Colombia', 60830]
     ]);
 
     var options = {
@@ -1726,8 +1725,8 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 5],
-      ['En peligro', 11],
-      ['Vulnerable', 14]
+      ['En peligro', 15],
+      ['Vulnerable', 16]
     ]);
 
     var options = {
@@ -1764,8 +1763,8 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        3,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 3</br>Registros: 17</div>'
+        2,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 2</br>Registros: 24</div>'
       ],
       [
         'En peligro SiB',
@@ -1774,10 +1773,10 @@ function showDivGraph(currentElement) {
       ],
       [
         'Vulnerable SiB',
-        3,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 3</br>Registros: 6</div>'
+        2,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 2</br>Registros: 4</div>'
       ],
-      ['Especies sin datos SiB Colombia', 23, '']
+      ['Especies sin datos SiB Colombia', 31, '']
     ]);
 
     var options = {
@@ -1897,7 +1896,7 @@ function showDivGraph(currentElement) {
   function Chartaracnidos1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1089]
+      ['Representatividad de especies', 1385]
     ]);
 
     var options = {
@@ -1925,8 +1924,8 @@ function showDivGraph(currentElement) {
   function Chartaracnidos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 74],
-      ['Especies sin datos SiB Colombia', 1015]
+      ['Especies con evidencia en el SiB Colombia', 91],
+      ['Especies sin datos SiB Colombia', 1294]
     ]);
 
     var options = {
@@ -1956,7 +1955,7 @@ function showDivGraph(currentElement) {
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 0],
       ['En peligro', 3],
-      ['Vulnerable', 6]
+      ['Vulnerable', 5]
     ]);
 
     var options = {
@@ -2004,9 +2003,9 @@ function showDivGraph(currentElement) {
       [
         'Vulnerable SiB',
         1,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 1</br>Registros: 70</div>'
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 1</br>Registros: 61</div>'
       ],
-      ['Especies sin datos SiB Colombia', 8, '']
+      ['Especies sin datos SiB Colombia', 7, '']
     ]);
 
     var options = {
@@ -2126,7 +2125,7 @@ function showDivGraph(currentElement) {
   function Chartmolusco1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1900]
+      ['Representatividad de especies', 1818]
     ]);
 
     var options = {
@@ -2154,8 +2153,8 @@ function showDivGraph(currentElement) {
   function Chartmolusco1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 694],
-      ['Especies sin datos SiB Colombia', 1206]
+      ['Especies con evidencia en el SiB Colombia', 785],
+      ['Especies sin datos SiB Colombia', 1033]
     ]);
 
     var options = {
@@ -2184,7 +2183,7 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 0],
-      ['En peligro', 0],
+      ['En peligro', 3],
       ['Vulnerable', 14]
     ]);
 
@@ -2232,8 +2231,8 @@ function showDivGraph(currentElement) {
       ],
       [
         'Vulnerable SiB',
-        5,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 5</br>Registros: 337</div>'
+        8,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 8</br>Registros: 331</div>'
       ],
       ['Especies sin datos SiB Colombia', 9, '']
     ]);
@@ -2320,7 +2319,7 @@ function showDivGraph(currentElement) {
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 1, '']
     ]);
 
     var options = {
@@ -2355,7 +2354,7 @@ function showDivGraph(currentElement) {
   function Chartdecapodo1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1352]
+      ['Representatividad de especies', 1849]
     ]);
 
     var options = {
@@ -2383,8 +2382,8 @@ function showDivGraph(currentElement) {
   function Chartdecapodo1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 393],
-      ['Especies sin datos SiB Colombia', 959]
+      ['Especies con evidencia en el SiB Colombia', 429],
+      ['Especies sin datos SiB Colombia', 1420]
     ]);
 
     var options = {
@@ -2456,15 +2455,15 @@ function showDivGraph(currentElement) {
       ],
       [
         'En peligro SiB',
-        0,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        6,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 6</br>Registros: 12</div>'
       ],
       [
         'Vulnerable SiB',
-        4,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 4</br>Registros: 14</div>'
+        3,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 3</br>Registros: 16</div>'
       ],
-      ['Especies sin datos SiB Colombia', 29, '']
+      ['Especies sin datos SiB Colombia', 24, '']
     ]);
 
     var options = {
@@ -2584,7 +2583,7 @@ function showDivGraph(currentElement) {
   function Chartequinodermo1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 296]
+      ['Representatividad de especies', 394]
     ]);
 
     var options = {
@@ -2612,8 +2611,8 @@ function showDivGraph(currentElement) {
   function Chartequinodermo1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 106],
-      ['Especies sin datos SiB Colombia', 190]
+      ['Especies con evidencia en el SiB Colombia', 330],
+      ['Especies sin datos SiB Colombia', 64]
     ]);
 
     var options = {
@@ -2778,7 +2777,7 @@ function showDivGraph(currentElement) {
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 1, '']
     ]);
 
     var options = {
@@ -2813,7 +2812,7 @@ function showDivGraph(currentElement) {
   function Chartesponjamarina1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 306]
+      ['Representatividad de especies', 142]
     ]);
 
     var options = {
@@ -2841,8 +2840,8 @@ function showDivGraph(currentElement) {
   function Chartesponjamarina1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 40],
-      ['Especies sin datos SiB Colombia', 266]
+      ['Especies con evidencia en el SiB Colombia', 134],
+      ['Especies sin datos SiB Colombia', 8]
     ]);
 
     var options = {
@@ -2957,7 +2956,7 @@ function showDivGraph(currentElement) {
       ['Especies estimadas', 'Número de especies'],
       ['Apéndice I', 0],
       ['Apéndice II', 0],
-      ['Apéndice III', 0]
+      ['Apéndice III', 1]
     ]);
 
     var options = {
@@ -3007,7 +3006,7 @@ function showDivGraph(currentElement) {
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 1, '']
     ]);
 
     var options = {
@@ -3042,7 +3041,7 @@ function showDivGraph(currentElement) {
   function Chartcoralesafines1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 139]
+      ['Representatividad de especies', 153]
     ]);
 
     var options = {
@@ -3070,8 +3069,7 @@ function showDivGraph(currentElement) {
   function Chartcoralesafines1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 136],
-      ['Especies sin datos SiB Colombia', 3]
+      ['Especies con evidencia en el SiB Colombia', 153],
     ]);
 
     var options = {
@@ -3101,7 +3099,7 @@ function showDivGraph(currentElement) {
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 1],
       ['En peligro', 1],
-      ['Vulnerable', 5]
+      ['Vulnerable', 4]
     ]);
 
     var options = {
@@ -3139,17 +3137,17 @@ function showDivGraph(currentElement) {
       [
         'En peligro crítico SiB',
         1,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 1</br>Registros: 2</div>'
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 1</br>Registros: 3</div>'
       ],
       [
         'En peligro SiB',
         1,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 1</br>Registros: 8</div>'
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 1</br>Registros: 5</div>'
       ],
       [
         'Vulnerable SiB',
-        4,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 4</br>Registros: 13</div>'
+        3,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 3</br>Registros: 23</div>'
       ],
       ['Especies sin datos SiB Colombia', 1, '']
     ]);
@@ -3185,7 +3183,7 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['Apéndice I', 0],
-      ['Apéndice II', 141],
+      ['Apéndice II', 119],
       ['Apéndice III', 0]
     ]);
 
@@ -3228,15 +3226,15 @@ function showDivGraph(currentElement) {
       ],
       [
         'Apéndice II en SiB',
-        56,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 56</br>Registros: 423</div>'
+        52,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 52</br>Registros: 480</div>'
       ],
       [
         'Apéndice III en SiB',
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 85, '']
+      ['Especies sin datos SiB Colombia', 67, '']
     ]);
 
     var options = {
@@ -3299,8 +3297,8 @@ function showDivGraph(currentElement) {
   function Chartorquideas1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 1384],
-      ['Especies sin datos SiB Colombia', 2886]
+      ['Especies con evidencia en el SiB Colombia', 1725],
+      ['Especies sin datos SiB Colombia', 2545]
     ]);
 
     var options = {
@@ -3368,19 +3366,19 @@ function showDivGraph(currentElement) {
       [
         'En peligro crítico SiB',
         2,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 2</br>Registros: 3</div>'
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 2</br>Registros: 13</div>'
       ],
       [
         'En peligro SiB',
-        25,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 25</br>Registros: 124</div>'
+        36,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 36</br>Registros: 176</div>'
       ],
       [
         'Vulnerable SiB',
-        47,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 47</br>Registros: 156</div>'
+        72,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 72</br>Registros: 253</div>'
       ],
-      ['Especies sin datos SiB Colombia', 133, '']
+      ['Especies sin datos SiB Colombia', 97, '']
     ]);
 
     var options = {
@@ -3414,7 +3412,7 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['Apéndice I', 6],
-      ['Apéndice II', 691],
+      ['Apéndice II', 2721],
       ['Apéndice III', 0]
     ]);
 
@@ -3453,19 +3451,19 @@ function showDivGraph(currentElement) {
       [
         'Apéndice I en SiB',
         4,
-        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 4</br>Registros: 22</div>'
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 4</br>Registros: 31</div>'
       ],
       [
         'Apéndice II en SiB',
-        210,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 210</br>Registros: 1.128</div>'
+        744,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 744</br>Registros: 4.536</div>'
       ],
       [
         'Apéndice III en SiB',
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 483, '']
+      ['Especies sin datos SiB Colombia', 1979, '']
     ]);
 
     var options = {
@@ -3500,7 +3498,7 @@ function showDivGraph(currentElement) {
   function Chartmagnolias1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 111]
+      ['Representatividad de especies', 114]
     ]);
 
     var options = {
@@ -3528,8 +3526,7 @@ function showDivGraph(currentElement) {
   function Chartmagnolias1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 108],
-      ['Especies sin datos SiB Colombia', 3]
+      ['Especies con evidencia en el SiB Colombia', 114],
     ]);
 
     var options = {
@@ -3557,8 +3554,8 @@ function showDivGraph(currentElement) {
   function Chartmagnolias2() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['En peligro crítico', 12],
-      ['En peligro', 22],
+      ['En peligro crítico', 15],
+      ['En peligro', 20],
       ['Vulnerable', 10]
     ]);
 
@@ -3596,20 +3593,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        9,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 9</br>Registros: 66</div>'
+        13,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 13</br>Registros: 96</div>'
       ],
       [
         'En peligro SiB',
-        18,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 18</br>Registros: 139</div>'
+        19,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 19</br>Registros: 208</div>'
       ],
       [
         'Vulnerable SiB',
         10,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 10</br>Registros: 4.890</div>'
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 10</br>Registros: 4.966</div>'
       ],
-      ['Especies sin datos SiB Colombia', 7, '']
+      ['Especies sin datos SiB Colombia', 3, '']
     ]);
 
     var options = {
@@ -3729,7 +3726,7 @@ function showDivGraph(currentElement) {
   function Chartbromelias1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 992]
+      ['Representatividad de especies', 1024]
     ]);
 
     var options = {
@@ -3757,8 +3754,8 @@ function showDivGraph(currentElement) {
   function Chartbromelias1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 672],
-      ['Especies sin datos SiB Colombia', 320]
+      ['Especies con evidencia en el SiB Colombia', 816],
+      ['Especies sin datos SiB Colombia', 208]
     ]);
 
     var options = {
@@ -3786,9 +3783,9 @@ function showDivGraph(currentElement) {
   function Chartbromelias2() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['En peligro crítico', 47],
-      ['En peligro', 94],
-      ['Vulnerable', 114]
+      ['En peligro crítico', 41],
+      ['En peligro', 67],
+      ['Vulnerable', 75]
     ]);
 
     var options = {
@@ -3826,19 +3823,19 @@ function showDivGraph(currentElement) {
       [
         'En peligro crítico SiB',
         16,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 16</br>Registros: 159</div>'
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 16</br>Registros: 130</div>'
       ],
       [
         'En peligro SiB',
-        39,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 39</br>Registros: 203</div>'
+        34,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 34</br>Registros: 96</div>'
       ],
       [
         'Vulnerable SiB',
-        58,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 58</br>Registros: 539</div>'
+        50,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 50</br>Registros: 369</div>'
       ],
-      ['Especies sin datos SiB Colombia', 142, '']
+      ['Especies sin datos SiB Colombia', 83, '']
     ]);
 
     var options = {
@@ -3958,7 +3955,7 @@ function showDivGraph(currentElement) {
   function Chartpalmas1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 288]
+      ['Representatividad de especies', 289]
     ]);
 
     var options = {
@@ -3986,8 +3983,8 @@ function showDivGraph(currentElement) {
   function Chartpalmas1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 232],
-      ['Especies sin datos SiB Colombia', 56]
+      ['Especies con evidencia en el SiB Colombia', 280],
+      ['Especies sin datos SiB Colombia', 9]
     ]);
 
     var options = {
@@ -4015,9 +4012,9 @@ function showDivGraph(currentElement) {
   function Chartpalmas2() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['En peligro crítico', 6],
-      ['En peligro', 17],
-      ['Vulnerable', 16]
+      ['En peligro crítico', 7],
+      ['En peligro', 22],
+      ['Vulnerable', 25]
     ]);
 
     var options = {
@@ -4054,20 +4051,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        5,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 5</br>Registros: 141</div>'
+        7,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 7</br>Registros: 39</div>'
       ],
       [
         'En peligro SiB',
-        14,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 14</br>Registros: 733</div>'
+        20,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 20</br>Registros: 1.014</div>'
       ],
       [
         'Vulnerable SiB',
-        12,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 12</br>Registros: 200</div>'
+        21,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 21</br>Registros: 326</div>'
       ],
-      ['Especies sin datos SiB Colombia', 8, '']
+      ['Especies sin datos SiB Colombia', 6, '']
     ]);
 
     var options = {
@@ -4215,8 +4212,7 @@ function showDivGraph(currentElement) {
   function Chartzamias1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 19],
-      ['Especies sin datos SiB Colombia', 2]
+      ['Especies con evidencia en el SiB Colombia', 21],
     ]);
 
     var options = {
@@ -4283,20 +4279,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        3,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 3</br>Registros: 282</div>'
+        7,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 7</br>Registros: 35</div>'
       ],
       [
         'En peligro SiB',
-        3,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 3</br>Registros: 16</div>'
+        8,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 8</br>Registros: 320</div>'
       ],
       [
         'Vulnerable SiB',
-        3,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 3</br>Registros: 31</div>'
+        4,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 4</br>Registros: 86</div>'
       ],
-      ['Especies sin datos SiB Colombia', 12, '']
+      ['Especies sin datos SiB Colombia', 2, '']
     ]);
 
     var options = {
@@ -4368,20 +4364,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'Apéndice I en SiB',
-        0,
-        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        1,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 1</div>'
       ],
       [
         'Apéndice II en SiB',
         17,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 17</br>Registros: 412</div>'
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 17</br>Registros: 434</div>'
       ],
       [
         'Apéndice III en SiB',
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 8, '']
+      ['Especies sin datos SiB Colombia', 7, '']
     ]);
 
     var options = {
@@ -4444,8 +4440,8 @@ function showDivGraph(currentElement) {
   function Chartfrailejones1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 68],
-      ['Especies sin datos SiB Colombia', 19]
+      ['Especies con evidencia en el SiB Colombia', 78],
+      ['Especies sin datos SiB Colombia', 9]
     ]);
 
     var options = {
@@ -4473,9 +4469,9 @@ function showDivGraph(currentElement) {
   function Chartfrailejones2() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['En peligro crítico', 20],
-      ['En peligro', 36],
-      ['Vulnerable', 32]
+      ['En peligro crítico', 7],
+      ['En peligro', 17],
+      ['Vulnerable', 13]
     ]);
 
     var options = {
@@ -4513,19 +4509,19 @@ function showDivGraph(currentElement) {
       [
         'En peligro crítico SiB',
         6,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 6</br>Registros: 33</div>'
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 6</br>Registros: 37</div>'
       ],
       [
         'En peligro SiB',
-        13,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 13</br>Registros: 583</div>'
+        17,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 17</br>Registros: 653</div>'
       ],
       [
         'Vulnerable SiB',
-        8,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 8</br>Registros: 622</div>'
+        12,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 12</br>Registros: 733</div>'
       ],
-      ['Especies sin datos SiB Colombia', 61, '']
+      ['Especies sin datos SiB Colombia', 2, '']
     ]);
 
     var options = {
@@ -4645,7 +4641,7 @@ function showDivGraph(currentElement) {
   function Chartcactus1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 57]
+      ['Representatividad de especies', 58]
     ]);
 
     var options = {
@@ -4673,8 +4669,8 @@ function showDivGraph(currentElement) {
   function Chartcactus1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 45],
-      ['Especies sin datos SiB Colombia', 12]
+      ['Especies con evidencia en el SiB Colombia', 53],
+      ['Especies sin datos SiB Colombia', 5]
     ]);
 
     var options = {
@@ -4788,7 +4784,7 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['Apéndice I', 0],
-      ['Apéndice II', 33],
+      ['Apéndice II', 32],
       ['Apéndice III', 0]
     ]);
 
@@ -4831,15 +4827,15 @@ function showDivGraph(currentElement) {
       ],
       [
         'Apéndice II en SiB',
-        0,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        21,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 21</br>Registros: 436</div>'
       ],
       [
         'Apéndice III en SiB',
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 11, '']
     ]);
 
     var options = {
@@ -4874,7 +4870,7 @@ function showDivGraph(currentElement) {
   function Chartpinos1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 22]
+      ['Representatividad de especies', 23]
     ]);
 
     var options = {
@@ -4902,8 +4898,7 @@ function showDivGraph(currentElement) {
   function Chartpinos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 21],
-      ['Especies sin datos SiB Colombia', 1]
+      ['Especies con evidencia en el SiB Colombia', 23],
     ]);
 
     var options = {
@@ -4931,9 +4926,9 @@ function showDivGraph(currentElement) {
   function Chartpinos2() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['En peligro crítico', 0],
-      ['En peligro', 0],
-      ['Vulnerable', 0]
+      ['En peligro crítico', 8],
+      ['En peligro', 9],
+      ['Vulnerable', 8]
     ]);
 
     var options = {
@@ -4970,20 +4965,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        0,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        7,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 7</br>Registros: 35</div>'
       ],
       [
         'En peligro SiB',
-        0,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        8,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 8</br>Registros: 320</div>'
       ],
       [
         'Vulnerable SiB',
-        0,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        8,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 8</br>Registros: 255</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 2, '']
     ]);
 
     var options = {
@@ -5016,8 +5011,8 @@ function showDivGraph(currentElement) {
   function Chartpinos3() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Apéndice I', 0],
-      ['Apéndice II', 0],
+      ['Apéndice I', 1],
+      ['Apéndice II', 24],
       ['Apéndice III', 0]
     ]);
 
@@ -5055,20 +5050,20 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'Apéndice I en SiB',
-        0,
-        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        1,
+        '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 1</br>Registros: 1</div>'
       ],
       [
         'Apéndice II en SiB',
-        0,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        17,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 17</br>Registros: 434</div>'
       ],
       [
         'Apéndice III en SiB',
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 7, '']
     ]);
 
     var options = {
@@ -5131,8 +5126,8 @@ function showDivGraph(currentElement) {
   function Charthelechos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 1278],
-      ['Especies sin datos SiB Colombia', 256]
+      ['Especies con evidencia en el SiB Colombia', 1397],
+      ['Especies sin datos SiB Colombia', 137]
     ]);
 
     var options = {
@@ -5289,15 +5284,15 @@ function showDivGraph(currentElement) {
       ],
       [
         'Apéndice II en SiB',
-        39,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 39</br>Registros: 21.497</div>'
+        40,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 40</br>Registros: 21.920</div>'
       ],
       [
         'Apéndice III en SiB',
         0,
         '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 34, '']
+      ['Especies sin datos SiB Colombia', 33, '']
     ]);
 
     var options = {
@@ -5332,7 +5327,7 @@ function showDivGraph(currentElement) {
   function Chartfenerogamas1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 265]
+      ['Representatividad de especies', 264]
     ]);
 
     var options = {
@@ -5360,8 +5355,8 @@ function showDivGraph(currentElement) {
   function Chartfenerogamas1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 237],
-      ['Especies sin datos SiB Colombia', 28]
+      ['Especies con evidencia en el SiB Colombia', 252],
+      ['Especies sin datos SiB Colombia', 12]
     ]);
 
     var options = {
@@ -5390,8 +5385,8 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 11],
-      ['En peligro', 27],
-      ['Vulnerable', 33]
+      ['En peligro', 28],
+      ['Vulnerable', 34]
     ]);
 
     var options = {
@@ -5428,18 +5423,18 @@ function showDivGraph(currentElement) {
     data.addRows([
       [
         'En peligro crítico SiB',
-        6,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 6</br>Registros: 91</div>'
+        7,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 7</br>Registros: 105</div>'
       ],
       [
         'En peligro SiB',
-        18,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 18</br>Registros: 786</div>'
+        20,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 20</br>Registros: 815</div>'
       ],
       [
         'Vulnerable SiB',
-        24,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 24</br>Registros: 139</div>'
+        23,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 23</br>Registros: 144</div>'
       ],
       ['Especies sin datos SiB Colombia', 23, '']
     ]);
@@ -5589,8 +5584,8 @@ function showDivGraph(currentElement) {
   function Chartmaderables1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 28],
-      ['Especies sin datos SiB Colombia', 6]
+      ['Especies con evidencia en el SiB Colombia', 27],
+      ['Especies sin datos SiB Colombia', 7]
     ]);
 
     var options = {
@@ -5619,8 +5614,8 @@ function showDivGraph(currentElement) {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 8],
-      ['En peligro', 16],
-      ['Vulnerable', 10]
+      ['En peligro', 13],
+      ['Vulnerable', 7]
     ]);
 
     var options = {
@@ -5658,19 +5653,19 @@ function showDivGraph(currentElement) {
       [
         'En peligro crítico SiB',
         8,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 8</br>Registros: 213</div>'
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 8</br>Registros: 288</div>'
       ],
       [
         'En peligro SiB',
         12,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 12</br>Registros: 797</div>'
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 12</br>Registros: 902</div>'
       ],
       [
         'Vulnerable SiB',
-        8,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 8</br>Registros: 2.257</div>'
+        7,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 7</br>Registros: 2.365</div>'
       ],
-      ['Especies sin datos SiB Colombia', 6, '']
+      ['Especies sin datos SiB Colombia', 1, '']
     ]);
 
     var options = {
@@ -5748,7 +5743,7 @@ function showDivGraph(currentElement) {
       [
         'Apéndice II en SiB',
         3,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 3</br>Registros: 49</div>'
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 3</br>Registros: 66</div>'
       ],
       [
         'Apéndice III en SiB',
@@ -5790,7 +5785,7 @@ function showDivGraph(currentElement) {
   function Chartmusgos1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1691]
+      ['Representatividad de especies', 1692]
     ]);
 
     var options = {
@@ -5818,8 +5813,8 @@ function showDivGraph(currentElement) {
   function Chartmusgos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 1349],
-      ['Especies sin datos SiB Colombia', 342]
+      ['Especies con evidencia en el SiB Colombia', 1409],
+      ['Especies sin datos SiB Colombia', 283]
     ]);
 
     var options = {
@@ -5849,7 +5844,7 @@ function showDivGraph(currentElement) {
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 8],
       ['En peligro', 5],
-      ['Vulnerable', 86]
+      ['Vulnerable', 80]
     ]);
 
     var options = {
@@ -5892,14 +5887,14 @@ function showDivGraph(currentElement) {
       [
         'En peligro SiB',
         1,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 1</br>Registros: 38</div>'
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 1</br>Registros: 69</div>'
       ],
       [
         'Vulnerable SiB',
-        31,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 31</br>Registros: 85</div>'
+        36,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 36</br>Registros: 159</div>'
       ],
-      ['Especies sin datos SiB Colombia', 66, '']
+      ['Especies sin datos SiB Colombia', 55, '']
     ]);
 
     var options = {
@@ -6019,7 +6014,7 @@ function showDivGraph(currentElement) {
   function Chartalgasmarinas1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 905]
+      ['Representatividad de especies', 473]
     ]);
 
     var options = {
@@ -6044,32 +6039,33 @@ function showDivGraph(currentElement) {
 
   google.charts.setOnLoadCallback(Chartalgasmarinas1b);
 
-  function Chartalgasmarinas1b() {
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Título');
-    data.addColumn('number', 'SiB');
-    data.addColumn({ type: 'string', role: 'tooltip' });
-    data.addRows([['Sin dato', 100, 'Dato en construcción']]);
+    function Chartalgasmarinas1b() {
+        var data = google.visualization.arrayToDataTable([
+            ['Titulo', 'SiB'],
+            ['Especies con evidencia en el SiB Colombia', 249],
+            ['Especies sin datos SiB Colombia', 224]
+        ]);
 
-    var options = {
-      titlePosition: 'none',
-      pieHole: 0.9,
-      backgroundColor: 'transparent',
-      legend: { position: 'none' },
-      chartArea: { width: '222', height: '222' },
-      pieSliceBorderColor: 'none',
-      slices: { 0: { color: '#e7e9ed' } },
-      sliceVisibilityThreshold: '0',
-      fontSize: '12',
-      pieSliceText: 'none',
-      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
-    };
+        var options = {
+            titlePosition: 'none',
+            pieHole: 0.9,
+            backgroundColor: 'transparent',
+            legend: { position: 'none' },
+            chartArea: { width: '222', height: '222' },
+            pieSliceBorderColor: 'none',
+            slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
+            sliceVisibilityThreshold: '0',
+            fontSize: '12',
+            pieSliceText: 'none',
+            tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+        };
 
-    var chart = new google.visualization.PieChart(
-      document.getElementById('donutalgasmarinas1b')
-    );
-    chart.draw(data, options);
-  }
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutalgasmarinas1b')
+        );
+        chart.draw(data, options);
+    }
+
 
   google.charts.setOnLoadCallback(Chartalgasmarinas2);
 
@@ -6248,7 +6244,7 @@ function showDivGraph(currentElement) {
   function Chartalgasdulceacuicolas1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 604]
+      ['Representatividad de especies', 605]
     ]);
 
     var options = {
@@ -6477,7 +6473,7 @@ function showDivGraph(currentElement) {
   function Chartalgasterrestres1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 16]
+      ['Representatividad de especies', 46]
     ]);
 
     var options = {
@@ -6706,7 +6702,7 @@ function showDivGraph(currentElement) {
   function Chartotrasalgas1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 128]
+      ['Representatividad de especies', 28]
     ]);
 
     var options = {
@@ -6935,7 +6931,7 @@ function showDivGraph(currentElement) {
   function Chartliquenes1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1464]
+      ['Representatividad de especies', 1473]
     ]);
 
     var options = {
@@ -6963,8 +6959,8 @@ function showDivGraph(currentElement) {
   function Chartliquenes1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 60],
-      ['Especies sin datos SiB Colombia', 1404]
+      ['Especies con evidencia en el SiB Colombia', 216],
+      ['Especies sin datos SiB Colombia', 1257]
     ]);
 
     var options = {
@@ -7164,7 +7160,7 @@ function showDivGraph(currentElement) {
   function Chartmacrohongos1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1239]
+      ['Representatividad de especies', 1261]
     ]);
 
     var options = {
@@ -7192,8 +7188,8 @@ function showDivGraph(currentElement) {
   function Chartmacrohongos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 69],
-      ['Especies sin datos SiB Colombia', 1170]
+      ['Especies con evidencia en el SiB Colombia', 169],
+      ['Especies sin datos SiB Colombia', 1092]
     ]);
 
     var options = {
@@ -7866,7 +7862,7 @@ $('.pecesm').on('click', function() {
   function Chartpecesm1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 990]
+      ['Representatividad de especies', 2582]
     ]);
 
     var options = {
@@ -7893,11 +7889,11 @@ $('.pecesm').on('click', function() {
   google.charts.setOnLoadCallback(Chartpecesm1b);
 
   function Chartpecesm1b() {
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Título');
-    data.addColumn('number', 'SiB');
-    data.addColumn({ type: 'string', role: 'tooltip' });
-    data.addRows([['Sin dato', 100, 'Dato en construcción']]);
+      var data = google.visualization.arrayToDataTable([
+          ['Titulo', 'SiB'],
+          ['Especies con evidencia en el SiB Colombia', 1283],
+          ['Especies sin datos SiB Colombia', 1299]
+      ]);
 
     var options = {
       titlePosition: 'none',
@@ -7906,7 +7902,7 @@ $('.pecesm').on('click', function() {
       legend: { position: 'none' },
       chartArea: { width: '222', height: '222' },
       pieSliceBorderColor: 'none',
-      slices: { 0: { color: '#e7e9ed' } },
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
       sliceVisibilityThreshold: '0',
       fontSize: '12',
       pieSliceText: 'none',
@@ -7997,7 +7993,7 @@ $('.pecesd').on('click', function() {
   function Chartpecesd1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1435]
+      ['Representatividad de especies', 1494]
     ]);
 
     var options = {
@@ -8024,11 +8020,11 @@ $('.pecesd').on('click', function() {
   google.charts.setOnLoadCallback(Chartpecesd1b);
 
   function Chartpecesd1b() {
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Título');
-    data.addColumn('number', 'SiB');
-    data.addColumn({ type: 'string', role: 'tooltip' });
-    data.addRows([['Sin dato', 100, 'Dato en construcción']]);
+      var data = google.visualization.arrayToDataTable([
+          ['Titulo', 'SiB'],
+          ['Especies con evidencia en el SiB Colombia', 1295],
+          ['Especies sin datos SiB Colombia', 199]
+      ]);
 
     var options = {
       titlePosition: 'none',
@@ -8037,7 +8033,7 @@ $('.pecesd').on('click', function() {
       legend: { position: 'none' },
       chartArea: { width: '222', height: '222' },
       pieSliceBorderColor: 'none',
-      slices: { 0: { color: '#e7e9ed' } },
+      slices: { 0: { color: '#2B4143' }, 1: { color: '#e7e9ed' } },
       sliceVisibilityThreshold: '0',
       fontSize: '12',
       pieSliceText: 'none',
@@ -8089,31 +8085,58 @@ $('.pecesd').on('click', function() {
   google.charts.setOnLoadCallback(Chartpecesd2b);
 
   function Chartpecesd2b() {
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Título');
-    data.addColumn('number', 'SiB');
-    data.addColumn({ type: 'string', role: 'tooltip' });
-    data.addRows([['Sin dato', 100, 'Dato en construcción']]);
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Título');
+      data.addColumn('number', 'Especies');
+      data.addColumn({ type: 'string', role: 'tooltip', p: { html: true } });
+      data.addRows([
+          [
+              'En peligro crítico SiB',
+              2,
+              '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 2.043</div>'
+          ],
+          [
+              'En peligro SiB',
+              3,
+              '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 127</div>'
+          ],
+          [
+              'Vulnerable SiB',
+              42,
+              '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 1.858</div>'
+          ],
+          ['Especies sin datos SiB Colombia', 6, '']
+      ]);
 
-    var options = {
-      titlePosition: 'none',
-      pieHole: 0.9,
-      backgroundColor: 'transparent',
-      legend: { position: 'none' },
-      chartArea: { width: '222', height: '222' },
-      pieSliceBorderColor: 'none',
-      slices: { 0: { color: '#e7e9ed' } },
-      sliceVisibilityThreshold: '0',
-      fontSize: '12',
-      pieSliceText: 'none',
-      tooltip: { isHtml: true, textStyle: { color: '#fff' } }
-    };
+      var options = {
+          titlePosition: 'none',
+          pieHole: 0.9,
+          backgroundColor: 'transparent',
+          legend: { position: 'none' },
+          chartArea: { width: '222', height: '222' },
+          pieSliceBorderColor: 'none',
+          slices: {
+              0: { color: '#d51920' },
+              1: { color: '#f47d20' },
+              2: { color: '#f9ba1b' },
+              3: { color: '#e7e9ed' }
+          },
+          sliceVisibilityThreshold: '0',
+          fontSize: '12',
+          pieSliceText: 'none',
+          tooltip: { isHtml: true, textStyle: { color: '#fff' } }
+      };
 
-    var chart = new google.visualization.PieChart(
-      document.getElementById('donutpecesd2b')
-    );
-    chart.draw(data, options);
+      var chart = new google.visualization.PieChart(
+          document.getElementById('donutpecesd2b')
+      );
+      chart.draw(data, options);
   }
+
+
+  google.charts.setOnLoadCallback(Chartpecesd2b);
+
+
 });
 
 //funciones graficas de insectos tercer nivel
@@ -8161,8 +8184,8 @@ $('.escarabajos').on('click', function() {
   function ChartinsectosEscarabajos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 320],
-      ['Especies sin datos SiB Colombia', 6680]
+      ['Especies con evidencia en el SiB Colombia', 792],
+      ['Especies sin datos SiB Colombia', 6208]
     ]);
 
     var options = {
@@ -8240,7 +8263,7 @@ $('.escarabajos').on('click', function() {
       [
         'Vulnerable SiB',
         1,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 1</br>Registros: 1</div>'
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 1</br>Registros: 3</div>'
       ],
       ['Especies sin datos SiB Colombia', 4, '']
     ]);
@@ -8394,8 +8417,8 @@ $('.mariposas').on('click', function() {
   function ChartinsectosMariposas1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 1269],
-      ['Especies sin datos SiB Colombia', 2005]
+      ['Especies con evidencia en el SiB Colombia', 1532],
+      ['Especies sin datos SiB Colombia', 1742]
     ]);
 
     var options = {
@@ -8472,10 +8495,10 @@ $('.mariposas').on('click', function() {
       ],
       [
         'Vulnerable SiB',
-        0,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        1,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 1</div>'
       ],
-      ['Especies sin datos SiB Colombia', 11, '']
+      ['Especies sin datos SiB Colombia', 10, '']
     ]);
 
     var options = {
@@ -8599,7 +8622,7 @@ $('.hormigas').on('click', function() {
   function ChartinsectosHormigas1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 855]
+      ['Representatividad de especies', 923]
     ]);
 
     var options = {
@@ -8627,8 +8650,8 @@ $('.hormigas').on('click', function() {
   function ChartinsectosHormigas1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 573],
-      ['Especies sin datos SiB Colombia', 282]
+      ['Especies con evidencia en el SiB Colombia', 540],
+      ['Especies sin datos SiB Colombia', 383]
     ]);
 
     var options = {
@@ -8708,7 +8731,7 @@ $('.hormigas').on('click', function() {
         0,
         '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 2, '']
     ]);
 
     var options = {
@@ -8826,7 +8849,7 @@ $('.abejas').on('click', function() {
   $('.grapharea').css('display', 'none');
   $('.graph_abejas').css('display', 'block');
 
-  // pie de literatura especies hormigas
+  // pie de literatura especies abejas
   google.charts.setOnLoadCallback(ChartinsectosAbejas1);
 
   function ChartinsectosAbejas1() {
@@ -8860,8 +8883,8 @@ $('.abejas').on('click', function() {
   function ChartinsectosAbejas1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 69],
-      ['Especies sin datos SiB Colombia', 329]
+      ['Especies con evidencia en el SiB Colombia', 52],
+      ['Especies sin datos SiB Colombia', 346]
     ]);
 
     var options = {
@@ -8890,8 +8913,8 @@ $('.abejas').on('click', function() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
       ['En peligro crítico', 4],
-      ['En peligro', 4],
-      ['Vulnerable', 3]
+      ['En peligro', 5],
+      ['Vulnerable', 4]
     ]);
 
     var options = {
@@ -8928,20 +8951,20 @@ $('.abejas').on('click', function() {
     data.addRows([
       [
         'En peligro crítico SiB',
-        3,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 3</br>Registros: 17</div>'
+        2,
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 2</br>Registros: 24</div>'
       ],
       [
         'En peligro SiB',
-        0,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+        1,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 1</br>Registros: 13</div>'
       ],
       [
         'Vulnerable SiB',
-        2,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 2</br>Registros: 5</div>'
+        1,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 1</br>Registros: 11</div>'
       ],
-      ['Especies sin datos SiB Colombia', 6, '']
+      ['Especies sin datos SiB Colombia', 9, '']
     ]);
 
     var options = {
@@ -9059,13 +9082,13 @@ $('.dipteros').on('click', function() {
   $('.grapharea').css('display', 'none');
   $('.graph_dipteros').css('display', 'block');
 
-  // pie de literatura especies hormigas
+  // pie de literatura especies dipteros
   google.charts.setOnLoadCallback(ChartinsectosDipteros1);
 
   function ChartinsectosDipteros1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 3153]
+      ['Representatividad de especies', 3186]
     ]);
 
     var options = {
@@ -9093,8 +9116,8 @@ $('.dipteros').on('click', function() {
   function ChartinsectosDipteros1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 259],
-      ['Especies sin datos SiB Colombia', 2894]
+      ['Especies con evidencia en el SiB Colombia', 253],
+      ['Especies sin datos SiB Colombia', 2933]
     ]);
 
     var options = {
@@ -9299,13 +9322,13 @@ $('.marinos').on('click', function() {
   $('.grapharea').css('display', 'none');
   $('.graph_marinos').css('display', 'block');
 
-  // pie de literatura especies hormigas
+  // pie de literatura especies moluscos marinos
   google.charts.setOnLoadCallback(ChartmoluscosMarinos1);
 
   function ChartmoluscosMarinos1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 1250]
+      ['Representatividad de especies', 1168]
     ]);
 
     var options = {
@@ -9333,8 +9356,8 @@ $('.marinos').on('click', function() {
   function ChartmoluscosMarinos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 0],
-      ['Especies sin datos SiB Colombia', 0]
+      ['Especies con evidencia en el SiB Colombia', 522],
+      ['Especies sin datos SiB Colombia', 646]
     ]);
 
     var options = {
@@ -9412,9 +9435,9 @@ $('.marinos').on('click', function() {
       [
         'Vulnerable SiB',
         0,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: En construcción</br>Registros: En construcción</div>'
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: En construcción</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 14, '']
     ]);
 
     var options = {
@@ -9491,8 +9514,8 @@ $('.marinos').on('click', function() {
       ],
       [
         'Apéndice II en SiB',
-        0,
-        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: En construcción</br>Registros: En construcción</div>'
+        1,
+        '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 1</br>Registros: 7</div>'
       ],
       [
         'Apéndice III en SiB',
@@ -9532,7 +9555,7 @@ $('.terrestres').on('click', function() {
   $('.grapharea').css('display', 'none');
   $('.graph_terrestres').css('display', 'block');
 
-  // pie de literatura especies hormigas
+  // pie de literatura especies moluscos terrestres
   google.charts.setOnLoadCallback(ChartmoluscosTerrestres1);
 
   function ChartmoluscosTerrestres1() {
@@ -9778,7 +9801,7 @@ $('.decapodos_marinos').on('click', function() {
   function ChartdecapodosMarinos1() {
     var data = google.visualization.arrayToDataTable([
       ['Especies estimadas', 'Número de especies'],
-      ['Representatividad de especies', 560]
+      ['Representatividad de especies', 1057]
     ]);
 
     var options = {
@@ -9806,8 +9829,8 @@ $('.decapodos_marinos').on('click', function() {
   function ChartdecapodosMarinos1b() {
     var data = google.visualization.arrayToDataTable([
       ['Titulo', 'SiB'],
-      ['Especies con evidencia en el SiB Colombia', 0],
-      ['Especies sin datos SiB Colombia', 0]
+      ['Especies con evidencia en el SiB Colombia', 600],
+      ['Especies sin datos SiB Colombia', 457]
     ]);
 
     var options = {
@@ -9884,10 +9907,10 @@ $('.decapodos_marinos').on('click', function() {
       ],
       [
         'Vulnerable SiB',
-        0,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: En construcción</br>Registros: En construcción</div>'
+        3,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 3</br>Registros: 16</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 4, '']
     ]);
 
     var options = {
@@ -10005,7 +10028,7 @@ $('.decapodos_terrestres').on('click', function() {
   $('.grapharea').css('display', 'none');
   $('.graph_decapodos_terrestres').css('display', 'block');
 
-  // pie de literatura especies decapodos marinos
+  // pie de literatura especies decapodos terrestres
   google.charts.setOnLoadCallback(ChartdecapodosTerrestres1);
 
   function ChartdecapodosTerrestres1() {
@@ -10238,7 +10261,7 @@ $('.decapodos_dulceacuicolas').on('click', function() {
   $('.grapharea').css('display', 'none');
   $('.graph_decapodos_dulceacuicolas').css('display', 'block');
 
-  // pie de literatura especies decapodos marinos
+  // pie de literatura especies decapodos dulce
   google.charts.setOnLoadCallback(ChartdecapodosDulce1);
 
   function ChartdecapodosDulce1() {
@@ -10345,15 +10368,15 @@ $('.decapodos_dulceacuicolas').on('click', function() {
       ],
       [
         'En peligro SiB',
-        0,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: En construcción</br>Registros: En construcción</div>'
+        6,
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: En construcción</br>Registros: 12</div>'
       ],
       [
         'Vulnerable SiB',
         0,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: En construcción</br>Registros: En construcción</div>'
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: En construcción</br>Registros: 0</div>'
       ],
-      ['Especies sin datos SiB Colombia', 0, '']
+      ['Especies sin datos SiB Colombia', 20, '']
     ]);
 
     var options = {

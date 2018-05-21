@@ -22,7 +22,8 @@
 </head>
 
 <body>
-	
+<!-- Hero -->
+
 	<a name="especiesColombia"></a>
 	<div class="imagecont">
 		<div class="boxybig">
@@ -45,6 +46,10 @@
 			<a href="http://datos.biodiversidad.co/" target="_blank">ir al portal de datos</a>
 		</div>
 	</div>
+<!-- / Hero -->
+
+
+<!-- Gráfica por reino -->
 
 	<a name="especiesPorReino"></a>
 	<div class="databg">
@@ -63,23 +68,33 @@
 		</div>
 	</div>
 
-	<a name="especiesRegistrosPorDepartamento"></a>
+<!-- / Gráfica por reino -->
+
+
+<!-- Mapa Colombia -->
+
+    <a name="especiesRegistrosPorDepartamento"></a>
 	<div class="databg mapsdep">
 		<div class="chart">
 			<h2>ESPECIES Y REGISTROS POR DEPARTAMENTO<br><i>En el SiB Colombia</i></h2>
 			<input type="button" name="ref" value="ESPECIES" onclick="showDivmap1()" class="tabbtn acttabbtn"/>
 			<input type="button" name="ref" value="REGISTROS" onclick="showDivmap2()" class="tabbtn"/>
 			<div id="mapa1">
-<!-- 				<div class="guiacont">-<div class="guia"></div>+</div> -->
+            <!-- <div class="guiacont">-<div class="guia"></div>+</div> -->
 				<div id="chart_div">
 				</div>
 			</div>
 			<div id="mapa2">
-<!-- 				<div class="guiacont">-<div class="guia guia2"></div>+</div> -->
+            <!-- <div class="guiacont">-<div class="guia guia2"></div>+</div> -->
 				<div id="chart_div2"></div></div>
 		</div>
 	</div>
-	
+
+<!-- / Mapa Colombia -->
+
+
+<!-- Amenazadas -->
+
 	<a name="especiesAmenazadas"></a>
 	<div class="greenline glimage">
 		<div class="ranks">
@@ -87,14 +102,14 @@
 				<img src="img/amenazadas.png" alt=""></img>
 				<div class="rank">
 					<h2>¿Cuántas especies</br>se encuentran</br>amenazadas</br>en Colombia?</h2>
-					<h1>1.345<input type="button" name="ref" value="i" class="refbtn mt5info"/></h1>
+					<h1>1.302<input type="button" name="ref" value="i" class="refbtn mt5info"/></h1>
 				</div>
 			</div>
 			<div class="fullrank masterTooltip2" title="Cifra obtenida de acuerdo con los criterios de la Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres (CITES).">
 				<img src="img/cites.png" alt=""></img>
 				<div class="rank">
 					<h2>¿Cuántas especies</br>son objeto de</br>comercio</br>en Colombia?</h2>
-					<h1>1.514<input type="button" name="ref" value="i" class="refbtn mt5info"/></h1>
+					<h1>3.558<input type="button" name="ref" value="i" class="refbtn mt5info"/></h1>
 				</div>
 			</div>
 			<div class="fullrank masterTooltip2" title="Del total de especies reportadas, 293 han sido evaluadas mediante herramientas de Análisis de Riesgo de Invasión, que han permitido identificar 96 especies como de Alto Riesgo de Invasión. Adicionalmente, se reconocen 22 especies invasoras de fauna y flora oficialmente declaradas por el Ministerio de Ambiente y Desarrollo Sostenible (Resoluciones 0848 de 2008 y 0207 de 2010.">
@@ -107,7 +122,11 @@
 		</div>
 	</div>
 
-	<a name="cifrasPorGrupoTaxonomico"></a>
+<!-- / Amenazadas -->
+
+<!-- Grupos taxonómicos -->
+
+    <a name="cifrasPorGrupoTaxonomico"></a>
 	<div class="cifras">
 		<h1>CIFRAS POR GRUPO TAXONÓMICO</h1>
 		<div class="grupo">
@@ -197,7 +216,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Mamíferos</h5>
 						<img src="img/mamiferos.png" alt=""></img>
-						<h6>518</h6>
+						<h6>528</h6>
 					</button>
 				</div>
 
@@ -226,14 +245,14 @@
 									<div id="donutmam1"></div>
 								</div>
 								<div class="pietext">
-									<h6>518</h6>
+									<h6>528</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 409</b></p>
-								<p class="datossib">Registros:<b> 31.109</b></p>
+								<p class="datossib">Especies:<b> 528</b></p>
+								<p class="datossib">Registros:<b> 63.615</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -251,16 +270,16 @@
 									<div id="donutmam2"></div>
 								</div>
 								<div class="pietext">
-									<h6>40</h6>
+									<h6>42</h6>
 									<p>Especies estimadas</p>
 								</div>
-								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 5">CR</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 7">CR</div>
 								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 10">EN</div>
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 25">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 18</b></p>
-								<p class="datossib">Registros:<b> 641</b></p>
+								<p class="datossib">Especies:<b> 34</b></p>
+								<p class="datossib">Registros:<b> 1689</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -278,7 +297,7 @@
 									<div id="donutmam3"></div>
 								</div>
 								<div class="pietext">
-									<h6>111</h6>
+									<h6>107</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 33">I</div>
@@ -286,8 +305,8 @@
 								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 11">III</div>
 								<div class="clear"></div>
 								<div class="sibtit">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 57</b></p>
-								<p class="datossib">Registros:<b> 4.404</b></p>
+								<p class="datossib">Especies:<b> 86</b></p>
+								<p class="datossib">Registros:<b> 8.281</b></p>
 							</div>
 							<div class="xtradata">
 								<h3 class="migratorias">Migratorias: <b>57</b>
@@ -296,7 +315,7 @@
 								</h3>
 								<div class="referencia">
 									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="https://www.researchgate.net/publication/262178951_Mamiferos_marinos_migratorios_en_Colombia" target="_blank"><b>47.</b> Amaya-Espinel, J. D. & L. A. Zapata (Editores). 2014. Guía de las especies migratorias de la biodiversidad en Colombia. Insectos, murciélagos, tortugas marinas, mamíferos marinos y dulceacuícolas. Vol. 3. Ministerio de Ambiente y Desarrollo Sostenible / WWF-Colombia. Bogotá, D.C. Colombia. 370 p. Consultado marzo 2017.</a>
+									<a href="https://www.researchgate.net/publication/262178951_Mamiferos_marinos_migratorios_en_Colombia" target="_blank"><b>45.</b> Amaya-Espinel, J. D. & L. A. Zapata (Editores). 2014. Guía de las especies migratorias de la biodiversidad en Colombia. Insectos, murciélagos, tortugas marinas, mamíferos marinos y dulceacuícolas. Vol. 3. Ministerio de Ambiente y Desarrollo Sostenible / WWF-Colombia. Bogotá, D.C. Colombia. 370 p. Consultado marzo 2017.</a>
 								</div>
 								<h3 class="endemicas">Endémicas: <b>34</b>
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="CIFRA ESTIMADA"/>
@@ -304,7 +323,7 @@
 								</h3>
 								<div class="referencia">
 									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>10.</b> Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
+									<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>13.</b> Andrade Correa, M. G. (2011). Estado del conocimiento de la biodiversidad en Colombia y sus amenazas. Consideraciones para fortalecer la interacción ciencia-política. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 35(137), 491-507.</a>
 								</div>
 							</div>
 						</div>
@@ -315,7 +334,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Aves</h5>
 						<img src="img/aves.png" alt=""></img>
-						<h6>1.937</h6>
+						<h6>1.909</h6>
 					</button>
 				</div>
 
@@ -344,14 +363,14 @@
 									<div id="donutave1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.937</h6>
+									<h6>1.909</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.900</b></p>
-								<p class="datossib">Registros:<b> 605.373</b></p>
+								<p class="datossib">Especies:<b> 1.861</b></p>
+								<p class="datossib">Registros:<b> 645.133</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -377,8 +396,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 67">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 111</b></p>
-								<p class="datossib">Registros:<b> 5.979</b></p>
+								<p class="datossib">Especies:<b> 120</b></p>
+								<p class="datossib">Registros:<b> 6.159</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -433,7 +452,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Anfibios</h5>
 						<img src="img/anfibios.png" alt=""></img>
-						<h6>805</h6>
+						<h6>814</h6>
 					</button>
 				</div>
 
@@ -462,14 +481,14 @@
 									<div id="donutanfibio1"></div>
 								</div>
 								<div class="pietext">
-									<h6>805</h6>
+									<h6>814</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 692</b></p>
-								<p class="datossib">Registros:<b> 67.024</b></p>
+								<p class="datossib">Especies:<b> 657</b></p>
+								<p class="datossib">Registros:<b> 77.458</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -495,8 +514,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 15">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 49</b></p>
-								<p class="datossib">Registros:<b> 1.513</b></p>
+								<p class="datossib">Especies:<b> 50</b></p>
+								<p class="datossib">Registros:<b> 1.628</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -532,7 +551,7 @@
 								</h3>
 								<div class="referencia">
 									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>10.</b> Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
+									<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>13.</b> Andrade Correa, M. G. (2011). Estado del conocimiento de la biodiversidad en Colombia y sus amenazas. Consideraciones para fortalecer la interacción ciencia-política. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 35(137), 491-507.</a>
 								</div>
 							</div>
 						</div>
@@ -578,8 +597,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 507</b></p>
-								<p class="datossib">Registros:<b> 21.474</b></p>
+								<p class="datossib">Especies:<b> 534</b></p>
+								<p class="datossib">Registros:<b> 27.664</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -605,8 +624,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 17">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 18</b></p>
-								<p class="datossib">Registros:<b> 2.129</b></p>
+								<p class="datossib">Especies:<b> 36</b></p>
+								<p class="datossib">Registros:<b> 3.402</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -661,7 +680,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Peces</h5>
 						<img src="img/pecesdulce.png" alt=""></img>
-						<h6>2.425</h6>
+						<h6>4.076</h6>
 					</button>
 					<div class="sublinks">
 						<button title="Marinos" class="pecesm masterTooltip"></button>
@@ -704,14 +723,14 @@
 									<div id="donutpeces1"></div>
 								</div>
 								<div class="pietext">
-									<h6>2.425</h6>
+									<h6>4.076</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.960</b></p>
-								<p class="datossib">Registros:<b> 36.029</b></p>
+								<p class="datossib">Especies:<b> 2.759</b></p>
+								<p class="datossib">Registros:<b> 208.526</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -739,12 +758,12 @@
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 7">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 11">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 91">VU</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 10">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 92">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 45</b></p>
-								<p class="datossib">Registros:<b> 3.409</b></p>
+								<p class="datossib">Especies:<b> 92</b></p>
+								<p class="datossib">Registros:<b> 5.421</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -803,7 +822,7 @@
 									<div id="donutpecesm1"></div>
 								</div>
 								<div class="pietext">
-									<h6>990</h6>
+									<h6>2.582</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
@@ -881,7 +900,7 @@
 									<div id="donutpecesd1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1435</h6>
+									<h6>1.494</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
@@ -901,14 +920,19 @@
 								<div class="fullpie" style="width: 200px; height: 200px;">
 									<div id="donutpecesd2"></div>
 								</div>
-								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 1">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 4">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 48">VU</div>
-								<div class="pietext">
-									<h6>53</h6>
-									<p>Especies estimadas</p>
-								</div>
+                                <div class="pietext">
+                                    <h6>53</h6>
+                                    <p>Especies estimadas</p>
+                                </div>
+                                <div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 1">CR</div>
+                                <div class="ame2 masterTooltip" title="Especies estimadas en peligro: 4">EN</div>
+                                <div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 48">VU</div>
+                                <div class="clear"></div>
+                                <div class="sibtit relleno2">En SiB Colombia</div>
+                                <p class="datossib">Especies:<b> 47</b></p>
+                                <p class="datossib">Registros:<b> 4.028</b></p>
 							</div>
+
 							<div class="col1">
 								<h3>CITES
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
@@ -916,6 +940,8 @@
 								<div class="pietext nodata">
 									<h6>Datos</h6>
 									<p>en construcción</p>
+
+
 								</div>
 							</div>
 							<div class="xtradata">
@@ -997,8 +1023,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 3.463</b></p>
-								<p class="datossib">Registros:<b> 206.560</b></p>
+								<p class="datossib">Especies:<b> 4.170</b></p>
+								<p class="datossib">Registros:<b> 250.486</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1016,16 +1042,16 @@
 									<div id="donutinsecto2"></div>
 								</div>
 								<div class="pietext">
-									<h6>30</h6>
+									<h6>36</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 5">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 11">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 14">VU</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 15">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 16">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 7</b></p>
-								<p class="datossib">Registros:<b> 24</b></p>
+								<p class="datossib">Especies:<b> 5</b></p>
+								<p class="datossib">Registros:<b> 29</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -1100,8 +1126,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 320</b></p>
-								<p class="datossib">Registros:<b> 60.050</b></p>
+								<p class="datossib">Especies:<b> 792</b></p>
+								<p class="datossib">Registros:<b> 84.760</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1128,7 +1154,7 @@
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
 								<p class="datossib">Especies:<b> 1</b></p>
-								<p class="datossib">Registros:<b> 1</b></p>
+								<p class="datossib">Registros:<b> 3</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -1193,8 +1219,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.269</b></p>
-								<p class="datossib">Registros:<b> 41.510</b></p>
+								<p class="datossib">Especies:<b> 1.532</b></p>
+								<p class="datossib">Registros:<b> 45.882</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1220,8 +1246,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 5">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1</b></p>
-								<p class="datossib">Registros:<b> 1</b></p>
+								<p class="datossib">Especies:<b> 2</b></p>
+								<p class="datossib">Registros:<b> 2</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -1257,7 +1283,7 @@
 								</h3>
 								<div class="referencia">
 									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://catalogoplantasdecolombia.unal.edu.co/" target="_blank"><p><b>10.</b> Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</p></a>
+									<a href="http://catalogoplantasdecolombia.unal.edu.co/" target="_blank"><p><b>13.</b> Andrade Correa, M. G. (2011). Estado del conocimiento de la biodiversidad en Colombia y sus amenazas. Consideraciones para fortalecer la interacción ciencia-política. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 35(137), 491-507.</p></a>
 								</div>
 							</div>
 						</div>
@@ -1290,14 +1316,14 @@
 									<div id="donuthormigas1"></div>
 								</div>
 								<div class="pietext">
-									<h6>855</h6>
+									<h6>923</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 573</b></p>
-								<p class="datossib">Registros:<b> 40.913</b></p>
+								<p class="datossib">Especies:<b> 540</b></p>
+								<p class="datossib">Registros:<b> 39.904</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1389,8 +1415,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 69</b></p>
-								<p class="datossib">Registros:<b> 1.780</b></p>
+								<p class="datossib">Especies:<b> 52</b></p>
+								<p class="datossib">Registros:<b> 453</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1408,16 +1434,16 @@
 									<div id="donutabejas2"></div>
 								</div>
 								<div class="pietext">
-									<h6>11</h6>
+									<h6>13</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 4">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 4">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 3">VU</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 5">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 4">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 5</b></p>
-								<p class="datossib">Registros:<b> 22</b></p>
+								<p class="datossib">Especies:<b> 4</b></p>
+								<p class="datossib">Registros:<b> 48</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -1476,14 +1502,14 @@
 									<div id="donutdipteros1"></div>
 								</div>
 								<div class="pietext">
-									<h6>3153</h6>
+									<h6>3.186</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 259</b></p>
-								<p class="datossib">Registros:<b> 24.488</b></p>
+								<p class="datossib">Especies:<b> 253</b></p>
+								<p class="datossib">Registros:<b> 25.351</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1547,7 +1573,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Arácnidos</h5>
 						<img src="img/aracnidos.png" alt=""></img>
-						<h6>1.089</h6>
+						<h6>1.385</h6>
 					</button>
 				</div>
 
@@ -1576,14 +1602,14 @@
 									<div id="donutaracnidos1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.089</h6>
+									<h6>1.385</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 74</b></p>
-								<p class="datossib">Registros:<b> 9.249</b></p>
+								<p class="datossib">Especies:<b> 91</b></p>
+								<p class="datossib">Registros:<b> 9.361</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1601,16 +1627,16 @@
 									<div id="donutaracnidos2"></div>
 								</div>
 								<div class="pietext">
-									<h6>9</h6>
+									<h6>8</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
 								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 3">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 6">VU</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 5">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
 								<p class="datossib">Especies:<b> 1</b></p>
-								<p class="datossib">Registros:<b> 70</b></p>
+								<p class="datossib">Registros:<b> 61</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -1649,7 +1675,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Moluscos</h5>
 						<img src="img/moluscosmarinos.png" alt=""></img>
-						<h6>1.900</h6>
+						<h6>1.818</h6>
 					</button>
 					<div class="sublinks">
 						<button title="Marinos" class="marinos masterTooltip"></button>
@@ -1691,14 +1717,14 @@
 									<div id="donutmolusco1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.900</h6>
+									<h6>1.818</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 694</b></p>
-								<p class="datossib">Registros:<b> 9.569</b></p>
+								<p class="datossib">Especies:<b> 785</b></p>
+								<p class="datossib">Registros:<b> 20.293</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1716,16 +1742,16 @@
 									<div id="donutmolusco2"></div>
 								</div>
 								<div class="pietext">
-									<h6>14</h6>
+									<h6>17</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 0">EN</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 3">EN</div>
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 14">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 5</b></p>
-								<p class="datossib">Registros:<b> 337</b></p>
+								<p class="datossib">Especies:<b> 8</b></p>
+								<p class="datossib">Registros:<b> 331</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -1786,14 +1812,14 @@
 									<div id="donutmarinos1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.250</h6>
+									<h6>1.168</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> En construcción</b></p>
-								<p class="datossib">Registros:<b> En construcción</b></p>
+								<p class="datossib">Especies:<b> 522</b></p>
+								<p class="datossib">Registros:<b> 11.781</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1819,8 +1845,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 14">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> En construcción</b></p>
-								<p class="datossib">Registros:<b> En construcción</b></p>
+								<p class="datossib">Especies:<b> 0</b></p>
+								<p class="datossib">Registros:<b> 0</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -1950,7 +1976,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Decápodos</h5>
 						<img src="img/decapodos-terrestres.png" alt=""></img>
-						<h6>1.352</h6>
+						<h6>1.849</h6>
 					</button>
 					<div class="sublinks">
 						<button title="Marinos" class="decapodos_marinos masterTooltip"></button>
@@ -1999,14 +2025,14 @@
 									<div id="donutdecapodo1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.352</h6>
+									<h6>1.849</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 393</b></p>
-								<p class="datossib">Registros:<b> 2.784</b></p>
+								<p class="datossib">Especies:<b> 429</b></p>
+								<p class="datossib">Registros:<b> 3.155</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2037,8 +2063,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 8">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 4</b></p>
-								<p class="datossib">Registros:<b> 14</b></p>
+								<p class="datossib">Especies:<b> 9</b></p>
+								<p class="datossib">Registros:<b> 28</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -2099,14 +2125,14 @@
 									<div id="donutdecapodosmarinos1"></div>
 								</div>
 								<div class="pietext">
-									<h6>560</h6>
+									<h6>1.057</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> En construcción</b></p>
-								<p class="datossib">Registros:<b> En construcción</b></p>
+								<p class="datossib">Especies:<b> 600</b></p>
+								<p class="datossib">Registros:<b> 11.729</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2132,8 +2158,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 7">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> En construcción</b></p>
-								<p class="datossib">Registros:<b> En construcción</b></p>
+								<p class="datossib">Especies:<b> 3</b></p>
+								<p class="datossib">Registros:<b> 16</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -2318,8 +2344,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 1">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> En construcción</b></p>
-								<p class="datossib">Registros:<b> En construcción</b></p>
+								<p class="datossib">Especies:<b> 6</b></p>
+								<p class="datossib">Registros:<b> 12</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -2356,7 +2382,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Equinodermos</h5>
 						<img src="img/equinodermos.png" alt=""></img>
-						<h6>296</h6>
+						<h6>394</h6>
 					</button>
 				</div>
 
@@ -2385,14 +2411,14 @@
 									<div id="donutequinodermo1"></div>
 								</div>
 								<div class="pietext">
-									<h6>296</h6>
+									<h6>394</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 106</b></p>
-								<p class="datossib">Registros:<b> 789</b></p>
+								<p class="datossib">Especies:<b> 330</b></p>
+								<p class="datossib">Registros:<b> 6.155</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2453,7 +2479,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Esponjas Marinas</h5>
 						<img src="img/esponjas.png" alt=""></img>
-						<h6>306</h6>
+						<h6>142</h6>
 					</button>
 				</div>
 
@@ -2482,14 +2508,14 @@
 									<div id="donutesponjamarina1"></div>
 								</div>
 								<div class="pietext">
-									<h6>306</h6>
+									<h6>142</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 40</b></p>
-								<p class="datossib">Registros:<b> 92</b></p>
+								<p class="datossib">Especies:<b> 134</b></p>
+								<p class="datossib">Registros:<b> 1.065</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2550,7 +2576,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Corales</h5>
 						<img src="img/corales.png" alt=""></img>
-						<h6>139</h6>
+						<h6>153</h6>
 					</button>
 				</div>
 
@@ -2579,14 +2605,14 @@
 									<div id="donutcoralesafines1"></div>
 								</div>
 								<div class="pietext">
-									<h6>139</h6>
+									<h6>153</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 136</b></p>
-								<p class="datossib">Registros:<b> 1.069</b></p>
+								<p class="datossib">Especies:<b> 153</b></p>
+								<p class="datossib">Registros:<b> 20.913</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2604,16 +2630,16 @@
 									<div id="donutcoralesafines2"></div>
 								</div>
 								<div class="pietext">
-									<h6>7</h6>
+									<h6>6</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 1">CR</div>
 								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 1">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 5">VU</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 4">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 6</b></p>
-								<p class="datossib">Registros:<b> 23</b></p>
+								<p class="datossib">Especies:<b> 5</b></p>
+								<p class="datossib">Registros:<b> 31</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -2669,14 +2695,14 @@
 									<div id="donutplantas1"></div>
 								</div>
 								<div class="pietext">
-									<h6>25.163</h6>
+									<h6>28.000</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 20.299</b></p>
-								<p class="datossib">Registros:<b> 884.052</b></p>
+								<p class="datossib">Especies:<b> 23.036</b></p>
+								<p class="datossib">Registros:<b> 1'129.815</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2765,8 +2791,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.384</b></p>
-								<p class="datossib">Registros:<b> 9.504</b></p>
+								<p class="datossib">Especies:<b> 1.725</b></p>
+								<p class="datossib">Registros:<b> 14.866</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2792,8 +2818,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 137">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 74</b></p>
-								<p class="datossib">Registros:<b> 283</b></p>
+								<p class="datossib">Especies:<b> 110</b></p>
+								<p class="datossib">Registros:<b> 442</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -2832,7 +2858,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Magnolias y afines</h5>
 						<img src="img/magnolias.png" alt=""></img>
-						<h6>111</h6>
+						<h6>114</h6>
 					</button>
 				</div>
 
@@ -2861,14 +2887,14 @@
 									<div id="donutmagnolias1"></div>
 								</div>
 								<div class="pietext">
-									<h6>111</h6>
+									<h6>114</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 108</b></p>
-								<p class="datossib">Registros:<b> 8.499</b></p>
+								<p class="datossib">Especies:<b> 114</b></p>
+								<p class="datossib">Registros:<b> 10.375</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2886,16 +2912,16 @@
 									<div id="donutmagnolias2"></div>
 								</div>
 								<div class="pietext">
-									<h6>44</h6>
+									<h6>45</h6>
 									<p>Especies estimadas</p>
 								</div>
-								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 12">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 22">EN</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 15">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 20">EN</div>
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 10">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 37</b></p>
-								<p class="datossib">Registros:<b> 5.095</b></p>
+								<p class="datossib">Especies:<b> 42</b></p>
+								<p class="datossib">Registros:<b> 5.270</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -2934,7 +2960,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Bromelias y otras</h5>
 						<img src="img/bromelia.png" alt=""></img>
-						<h6>992</h6>
+						<h6>1.024</h6>
 					</button>
 				</div>
 
@@ -2963,14 +2989,14 @@
 									<div id="donutbromelias1"></div>
 								</div>
 								<div class="pietext">
-									<h6>992</h6>
+									<h6>1.024</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 672</b></p>
-								<p class="datossib">Registros:<b> 14.039</b></p>
+								<p class="datossib">Especies:<b> 816</b></p>
+								<p class="datossib">Registros:<b> 20.089</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2988,16 +3014,16 @@
 									<div id="donutbromelias2"></div>
 								</div>
 								<div class="pietext">
-									<h6>255</h6>
+									<h6>183</h6>
 									<p>Especies estimadas</p>
 								</div>
-								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 47">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 94">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 114">VU</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 41">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 67">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 75">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 113</b></p>
-								<p class="datossib">Registros:<b> 901</b></p>
+								<p class="datossib">Especies:<b> 100</b></p>
+								<p class="datossib">Registros:<b> 595</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3036,7 +3062,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Palmas</h5>
 						<img src="img/palmas.png" alt=""></img>
-						<h6>288</h6>
+						<h6>289</h6>
 					</button>
 				</div>
 
@@ -3065,14 +3091,14 @@
 									<div id="donutpalmas1"></div>
 								</div>
 								<div class="pietext">
-									<h6>288</h6>
+									<h6>289</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 232</b></p>
-								<p class="datossib">Registros:<b> 8.174</b></p>
+								<p class="datossib">Especies:<b> 280</b></p>
+								<p class="datossib">Registros:<b> 52.892</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3090,16 +3116,16 @@
 									<div id="donutpalmas2"></div>
 								</div>
 								<div class="pietext">
-									<h6>39</h6>
+									<h6>54</h6>
 									<p>Especies estimadas</p>
 								</div>
-								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 6">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 17">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 16">VU</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 7">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 22">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 25">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 31</b></p>
-								<p class="datossib">Registros:<b> 1.074</b></p>
+								<p class="datossib">Especies:<b> 48</b></p>
+								<p class="datossib">Registros:<b> 1.379</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3181,8 +3207,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 19</b></p>
-								<p class="datossib">Registros:<b> 430</b></p>
+								<p class="datossib">Especies:<b> 21</b></p>
+								<p class="datossib">Registros:<b> 490</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3208,8 +3234,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 4">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 9</b></p>
-								<p class="datossib">Registros:<b> 329</b></p>
+								<p class="datossib">Especies:<b> 19</b></p>
+								<p class="datossib">Registros:<b> 441</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3283,8 +3309,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 68</b></p>
-								<p class="datossib">Registros:<b> 7.244</b></p>
+								<p class="datossib">Especies:<b> 78</b></p>
+								<p class="datossib">Registros:<b> 8.379</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3302,16 +3328,16 @@
 									<div id="donutfrailejones2"></div>
 								</div>
 								<div class="pietext">
-									<h6>88</h6>
+									<h6>37</h6>
 									<p>Especies estimadas</p>
 								</div>
-								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 20">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 36">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 32">VU</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 7">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 17">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 13">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 27</b></p>
-								<p class="datossib">Registros:<b> 1.238</b></p>
+								<p class="datossib">Especies:<b> 35</b></p>
+								<p class="datossib">Registros:<b> 1.423</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3350,7 +3376,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Cactus</h5>
 						<img src="img/cactus.png" alt=""></img>
-						<h6>57</h6>
+						<h6>58</h6>
 					</button>
 				</div>
 
@@ -3379,14 +3405,14 @@
 									<div id="donutcactus1"></div>
 								</div>
 								<div class="pietext">
-									<h6>57</h6>
+									<h6>58</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 45</b></p>
-								<p class="datossib">Registros:<b> 1.662</b></p>
+								<p class="datossib">Especies:<b> 53</b></p>
+								<p class="datossib">Registros:<b> 1.915</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3452,7 +3478,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Pinos y afines</h5>
 						<img src="img/plantas-sin-flor.png" alt=""></img>
-						<h6>22</h6>
+						<h6>23</h6>
 					</button>
 				</div>
 
@@ -3481,14 +3507,14 @@
 									<div id="donutpinos1"></div>
 								</div>
 								<div class="pietext">
-									<h6>22</h6>
+									<h6>23</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 21</b></p>
-								<p class="datossib">Registros:<b> 445</b></p>
+								<p class="datossib">Especies:<b> 23</b></p>
+								<p class="datossib">Registros:<b> 516</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3506,16 +3532,16 @@
 									<div id="donutpinos2"></div>
 								</div>
 								<div class="pietext">
-									<h6>0</h6>
+									<h6>25</h6>
 									<p>Especies estimadas</p>
 								</div>
-								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 0">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 0">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 0">VU</div>
+								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 8">CR</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 9">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 8">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 0</b></p>
-								<p class="datossib">Registros:<b> 0</b></p>
+								<p class="datossib">Especies:<b> 23</b></p>
+								<p class="datossib">Registros:<b> 6103</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3589,8 +3615,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.278</b></p>
-								<p class="datossib">Registros:<b> 51.277</b></p>
+								<p class="datossib">Especies:<b> 1.397</b></p>
+								<p class="datossib">Registros:<b> 57.493</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3656,7 +3682,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Fanerógamas</h5>
 						<img src="img/fanerogamas.png" alt=""></img>
-						<h6>265</h6>
+						<h6>264</h6>
 					</button>
 				</div>
 
@@ -3685,14 +3711,14 @@
 									<div id="donutfenerogamas1"></div>
 								</div>
 								<div class="pietext">
-									<h6>265</h6>
+									<h6>264</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 237</b></p>
-								<p class="datossib">Registros:<b> 11.262</b></p>
+								<p class="datossib">Especies:<b> 252</b></p>
+								<p class="datossib">Registros:<b> 13.785</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3710,16 +3736,16 @@
 									<div id="donutfenerogamas2"></div>
 								</div>
 								<div class="pietext">
-									<h6>71</h6>
+									<h6>73</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 11">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 27">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 33">VU</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 28">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 34">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 48</b></p>
-								<p class="datossib">Registros:<b> 1.016</b></p>
+								<p class="datossib">Especies:<b> 50</b></p>
+								<p class="datossib">Registros:<b> 1.064</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3793,8 +3819,8 @@
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 28</b></p>
-								<p class="datossib">Registros:<b> 3.268</b></p>
+								<p class="datossib">Especies:<b> 27</b></p>
+								<p class="datossib">Registros:<b> 3.629</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3817,16 +3843,16 @@
 									<div id="donutmaderables2"></div>
 								</div>
 								<div class="pietext">
-									<h6>34</h6>
+									<h6>28</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 8">CR</div>
-								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 16">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 10">VU</div>
+								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 13">EN</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 7">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 28</b></p>
-								<p class="datossib">Registros:<b> 3.267</b></p>
+								<p class="datossib">Especies:<b> 27</b></p>
+								<p class="datossib">Registros:<b> 3.555</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3865,7 +3891,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Musgos y afines</h5>
 						<img src="img/musgos.png" alt=""></img>
-						<h6>1.691</h6>
+						<h6>1.692</h6>
 					</button>
 				</div>
 
@@ -3894,14 +3920,14 @@
 									<div id="donutmusgos1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.691</h6>
+									<h6>1.692</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.349</b></p>
-								<p class="datossib">Registros:<b> 31.326</b></p>
+								<p class="datossib">Especies:<b> 1.409</b></p>
+								<p class="datossib">Registros:<b> 37.345</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -3924,16 +3950,16 @@
 									<div id="donutmusgos2"></div>
 								</div>
 								<div class="pietext">
-									<h6>99</h6>
+									<h6>93</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 8">CR</div>
 								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 5">EN</div>
-								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 86">VU</div>
+								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 80">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 33</b></p>
-								<p class="datossib">Registros:<b> 124</b></p>
+								<p class="datossib">Especies:<b> 38</b></p>
+								<p class="datossib">Registros:<b> 229</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -3975,7 +4001,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Marinas</h5>
 						<img src="img/algas-marinas.png" alt=""></img>
-						<h6>905</h6>
+						<h6>473</h6>
 					</button>
 				</div>
 
@@ -4004,10 +4030,14 @@
 									<div id="donutalgasmarinas1"></div>
 								</div>
 								<div class="pietext">
-									<h6>905</h6>
+									<h6>473</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+                                <div class="clear2"></div>
+                                <div class="sibtit relleno">En SiB Colombia</div>
+                                <p class="datossib">Especies:<b> 249</b></p>
+                                <p class="datossib">Registros:<b> 3.644</b></p>
 								<div class="clear2"></div>
 							</div>
 							<div class="col1">
@@ -4072,7 +4102,7 @@
 									<div id="donutalgasdulceacuicolas1"></div>
 								</div>
 								<div class="pietext">
-									<h6>604</h6>
+									<h6>605</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
@@ -4140,7 +4170,7 @@
 									<div id="donutalgasterrestres1"></div>
 								</div>
 								<div class="pietext">
-									<h6>16</h6>
+									<h6>46</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
@@ -4208,7 +4238,7 @@
 									<div id="donutotrasalgas1"></div>
 								</div>
 								<div class="pietext">
-									<h6>128</h6>
+									<h6>28</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
@@ -4250,7 +4280,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>líquenes</h5>
 						<img src="img/liquenes.png" alt=""></img>
-						<h6>1.464</h6>
+						<h6>1.473</h6>
 					</button>
 				</div>
 
@@ -4279,14 +4309,14 @@
 									<div id="donutliquenes1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.464</h6>
+									<h6>1.473</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 60</b></p>
-								<p class="datossib">Registros:<b> 2.839</b></p>
+								<p class="datossib">Especies:<b> 216</b></p>
+								<p class="datossib">Registros:<b> 5.426</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -4355,7 +4385,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Macrohongos</h5>
 						<img src="img/hongos.png" alt=""></img>
-						<h6>1.239</h6>
+						<h6>1.261</h6>
 					</button>
 				</div>
 
@@ -4384,14 +4414,14 @@
 									<div id="donutmacrohongos1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.239</h6>
+									<h6>1.261</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 69</b></p>
-								<p class="datossib">Registros:<b> 701</b></p>
+								<p class="datossib">Especies:<b> 169</b></p>
+								<p class="datossib">Registros:<b> 1.812</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -4661,7 +4691,11 @@
 		</div>
 	</div>
 
-	<a name="biodiversidadMundo"></a>
+<!-- / Grupos taxonómicos -->
+
+<!-- Mapa Mundo -->
+
+    <a name="biodiversidadMundo"></a>
 	<div class="mapabio">
 		<div>
 			<h2>BIODIVERSIDAD EN EL MUNDO
@@ -4669,14 +4703,18 @@
 			</h2>
 			<h4>Top 10 países con mayor biodiversidad</h4>
 		</div>
-		<div class="referencia"> 
+		<div class="referencia">
 			<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
 			<a href="https://news.mongabay.com/2016/05/top-10-biodiverse-countries/?n3wsletter" target="_blank">Mongabay. 2016. “The Top 10 Most Biodiverse Countries.” Edited by Rhett A. Butler. Mongabay.</a>
 		</div>
 		<div id="regions_div" class="chart nobg"></div>
 	</div>
 
-	<div class="colombiadata">
+<!-- / Mapa Mundo -->
+
+<!-- Data Colombia -->
+
+    <div class="colombiadata">
 		<div class="down"></div>
 		<img src="img/colominimap.png" class="minimap" alt=""></img>
 		<div class="ranks">
@@ -4761,6 +4799,7 @@
 		</div>
 	</div>
 
+<!-- / Data Colombia -->
 
 	<script
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
