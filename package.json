@@ -1,0 +1,22 @@
+{
+  "name": "cifras.biodiversidad.co",
+  "version": "1.0.0",
+  "description": "Portal cifras Biovidersidad de Colombia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIB-Colombia/Biodiversidad-en-cifras.git"
+  },
+  "keywords": [
+    "biodiversidad"
+  ],
+  "author": "SiB Colombia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SIB-Colombia/Biodiversidad-en-cifras/issues"
+  },
+  "homepage": "https://github.com/SIB-Colombia/Biodiversidad-en-cifras#readme"
+}
