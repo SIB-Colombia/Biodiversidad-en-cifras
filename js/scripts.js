@@ -1328,17 +1328,17 @@ function showDivGraph(currentElement) {
       [
         'En peligro crítico SiB',
         9,
-        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 7</br>Registros: 1.611</div>'
+        '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 9</br>Registros: 1.611</div>'
       ],
       [
         'En peligro SiB',
         14,
-        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 7</br>Registros: 972</div>'
+        '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 14</br>Registros: 972</div>'
       ],
       [
         'Vulnerable SiB',
-        13,
-        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 4</br>Registros: 819</div>'
+        17,
+        '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 17</br>Registros: 819</div>'
       ],
       ['Especies sin datos SiB Colombia', 8, '']
     ]);
@@ -5000,7 +5000,7 @@ function showDivGraph(currentElement) {
         4,
         '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 4</br>Registros: 169</div>'
       ],
-      ['Especies sin datos SiB Colombia', 2, '']
+      ['Especies sin datos SiB Colombia', 0, '']
     ]);
 
     var options = {
@@ -8163,7 +8163,7 @@ $('.pecesd').on('click', function() {
       ['Especies estimadas', 'Número de especies'],
       ['Apéndice I', 0],
       ['Apéndice II', 1],
-      ['Apéndice III', 6]
+      ['Apéndice III', 0]
     ]);
 
     var options = {
