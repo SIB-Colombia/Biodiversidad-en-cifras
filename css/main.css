@@ -71,15 +71,42 @@ a {
 }
 
 .imagecont {
-	height: 500px;
-	margin: 15px;
+	height: 650px;
+	margin: 0;
 	margin-bottom: 0;
-	background-image: url(../img/bg.jpg);
+	background-image: url(../img/bg-2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-position-x: center;
+	position: relative;
+}
+
+
+.credito{
+	display: block;
+    margin-top: 5em;
+	opacity: .8;
+	font-size: 1em;
+    line-height: 1em;
+    font-weight: 400;
+    color: #fff;
+	font-style: italic;
+	text-align: center;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+.credito:hover{
+	opacity: 1;
+}
+
+.credito img{
+	margin-top: -4px;
+    vertical-align: middle;
+    height: 16px;
 }
 
 .boxybig h1 {
@@ -869,8 +896,13 @@ div.google-visualization-tooltip { pointer-events: none;} /* flickering de googl
 
 }
 
-@media screen and (max-width: 740px){
-
+@media screen and (max-width: 768px){
+	.imagecont{
+		background-position-x: unset;
+		background-position: bottom;
+		background-color: black;
+		background-size: contain;
+	}
 }
 
 @media screen and (max-width: 490px){ 
