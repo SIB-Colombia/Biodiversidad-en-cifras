@@ -10890,14 +10890,15 @@ $(document).ready(function() {
   $('.masterTooltip2')
     .hover(
       function() {
+        console.log('clickkkk');
         var title = $(this).attr('title');
         $(this)
-          .data('tipText', title)
-          .removeAttr('title');
+        .data('tipText', title)
+        .removeAttr('title');
         $('<p class="tooltip2"></p>')
-          .text(title)
-          .appendTo('body')
-          .fadeIn('fast');
+        .text(title)
+        .appendTo('body')
+        .fadeIn('fast');
       },
       function() {
         $(this).attr('title', $(this).data('tipText'));
