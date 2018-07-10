@@ -10890,7 +10890,6 @@ $(document).ready(function() {
   $('.masterTooltip2')
     .hover(
       function() {
-        console.log('clickkkk');
         var title = $(this).attr('title');
         $(this)
         .data('tipText', title)
