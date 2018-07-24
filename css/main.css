@@ -197,7 +197,8 @@ a {
 }
 
 .greenline {
-	background-color: #4bc0c0;
+	//background-color: #4bc0c0;
+	background-color: #1b7399;
 	width: 100%;
 	padding: 25px 0;
 }
@@ -222,8 +223,10 @@ a {
 .textcont a, a.linkpd {
 	text-transform: uppercase;
 	padding: 3px 10px;
-	color: #1d393d;
-	border: 1px solid #1d393d;
+	//color: #1d393d;
+	//border: 1px solid #1d393d;
+	color: white;
+	border: 1px solid white;
 }
 
 .textcont a:hover, a.linkpd:hover {
@@ -337,7 +340,8 @@ a {
 }
 
 .colombiadata {
-	background-color: #1D393D;
+	//background-color: #1D393D;
+	background-color: #005d5f;
 	padding-bottom: 160px;
 }
 

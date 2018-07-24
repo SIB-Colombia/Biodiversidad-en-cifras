@@ -52,99 +52,167 @@
 	</div>
 <!-- / Hero -->
 
+<!-- Mapa Mundo -->
 
-<!-- Gráfica por reino -->
-
-	<a name="especiesPorReino"></a>
-	<div class="databg">
-		<div class="databox">
-			<h2>NÚMERO DE ESPECIES POR REINO<br><i>En el SiB Colombia</i></h2>
-			<input type="button" name="ref" value="TOTAL" onclick="showDivspp1()" class="tabbtn acttabbtn"/>
-			<input type="button" name="ref" value="COLECCIONES" onclick="showDivspp2()" class="tabbtn"/>
-			<input type="button" name="ref" value="OBSERVACIONES" onclick="showDivspp3()" class="tabbtn"/>
-			<div id="chart_div_records" class="chart2"></div>
-			<div id="chart_div_colecciones" class="chart2"></div>
-			<div id="chart_div_observaciones" class="chart2"></div>
-			<div class="tabbtn circulotab">PLANTAS</div>
-			<div class="tabbtn circulotab">ANIMALES</div>
-			<div class="tabbtn circulotab">HONGOS</div>
-			<div class="tabbtn circulotab">OTROS</div>
-		</div>
+<a name="biodiversidadMundo"></a>
+<div class="mapabio">
+	<div>
+		<h2>BIODIVERSIDAD EN EL MUNDO
+		<input type="button" name="ref" value="2" onclick="showDiv2(this)" class="refbtn mt5"/>
+		</h2>
+		<h4>Top 10 países con mayor biodiversidad</h4>
 	</div>
+	<div class="referencia">
+		<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+		<a href="https://news.mongabay.com/2016/05/top-10-biodiverse-countries/?n3wsletter" target="_blank">Mongabay. 2016. “The Top 10 Most Biodiverse Countries.” Edited by Rhett A. Butler. Mongabay.</a>
+	</div>
+	<div id="regions_div" class="chart nobg"></div>
+</div>
 
-<!-- / Gráfica por reino -->
+<!-- / Mapa Mundo -->
+<!-- Data Colombia -->
 
-
-<!-- Mapa Colombia -->
-
-    <a name="especiesRegistrosPorDepartamento"></a>
-	<div class="databg mapsdep">
-		<div class="chart">
-			<h2>ESPECIES Y REGISTROS POR DEPARTAMENTO<br><i>En el SiB Colombia</i></h2>
-			<input type="button" name="ref" value="ESPECIES" onclick="showDivmap1()" class="tabbtn acttabbtn"/>
-			<input type="button" name="ref" value="REGISTROS" onclick="showDivmap2()" class="tabbtn"/>
-			<div id="mapa1">
-            <!-- <div class="guiacont">-<div class="guia"></div>+</div> -->
-				<div id="chart_div">
+<div class="colombiadata">
+		<div class="down"></div>
+		<img src="img/colominimap.png" class="minimap" alt=""></img>
+		<div class="ranks">
+			<div class="fullrank">
+				<img src="img/rank1.png" alt=""></img>
+				<div class="rank">
+					<h1>1</h1>
+					<p class="uno">er</br>
+					<b>país</b></p>
+					<h2>AVES Y ORQUÍDEAS</h2>
+					<input type="button" name="ref" value="25" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="http://www.wri.org/publication/world-resources-2005-wealth-poor" target="_blank"><b>25. </b>World Resources Institute (WRI) en colaboración con United Nations Development Programme, United Nations Environment Programme, y World Bank. 2005. The Wealth of the Poor: Managing Ecosystems to Fight Poverty. World. Washington, DC: World Resources Institute. Consultado marzo 2017.</a>
+					</div>
+					<input type="button" name="ref" value="26" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="https://worldplants.webarchiv.kit.edu/orchids/statistics.php" target="_blank"><b>26. </b>Hassler, Michael, y Joachim Rheinheimer. 2016. “Illustrated World Compendium of Orchids - List of Taxa: Statistics for Countries and Regions". Consultado marzo 2017.</a>
+					</div>
 				</div>
 			</div>
-			<div id="mapa2">
-            <!-- <div class="guiacont">-<div class="guia guia2"></div>+</div> -->
-				<div id="chart_div2"></div></div>
+			<div class="fullrank">
+				<img src="img/rank2.png" alt=""></img>
+				<div class="rank">
+					<h1>2</h1>
+					<p>do</br>
+					<b>país</b></p>
+					<h2>PLANTAS, ANFÍBIOS,</br>
+						MARIPOSAS Y PECES</br>
+						DULCEACUÍCOLAS</h2>
+					<input type="button" name="ref" value="27" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="http://www.wri.org/publication/world-resources-2005-wealth-poor" target="_blank"><b>27. </b>World Resources Institute (WRI) en colaboración con United Nations Development Programme, United Nations Environment Programme, y World Bank. 2005. The Wealth of the Poor: Managing Ecosystems to Fight Poverty. World. Washington, DC: World Resources Institute. Consultado marzo 2017.</a>
+					</div>
+					<input type="button" name="ref" value="28" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="http://www.batrachia.com" target="_blank"><b>28. </b>Acosta Galvis, Andrés Rymel, y D. Cuentas. 2016. “Lista de Los Anfibios de Colombia: Referencia En Línea V.05.2015.0.” Villa de Leyva, Colombia. Consultado marzo 2017.</a>
+					</div>
+					<input type="button" name="ref" value="29" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>29. </b>Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
+					</div>
+					<input type="button" name="ref" value="30" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="http://www.redalyc.org/articulo.oa?id=49120960001" target="_blank"><b>30. </b>Maldonado-Ocampo, Javier A., Richard P. Vari, and José Saulo Usma. 2008. “Checklist of the Freshwater Fishes of Colombia.” Biota Colombiana 9 (2). Instituto de Investigación de Recursos Biológicos “Alexander von Humboldt”: 143–237. Consultado marzo 2017.</a>
+					</div>
+				</div>
+			</div>
+			<div class="fullrank">
+				<img src="img/rank3.png" alt=""></img>
+				<div class="rank">
+					<h1>3</h1>
+					<p>er</br>
+					<b>país</b></p>
+					<h2>PALMAS Y REPTILES</h2>
+					<input type="button" name="ref" value="31" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>31. </b>Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
+					</div>
+				</div>
+			</div>
+			<div class="fullrank">
+				<img src="img/rank4.png" alt=""></img>
+				<div class="rank">
+					<h1>4</h1>
+					<p>to</br>
+					<b>país</b></p>
+					<h2>MAMÍFEROS</h2>
+					<input type="button" name="ref" value="32" onclick="showDiv0(this)" class="refbtn mt5"/>
+					<div class="referencia"> 
+						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+						<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>32. </b>Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-<!-- / Mapa Colombia -->
+	
+	<!-- / Data Colombia -->
 
 
 <!-- Amenazadas -->
 
-	<a name="especiesAmenazadas"></a>
-	<div class="greenline glimage">
-		<div class="ranks">
-			<div class="fullrank" >
-				<img src="img/amenazadas.png" alt=""></img>
-				<div class="rank">
-					<h2>¿Cuántas especies</br>se encuentran</br>amenazadas</br>en Colombia?</h2>
-					<h1>1.302
-						<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip2 " title="Cifra obtenida de acuerdo con la información disponible en la serie de Libros Rojos de Especies Amenazadas de Colombia y en la Resolución 1912 de 2017, según los criterios de la unión internacional para la conservación de la naturaleza - UICN."/>
-					</h1>
-					<input type="button" name="ref" value="39" onclick="showDiv(this)" class="refbtn mt5"/>
-				</div>
-				<div class="referencia">
-					<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-					<a href="http://www.minambiente.gov.co/images/normativa/app/resoluciones/75-res%201912%20de%202017.pdf" target="_blank"><b>39.</b> Ministerio de Ambiente, Vivienda y Desarrollo Territorial. (2017). Resolución 1912 de 2017: Por la cual se establece el listado de las especies silvestres amenazadas de la diversidad biológica colombiana que se encuentran en el territorio nacional. Colombia.</a>
-				</div>
+<a name="especiesAmenazadas"></a>
+<div class="greenline glimage">
+	<div class="ranks">
+		<div class="fullrank" >
+			<img src="img/amenazadas.png" alt=""></img>
+			<div class="rank">
+				<h2>¿Cuántas especies</br>se encuentran</br>amenazadas</br>en Colombia?</h2>
+				<h1>1.302
+					<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip2 " title="Cifra obtenida de acuerdo con la información disponible en la serie de Libros Rojos de Especies Amenazadas de Colombia y en la Resolución 1912 de 2017, según los criterios de la unión internacional para la conservación de la naturaleza - UICN."/>
+				</h1>
+				<input type="button" name="ref" value="39" onclick="showDiv(this)" class="refbtn mt5"/>
 			</div>
-			<div class="fullrank">
-				<img src="img/cites.png" alt=""></img>
-				<div class="rank">
-					<h2>¿Cuántas especies</br>son objeto de</br>comercio</br>en Colombia?</h2>
-					<h1>3.558<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip2" title="Cifra obtenida de acuerdo con los criterios de la Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres (CITES)."/></h1>
-					<input type="button" name="ref" value="44" onclick="showDiv(this)" class="refbtn mt5"/>
-				</div>
-				<div class="referencia">
-					<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-					<a href="http://checklist.cites.org" target="_blank"><b>44.</b> UNEP-WCMC (Comps.) (2017). The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado Mayo 2018.</a>
-				</div>
-				
+			<div class="referencia">
+				<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+				<a href="http://www.minambiente.gov.co/images/normativa/app/resoluciones/75-res%201912%20de%202017.pdf" target="_blank"><b>39.</b> Ministerio de Ambiente, Vivienda y Desarrollo Territorial. (2017). Resolución 1912 de 2017: Por la cual se establece el listado de las especies silvestres amenazadas de la diversidad biológica colombiana que se encuentran en el territorio nacional. Colombia.</a>
 			</div>
-			<div class="fullrank">
-				<img src="img/invasoras.png" alt=""></img>
-				<div class="rank">
-					<h2>¿Cuántas especies son</br>introducidas, invasoras</br>o trasplantadas</br>en Colombia? </h2>
-					<h1>922<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip2" title="Del total de especies reportadas, 293 han sido evaluadas mediante herramientas de Análisis de Riesgo de Invasión, que han permitido identificar 96 especies como de Alto Riesgo de Invasión. Adicionalmente, se reconocen 22 especies invasoras de fauna y flora oficialmente declaradas por el Ministerio de Ambiente y Desarrollo Sostenible (Resoluciones 0848 de 2008 y 0207 de 2010."/></h1>
-					<input type="button" name="ref" value="47" onclick="showDiv(this)" class="refbtn mt5"/>
-				</div>
-				<div class="referencia">
-					<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-					<a href="http://hdl.handle.net/20.500.11761/9282" target="_blank"><b>47.</b> Cárdenas T.J., Baptiste M.P, Ramírez W. y Aguilar G,M. (Eds.) (2015). Herramienta de decisión para la gestión de áreas afectadas por invasiones biológicas en Colombia. Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. Bogotá, D. C., Colombia. 152 pp. </a>
-				</div>
+		</div>
+		<div class="fullrank">
+			<img src="img/cites.png" alt=""></img>
+			<div class="rank">
+				<h2>¿Cuántas especies</br>son objeto de</br>comercio</br>en Colombia?</h2>
+				<h1>3.558<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip2" title="Cifra obtenida de acuerdo con los criterios de la Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres (CITES)."/></h1>
+				<input type="button" name="ref" value="44" onclick="showDiv(this)" class="refbtn mt5"/>
+			</div>
+			<div class="referencia">
+				<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+				<a href="http://checklist.cites.org" target="_blank"><b>44.</b> UNEP-WCMC (Comps.) (2017). The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado Mayo 2018.</a>
+			</div>
+			
+		</div>
+		<div class="fullrank">
+			<img src="img/invasoras.png" alt=""></img>
+			<div class="rank">
+				<h2>¿Cuántas especies son</br>introducidas, invasoras</br>o trasplantadas</br>en Colombia? </h2>
+				<h1>922<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip2" title="Del total de especies reportadas, 293 han sido evaluadas mediante herramientas de Análisis de Riesgo de Invasión, que han permitido identificar 96 especies como de Alto Riesgo de Invasión. Adicionalmente, se reconocen 22 especies invasoras de fauna y flora oficialmente declaradas por el Ministerio de Ambiente y Desarrollo Sostenible (Resoluciones 0848 de 2008 y 0207 de 2010."/></h1>
+				<input type="button" name="ref" value="47" onclick="showDiv(this)" class="refbtn mt5"/>
+			</div>
+			<div class="referencia">
+				<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+				<a href="http://hdl.handle.net/20.500.11761/9282" target="_blank"><b>47.</b> Cárdenas T.J., Baptiste M.P, Ramírez W. y Aguilar G,M. (Eds.) (2015). Herramienta de decisión para la gestión de áreas afectadas por invasiones biológicas en Colombia. Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. Bogotá, D. C., Colombia. 152 pp. </a>
 			</div>
 		</div>
 	</div>
+</div>
 
 <!-- / Amenazadas -->
+
+
+
+
 
 <!-- Grupos taxonómicos -->
 
@@ -4861,118 +4929,36 @@
 
 <!-- / Grupos taxonómicos -->
 
-<!-- Mapa Mundo -->
+<!-- Gráfica por reino -->
 
-    <a name="biodiversidadMundo"></a>
-	<div class="mapabio">
-		<div>
-			<h2>BIODIVERSIDAD EN EL MUNDO
-			<input type="button" name="ref" value="2" onclick="showDiv2(this)" class="refbtn mt5"/>
-			</h2>
-			<h4>Top 10 países con mayor biodiversidad</h4>
-		</div>
-		<div class="referencia">
-			<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-			<a href="https://news.mongabay.com/2016/05/top-10-biodiverse-countries/?n3wsletter" target="_blank">Mongabay. 2016. “The Top 10 Most Biodiverse Countries.” Edited by Rhett A. Butler. Mongabay.</a>
-		</div>
-		<div id="regions_div" class="chart nobg"></div>
+<a name="especiesPorReino"></a>
+<div class="databg">
+	<div class="databox">
+		<h2>NÚMERO DE ESPECIES POR REINO<br><i>En el SiB Colombia</i></h2>
+		<input type="button" name="ref" value="TOTAL" onclick="showDivspp1()" class="tabbtn acttabbtn"/>
+		<input type="button" name="ref" value="COLECCIONES" onclick="showDivspp2()" class="tabbtn"/>
+		<input type="button" name="ref" value="OBSERVACIONES" onclick="showDivspp3()" class="tabbtn"/>
+		<div id="chart_div_records" class="chart2"></div>
+		<div id="chart_div_colecciones" class="chart2"></div>
+		<div id="chart_div_observaciones" class="chart2"></div>
+		<div class="tabbtn circulotab">PLANTAS</div>
+		<div class="tabbtn circulotab">ANIMALES</div>
+		<div class="tabbtn circulotab">HONGOS</div>
+		<div class="tabbtn circulotab">OTROS</div>
 	</div>
+</div>
 
-<!-- / Mapa Mundo -->
+<!-- / Gráfica por reino -->
 
-<!-- Data Colombia -->
 
-    <div class="colombiadata">
-		<div class="down"></div>
-		<img src="img/colominimap.png" class="minimap" alt=""></img>
-		<div class="ranks">
-			<div class="fullrank">
-				<img src="img/rank1.png" alt=""></img>
-				<div class="rank">
-					<h1>1</h1>
-					<p class="uno">er</br>
-					<b>país</b></p>
-					<h2>AVES Y ORQUÍDEAS</h2>
-					<input type="button" name="ref" value="25" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="http://www.wri.org/publication/world-resources-2005-wealth-poor" target="_blank"><b>25. </b>World Resources Institute (WRI) en colaboración con United Nations Development Programme, United Nations Environment Programme, y World Bank. 2005. The Wealth of the Poor: Managing Ecosystems to Fight Poverty. World. Washington, DC: World Resources Institute. Consultado marzo 2017.</a>
-					</div>
-					<input type="button" name="ref" value="26" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="https://worldplants.webarchiv.kit.edu/orchids/statistics.php" target="_blank"><b>26. </b>Hassler, Michael, y Joachim Rheinheimer. 2016. “Illustrated World Compendium of Orchids - List of Taxa: Statistics for Countries and Regions". Consultado marzo 2017.</a>
-					</div>
-				</div>
-			</div>
-			<div class="fullrank">
-				<img src="img/rank2.png" alt=""></img>
-				<div class="rank">
-					<h1>2</h1>
-					<p>do</br>
-					<b>país</b></p>
-					<h2>PLANTAS, ANFÍBIOS,</br>
-						MARIPOSAS Y PECES</br>
-						DULCEACUÍCOLAS</h2>
-					<input type="button" name="ref" value="27" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="http://www.wri.org/publication/world-resources-2005-wealth-poor" target="_blank"><b>27. </b>World Resources Institute (WRI) en colaboración con United Nations Development Programme, United Nations Environment Programme, y World Bank. 2005. The Wealth of the Poor: Managing Ecosystems to Fight Poverty. World. Washington, DC: World Resources Institute. Consultado marzo 2017.</a>
-					</div>
-					<input type="button" name="ref" value="28" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="http://www.batrachia.com" target="_blank"><b>28. </b>Acosta Galvis, Andrés Rymel, y D. Cuentas. 2016. “Lista de Los Anfibios de Colombia: Referencia En Línea V.05.2015.0.” Villa de Leyva, Colombia. Consultado marzo 2017.</a>
-					</div>
-					<input type="button" name="ref" value="29" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>29. </b>Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
-					</div>
-					<input type="button" name="ref" value="30" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="http://www.redalyc.org/articulo.oa?id=49120960001" target="_blank"><b>30. </b>Maldonado-Ocampo, Javier A., Richard P. Vari, and José Saulo Usma. 2008. “Checklist of the Freshwater Fishes of Colombia.” Biota Colombiana 9 (2). Instituto de Investigación de Recursos Biológicos “Alexander von Humboldt”: 143–237. Consultado marzo 2017.</a>
-					</div>
-				</div>
-			</div>
-			<div class="fullrank">
-				<img src="img/rank3.png" alt=""></img>
-				<div class="rank">
-					<h1>3</h1>
-					<p>er</br>
-					<b>país</b></p>
-					<h2>PALMAS Y REPTILES</h2>
-					<input type="button" name="ref" value="31" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>31. </b>Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
-					</div>
-				</div>
-			</div>
-			<div class="fullrank">
-				<img src="img/rank4.png" alt=""></img>
-				<div class="rank">
-					<h1>4</h1>
-					<p>to</br>
-					<b>país</b></p>
-					<h2>MAMÍFEROS</h2>
-					<input type="button" name="ref" value="32" onclick="showDiv0(this)" class="refbtn mt5"/>
-					<div class="referencia"> 
-						<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-						<a href="http://www.accefyn.org.co/revista/Vol_35/137/492-508.pdf" target="_blank"><b>32. </b>Andrade-C, Gonzalo M. 2011. “Estado de Conocimiento de La Biodiversidad En Colombia Y Sus Amenazas. Consideraciones Para Fortalecer La Interacción Ciencia-Política.” Revista de La Academia Colombiana de Ciencias 35 (137): 491–507. Consultado marzo 2017.</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
+	
 	<footer class="footer">
 		<a href="https://sibcolombia.net" target="_blank" class="footer__logo"><img src="http://biodiversidad.co/sib-logo.svg" alt="logo SiB Colombia">	</a>
 		<a href="http://biodiversidad.co" target="_blank" class="logo-biodiversidad"><span>Bio</span>diversidad.<span>co</span></a>
 	</footer>
 
-<!-- / Data Colombia -->
+
 
 	<script
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
