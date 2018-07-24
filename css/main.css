@@ -889,6 +889,36 @@ div.google-visualization-tooltip > ul > li  {
 }
 
 
+.footer{
+	background-color: #00292B;
+	padding: 2em;
+	color: white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.footer img{
+	width: 200px;
+	padding: 1.5rem 1rem 1rem;
+}
+.logo-biodiversidad{
+	display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    padding: 1rem;
+	font-size: 1.5rem;
+	font-family: "Open Sans",sans-serif;
+	text-transform: uppercase
+}
+
+.logo-biodiversidad span{
+	font-weight: 700;
+}
+
 
 svg > g > g:last-child { pointer-events: none } /* flickering de google charts */
 div.google-visualization-tooltip { pointer-events: none;} /* flickering de google charts */
