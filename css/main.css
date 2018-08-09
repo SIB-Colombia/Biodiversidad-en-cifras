@@ -44,6 +44,21 @@ a {
 	cursor: pointer;
 }
 
+
+.top-nav {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+	padding: 1em
+}
+
+.top-nav img{
+	height: 35px;
+}
 .tooltip {
 	display:none;
 	position: absolute;
@@ -245,7 +260,7 @@ a {
 }
 
 .mapsdep{
-	background: #e7e9ed;
+	background: #d2d2d2;
 	padding-top: 65px;
 }
 
@@ -303,7 +318,7 @@ a {
 
 
 .glimage {
-	background: #4bc0c0 url(../img/datos.png) no-repeat top center;
+	background: #35b5c5 url(../img/datos.png) no-repeat top center;
 	padding: 100px 0 40px;
 }
 
@@ -340,8 +355,7 @@ a {
 }
 
 .colombiadata {
-	//background-color: #1D393D;
-	background-color: #005d5f;
+	background-color: #22607b;
 	padding-bottom: 160px;
 }
 
