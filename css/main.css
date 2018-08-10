@@ -129,8 +129,8 @@ a {
 	font-weight: 400;
 	color: #fff;
 	text-align: center;
-	border-bottom: 1px solid #fff;
 	display: table-cell;
+	text-shadow: 0 0 16px rgba(0,0,0,0.7);
 }
 
 .boxybig p {
