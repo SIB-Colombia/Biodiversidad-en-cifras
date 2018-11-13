@@ -57,7 +57,7 @@ a {
 }
 
 .top-nav img{
-	height: 35px;
+	height: 60px;
 }
 .tooltip {
 	display:none;
@@ -908,19 +908,10 @@ div.google-visualization-tooltip > ul > li  {
 
 
 .footer{
-	background-color: #00292B;
-	padding: 2em;
-	color: white;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 
 .footer img{
-	width: 200px;
-	padding: 1.5rem 1rem 1rem;
 }
 .logo-biodiversidad{
 	display: block;
@@ -937,6 +928,39 @@ div.google-visualization-tooltip > ul > li  {
 	font-weight: 700;
 }
 
+
+.enlaces-canales {
+	width: 100%;
+	background-color: #00484d;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+
+.enlaces-canales a {
+	display: block;
+	padding: 0 1em;
+	text-align: center;
+}
+
+.enlaces-canales img {
+	width: 200px;
+
+}
+
+.footer-sib {
+	background-color: #00292b;
+	text-align: center;
+}
+
+.footer-sib img{
+	width: 200px;
+	padding: 1.5rem 1rem 1rem;
+	background-color: #00292b;
+}
 
 svg > g > g:last-child { pointer-events: none } /* flickering de google charts */
 div.google-visualization-tooltip { pointer-events: none;} /* flickering de google charts */
