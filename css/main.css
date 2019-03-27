@@ -528,19 +528,19 @@ a {
 	background-color: #f3776d;
 }
 
-.plantas h5 {
+.plantas h5, h5.plantas {
 	background-color: #75b3a4;
 }
 
-.algas h5 {
+.algas h5, h5.algas {
 	background-color: #4fbed0;
 }
 
-.liquenes h5 {
+.liquenes h5, h5.liquenes {
 	background-color: #7c6b7d;
 }
 
-.hongos h5 {
+.hongos h5, h5.hongos {
 	background-color: #fdc56a;
 }
 
@@ -794,6 +794,10 @@ div.google-visualization-tooltip > ul > li  {
 	display: inline-block;
 	vertical-align: top;
 	padding-bottom: 20px;
+}
+
+.col3 {
+	width: calc(100%/3);
 }
 
 .fullpie {
