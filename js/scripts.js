@@ -80,6 +80,108 @@ function hideDiv2(currentElement) {
 
 //funciones para graficas de especies y de tercer nivel
 
+var options_graph1 =  {
+    titlePosition: 'none',
+    pieHole: 0.7,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '180', height: '180'},
+    pieSliceBorderColor: 'none',
+    slices: {0: {color: '#4BC0C0'}},
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {trigger: 'none'}
+};
+
+var options_graph1b = {
+    titlePosition: 'none',
+    pieHole: 0.9,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '222', height: '222'},
+    pieSliceBorderColor: 'none',
+    slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {isHtml: true, textStyle: {color: '#fff'}}
+};
+
+var options_graph2 = {
+    titlePosition: 'none',
+    pieHole: 0.7,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '180', height: '180'},
+    pieSliceBorderColor: 'none',
+    slices: {
+        0: {color: '#d51920'},
+        1: {color: '#f47d20'},
+        2: {color: '#f9ba1b'}
+    },
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {trigger: 'none'}
+};
+
+var options_graph2b = {
+    titlePosition: 'none',
+    pieHole: 0.9,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '222', height: '222'},
+    pieSliceBorderColor: 'none',
+    slices: {
+        0: {color: '#d51920'},
+        1: {color: '#f47d20'},
+        2: {color: '#f9ba1b'},
+        3: {color: '#e7e9ed'}
+    },
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {isHtml: true, textStyle: {color: '#fff'}}
+};
+
+var options_graph3 = {
+    titlePosition: 'none',
+    pieHole: 0.7,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '180', height: '180'},
+    pieSliceBorderColor: 'none',
+    slices: {
+        0: {color: '#238ED9'},
+        1: {color: '#A2C754'},
+        2: {color: '#E8702F'}
+    },
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {trigger: 'none'}
+};
+
+var options_graph3b = {
+    titlePosition: 'none',
+    pieHole: 0.9,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '222', height: '222'},
+    pieSliceBorderColor: 'none',
+    slices: {
+        0: {color: '#238ED9'},
+        1: {color: '#A2C754'},
+        2: {color: '#E8702F'},
+        3: {color: '#e7e9ed'}
+    },
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {isHtml: true, textStyle: {color: '#fff'}}
+};
+
 function showDivGraph(currentElement) {
     $('.grapharea').css('display', 'none');
     $(currentElement)
@@ -90,231 +192,6 @@ function showDivGraph(currentElement) {
     // pie de literatura especies mamiferos
 
     google.charts.load('current', {packages: ['corechart']});
-    google.charts.setOnLoadCallback(ChartMam1);
-
-    function ChartMam1() {
-        var data = google.visualization.arrayToDataTable([
-            ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 528]
-        ]);
-
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
-        var chart = new google.visualization.PieChart(
-            document.getElementById('donutmam1')
-        );
-        chart.draw(data, options);
-    }
-
-    google.charts.setOnLoadCallback(ChartMam1b);
-
-    function ChartMam1b() {
-        var data = google.visualization.arrayToDataTable([
-            ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 528],
-        ]);
-
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
-        var chart = new google.visualization.PieChart(
-            document.getElementById('donutmam1b')
-        );
-        chart.draw(data, options);
-    }
-
-    google.charts.setOnLoadCallback(ChartMam2);
-
-    function ChartMam2() {
-        var data = google.visualization.arrayToDataTable([
-            ['Especies estimadas', 'Número de especies'],
-            ['En peligro crítico', 7],
-            ['En peligro', 10],
-            ['Vulnerable', 25]
-        ]);
-
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
-        var chart = new google.visualization.PieChart(
-            document.getElementById('donutmam2')
-        );
-        chart.draw(data, options);
-    }
-
-    google.charts.setOnLoadCallback(ChartMam2b);
-
-    function ChartMam2b() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Título');
-        data.addColumn('number', 'Especies');
-        data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
-        data.addRows([
-            [
-                'En peligro crítico SiB',
-                3,
-                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 3</br>Registros: 347</div>'
-            ],
-            [
-                'En peligro SiB',
-                10,
-                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 10</br>Registros: 97</div>'
-            ],
-            [
-                'Vulnerable SiB',
-                21,
-                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 21</br>Registros: 1.245</div>'
-            ],
-            ['Especies sin datos SiB Colombia', 8, '']
-        ]);
-
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
-        var chart = new google.visualization.PieChart(
-            document.getElementById('donutmam2b')
-        );
-        chart.draw(data, options);
-    }
-
-    google.charts.setOnLoadCallback(ChartMam3);
-
-    function ChartMam3() {
-        var data = google.visualization.arrayToDataTable([
-            ['Especies estimadas', 'Número de especies'],
-            ['Apéndice I', 31],
-            ['Apéndice II', 65],
-            ['Apéndice III', 11]
-        ]);
-
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
-        var chart = new google.visualization.PieChart(
-            document.getElementById('donutmam3')
-        );
-        chart.draw(data, options);
-    }
-
-    google.charts.setOnLoadCallback(ChartMam3b);
-
-    function ChartMam3b() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Título');
-        data.addColumn('number', 'Especies');
-        data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
-        data.addRows([
-            [
-                'Apéndice I en SiB',
-                27,
-                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 27</br>Registros: 1.830</div>'
-            ],
-            [
-                'Apéndice II en SiB',
-                48,
-                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 48</br>Registros: 3.504</div>'
-            ],
-            [
-                'Apéndice III en SiB',
-                11,
-                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 11</br>Registros: 2.947</div>'
-            ],
-            ['Especies sin datos SiB Colombia', 21, '']
-        ]);
-
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
-        var chart = new google.visualization.PieChart(
-            document.getElementById('donutmam3b')
-        );
-        chart.draw(data, options);
-    }
 
     // pie de literatura especies animales
 
@@ -326,24 +203,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 81171]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartanimales1b);
@@ -355,24 +218,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 68894]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartanimales2);
@@ -385,28 +234,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 264]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartanimales2b);
@@ -435,29 +266,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 128, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartanimales3);
@@ -470,28 +282,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 31]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartanimales3b);
@@ -520,29 +314,136 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 172, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
+    }
+
+    // pie de literatura especies mamiferos
+
+    google.charts.setOnLoadCallback(ChartMam1);
+
+    function ChartMam1() {
+        var data = google.visualization.arrayToDataTable([
+            ['Especies estimadas', 'Número de especies'],
+            ['Representatividad de especies', 528]
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutmam1')
+        );
+        chart.draw(data, options_graph1);
+    }
+
+    google.charts.setOnLoadCallback(ChartMam1b);
+
+    function ChartMam1b() {
+        var data = google.visualization.arrayToDataTable([
+            ['Titulo', 'SiB'],
+            ['Especies con evidencia en el SiB Colombia', 528],
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutmam1b')
+        );
+        chart.draw(data, options_graph1b);
+    }
+
+    google.charts.setOnLoadCallback(ChartMam2);
+
+    function ChartMam2() {
+        var data = google.visualization.arrayToDataTable([
+            ['Especies estimadas', 'Número de especies'],
+            ['En peligro crítico', 7],
+            ['En peligro', 10],
+            ['Vulnerable', 25]
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutmam2')
+        );
+        chart.draw(data, options_graph2);
+    }
+
+    google.charts.setOnLoadCallback(ChartMam2b);
+
+    function ChartMam2b() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Título');
+        data.addColumn('number', 'Especies');
+        data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
+        data.addRows([
+            [
+                'En peligro crítico SiB',
+                3,
+                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 3</br>Registros: 347</div>'
+            ],
+            [
+                'En peligro SiB',
+                10,
+                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 10</br>Registros: 97</div>'
+            ],
+            [
+                'Vulnerable SiB',
+                21,
+                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 21</br>Registros: 1.245</div>'
+            ],
+            ['Especies sin datos SiB Colombia', 8, '']
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutmam2b')
+        );
+        chart.draw(data, options_graph2b);
+    }
+
+    google.charts.setOnLoadCallback(ChartMam3);
+
+    function ChartMam3() {
+        var data = google.visualization.arrayToDataTable([
+            ['Especies estimadas', 'Número de especies'],
+            ['Apéndice I', 31],
+            ['Apéndice II', 65],
+            ['Apéndice III', 11]
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutmam3')
+        );
+        chart.draw(data, options_graph3);
+    }
+
+    google.charts.setOnLoadCallback(ChartMam3b);
+
+    function ChartMam3b() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Título');
+        data.addColumn('number', 'Especies');
+        data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
+        data.addRows([
+            [
+                'Apéndice I en SiB',
+                27,
+                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 27</br>Registros: 1.830</div>'
+            ],
+            [
+                'Apéndice II en SiB',
+                48,
+                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 48</br>Registros: 3.504</div>'
+            ],
+            [
+                'Apéndice III en SiB',
+                11,
+                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 11</br>Registros: 2.947</div>'
+            ],
+            ['Especies sin datos SiB Colombia', 21, '']
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutmam3b')
+        );
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies plantas
@@ -555,24 +456,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 28000]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutplantas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartplantas1b);
@@ -584,24 +471,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 4964]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutplantas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartplantas2);
@@ -614,28 +487,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 425]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutplantas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartplantas2b);
@@ -664,29 +519,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 314, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutplantas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartplantas3);
@@ -699,28 +535,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 3]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutplantas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartplantas3b);
@@ -749,29 +567,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 2036, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutplantas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies aves
@@ -784,24 +583,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1909]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutave1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartave1b);
@@ -813,24 +598,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 48]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutave1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartave2);
@@ -843,28 +614,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 67]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutave2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartave2b);
@@ -893,29 +646,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 20, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutave2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartave3);
@@ -928,28 +662,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 14]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutave3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartave3b);
@@ -978,29 +694,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 40, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutave3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies anfibios
@@ -1013,24 +710,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 814]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanfibio1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartanfibio1b);
@@ -1042,24 +725,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 157]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanfibio1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartanfibio2);
@@ -1072,28 +741,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 15]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanfibio2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartanfibio2b);
@@ -1122,29 +773,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 5, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanfibio2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartanfibio3);
@@ -1157,28 +789,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanfibio3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartanfibio3b);
@@ -1207,29 +821,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 11, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanfibio3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies reptiles
@@ -1242,24 +837,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 537]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartreptil1b);
@@ -1271,24 +852,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 3]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartreptil2);
@@ -1301,28 +868,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 17]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartreptil2b);
@@ -1351,29 +900,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 8, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartreptil3);
@@ -1386,28 +916,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 2]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartreptil3b);
@@ -1436,29 +948,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 2, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies peces
@@ -1471,24 +964,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 4076]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpeces1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartpeces1b);
@@ -1500,24 +979,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1317]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpeces1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartpeces2);
@@ -1530,28 +995,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 92]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpeces2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartpeces2b);
@@ -1580,29 +1027,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 17, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpeces2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartpeces3);
@@ -1615,28 +1043,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 3]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpeces3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartpeces3b);
@@ -1665,29 +1075,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 7, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpeces3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies insectos
@@ -1700,24 +1091,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 65000]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutinsecto1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartinsecto1b);
@@ -1729,24 +1106,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 60830]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutinsecto1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartinsecto2);
@@ -1759,28 +1122,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 16]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutinsecto2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartinsecto2b);
@@ -1809,29 +1154,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 31, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutinsecto2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartinsecto3);
@@ -1844,28 +1170,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutinsecto3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartinsecto3b);
@@ -1894,29 +1202,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutinsecto3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies aracnidos
@@ -1929,24 +1218,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1385]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutaracnidos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartaracnidos1b);
@@ -1958,24 +1233,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1294]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutaracnidos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartaracnidos2);
@@ -1988,28 +1249,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 5]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutaracnidos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartaracnidos2b);
@@ -2038,29 +1281,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 7, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutaracnidos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartaracnidos3);
@@ -2073,28 +1297,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutaracnidos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartaracnidos3b);
@@ -2123,29 +1329,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutaracnidos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies moluscos
@@ -2158,24 +1345,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1818]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmolusco1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartmolusco1b);
@@ -2187,24 +1360,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1033]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmolusco1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartmolusco2);
@@ -2217,28 +1376,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 14]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmolusco2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartmolusco2b);
@@ -2267,29 +1408,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 9, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmolusco2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartmolusco3);
@@ -2302,28 +1424,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmolusco3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartmolusco3b);
@@ -2352,29 +1456,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmolusco3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies decápodos
@@ -2387,24 +1472,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1849]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodo1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartdecapodo1b);
@@ -2416,24 +1487,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1420]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodo1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartdecapodo2);
@@ -2446,28 +1503,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 8]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodo2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartdecapodo2b);
@@ -2496,29 +1535,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 24, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodo2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartdecapodo3);
@@ -2531,28 +1551,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodo3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartdecapodo3b);
@@ -2581,29 +1583,12 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
+
 
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodo3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies equinodermos
@@ -2616,24 +1601,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 394]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutequinodermo1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartequinodermo1b);
@@ -2645,24 +1616,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 64]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutequinodermo1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartequinodermo2);
@@ -2675,28 +1632,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutequinodermo2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartequinodermo2b);
@@ -2725,29 +1664,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutequinodermo2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartequinodermo3);
@@ -2760,28 +1680,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 1]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutequinodermo3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartequinodermo3b);
@@ -2810,29 +1712,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutequinodermo3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies esponja marina
@@ -2845,24 +1728,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 142]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutesponjamarina1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartesponjamarina1b);
@@ -2874,24 +1743,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 8]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutesponjamarina1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartesponjamarina2);
@@ -2904,28 +1759,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutesponjamarina2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartesponjamarina2b);
@@ -2954,29 +1791,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutesponjamarina2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartesponjamarina3);
@@ -2989,28 +1807,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 1]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutesponjamarina3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartesponjamarina3b);
@@ -3039,29 +1839,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutesponjamarina3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies corales afines
@@ -3074,24 +1855,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 153]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcoralesafines1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartcoralesafines1b);
@@ -3102,24 +1869,10 @@ function showDivGraph(currentElement) {
             ['Especies con evidencia en el SiB Colombia', 153],
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcoralesafines1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartcoralesafines2);
@@ -3132,28 +1885,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 4]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcoralesafines2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartcoralesafines2b);
@@ -3182,29 +1917,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcoralesafines2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartcoralesafines3);
@@ -3217,28 +1933,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcoralesafines3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartcoralesafines3b);
@@ -3267,29 +1965,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 67, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcoralesafines3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies orquideas
@@ -3302,24 +1981,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 4270]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutorquideas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartorquideas1b);
@@ -3331,24 +1996,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 2545]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutorquideas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartorquideas2);
@@ -3361,28 +2012,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 137]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutorquideas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartorquideas2b);
@@ -3411,29 +2044,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 97, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutorquideas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartorquideas3);
@@ -3446,28 +2060,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutorquideas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartorquideas3b);
@@ -3496,29 +2092,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1979, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutorquideas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies magnolias y afines
@@ -3531,24 +2108,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 114]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmagnolias1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartmagnolias1b);
@@ -3559,24 +2122,10 @@ function showDivGraph(currentElement) {
             ['Especies con evidencia en el SiB Colombia', 114],
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmagnolias1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartmagnolias2);
@@ -3589,28 +2138,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 10]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmagnolias2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartmagnolias2b);
@@ -3639,29 +2170,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 3, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmagnolias2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartmagnolias3);
@@ -3674,28 +2186,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmagnolias3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartmagnolias3b);
@@ -3724,29 +2218,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmagnolias3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies bromelias
@@ -3759,24 +2234,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1024]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutbromelias1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartbromelias1b);
@@ -3788,24 +2249,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 208]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutbromelias1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartbromelias2);
@@ -3818,28 +2265,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 75]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutbromelias2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartbromelias2b);
@@ -3868,29 +2297,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 83, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutbromelias2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartbromelias3);
@@ -3903,28 +2313,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutbromelias3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartbromelias3b);
@@ -3953,29 +2345,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutbromelias3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies palmas
@@ -3988,24 +2361,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 289]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpalmas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartpalmas1b);
@@ -4017,24 +2376,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 9]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpalmas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartpalmas2);
@@ -4047,28 +2392,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 25]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpalmas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartpalmas2b);
@@ -4097,29 +2424,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 6, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpalmas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartpalmas3);
@@ -4132,28 +2440,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpalmas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartpalmas3b);
@@ -4182,29 +2472,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpalmas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies zamias
@@ -4217,24 +2488,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 21]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutzamias1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartzamias1b);
@@ -4245,24 +2502,10 @@ function showDivGraph(currentElement) {
             ['Especies con evidencia en el SiB Colombia', 21],
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutzamias1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartzamias2);
@@ -4275,28 +2518,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 4]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutzamias2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartzamias2b);
@@ -4325,29 +2550,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 2, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutzamias2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartzamias3);
@@ -4360,28 +2566,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutzamias3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartzamias3b);
@@ -4410,29 +2598,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 7, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutzamias3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies frailejones
@@ -4445,24 +2614,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 87]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfrailejones1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartfrailejones1b);
@@ -4474,24 +2629,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 9]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfrailejones1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartfrailejones2);
@@ -4504,28 +2645,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 13]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfrailejones2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartfrailejones2b);
@@ -4554,29 +2677,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 2, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfrailejones2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartfrailejones3);
@@ -4589,28 +2693,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfrailejones3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartfrailejones3b);
@@ -4639,29 +2725,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfrailejones3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies cactus
@@ -4674,24 +2741,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 58]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcactus1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartcactus1b);
@@ -4703,24 +2756,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 5]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcactus1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartcactus2);
@@ -4733,28 +2772,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcactus2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartcactus2b);
@@ -4783,29 +2804,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcactus2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartcactus3);
@@ -4818,28 +2820,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcactus3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartcactus3b);
@@ -4868,29 +2852,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 11, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcactus3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies pinos
@@ -4903,24 +2868,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 23]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpinos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartpinos1b);
@@ -4931,24 +2882,10 @@ function showDivGraph(currentElement) {
             ['Especies con evidencia en el SiB Colombia', 23],
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpinos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartpinos2);
@@ -4961,28 +2898,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 4]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpinos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartpinos2b);
@@ -5011,29 +2930,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpinos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartpinos3);
@@ -5046,28 +2946,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpinos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartpinos3b);
@@ -5096,29 +2978,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpinos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies helechos
@@ -5131,24 +2994,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1534]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthelechos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Charthelechos1b);
@@ -5160,24 +3009,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 137]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthelechos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Charthelechos2);
@@ -5190,28 +3025,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthelechos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Charthelechos2b);
@@ -5240,29 +3057,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthelechos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Charthelechos3);
@@ -5275,28 +3073,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthelechos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Charthelechos3b);
@@ -5325,29 +3105,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 33, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthelechos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies fenerogamas
@@ -5360,24 +3121,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 264]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfenerogamas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartfenerogamas1b);
@@ -5389,24 +3136,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 12]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfenerogamas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartfenerogamas2);
@@ -5419,28 +3152,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 34]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfenerogamas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartfenerogamas2b);
@@ -5469,29 +3184,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 23, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfenerogamas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartfenerogamas3);
@@ -5504,28 +3200,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfenerogamas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartfenerogamas3b);
@@ -5554,29 +3232,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutfenerogamas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies maderables
@@ -5589,24 +3248,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 34]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmaderables1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartmaderables1b);
@@ -5618,24 +3263,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 7]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmaderables1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartmaderables2);
@@ -5648,28 +3279,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 7]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmaderables2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartmaderables2b);
@@ -5698,29 +3311,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmaderables2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartmaderables3);
@@ -5733,28 +3327,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmaderables3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartmaderables3b);
@@ -5783,29 +3359,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmaderables3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies musgos
@@ -5818,24 +3375,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1692]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmusgos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartmusgos1b);
@@ -5847,24 +3390,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 283]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmusgos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartmusgos2);
@@ -5877,28 +3406,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 80]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmusgos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartmusgos2b);
@@ -5927,29 +3438,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 55, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmusgos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartmusgos3);
@@ -5962,28 +3454,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmusgos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartmusgos3b);
@@ -6012,29 +3486,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmusgos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies algas marinas
@@ -6047,24 +3502,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 473]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasmarinas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartalgasmarinas1b);
@@ -6076,24 +3517,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 224]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasmarinas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
 
@@ -6107,28 +3534,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasmarinas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartalgasmarinas2b);
@@ -6157,29 +3566,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasmarinas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartalgasmarinas3);
@@ -6192,28 +3582,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasmarinas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartalgasmarinas3b);
@@ -6242,29 +3614,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasmarinas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies algas dulceacuícolas
@@ -6277,24 +3630,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 605]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasdulceacuicolas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartalgasdulceacuicolas1b);
@@ -6336,28 +3675,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasdulceacuicolas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartalgasdulceacuicolas2b);
@@ -6386,29 +3707,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasdulceacuicolas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartalgasdulceacuicolas3);
@@ -6421,28 +3723,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasdulceacuicolas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartalgasdulceacuicolas3b);
@@ -6471,29 +3755,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasdulceacuicolas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies algas terrestres
@@ -6506,24 +3771,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 46]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasterrestres1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartalgasterrestres1b);
@@ -6565,28 +3816,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasterrestres2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartalgasterrestres2b);
@@ -6615,29 +3848,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasterrestres2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartalgasterrestres3);
@@ -6650,28 +3864,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasterrestres3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartalgasterrestres3b);
@@ -6700,29 +3896,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutalgasterrestres3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies otras algas
@@ -6735,24 +3912,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 28]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutotrasalgas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartotrasalgas1b);
@@ -6794,28 +3957,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutotrasalgas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartotrasalgas2b);
@@ -6844,29 +3989,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutotrasalgas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartotrasalgas3);
@@ -6879,28 +4005,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutotrasalgas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartotrasalgas3b);
@@ -6929,29 +4037,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutotrasalgas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies liquenes
@@ -6964,24 +4053,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1473]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutliquenes1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartliquenes1b);
@@ -6993,24 +4068,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1257]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutliquenes1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartliquenes2);
@@ -7023,28 +4084,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutliquenes2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartliquenes2b);
@@ -7073,29 +4116,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutliquenes2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartliquenes3);
@@ -7108,28 +4132,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutliquenes3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartliquenes3b);
@@ -7158,29 +4164,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutliquenes3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies macrohongos
@@ -7193,24 +4180,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 1261]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmacrohongos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartmacrohongos1b);
@@ -7222,24 +4195,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 1092]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmacrohongos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartmacrohongos2);
@@ -7252,28 +4211,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmacrohongos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartmacrohongos2b);
@@ -7302,29 +4243,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmacrohongos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartmacrohongos3);
@@ -7337,28 +4259,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmacrohongos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartmacrohongos3b);
@@ -7387,29 +4291,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmacrohongos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies royas
@@ -7422,24 +4307,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 456]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutroyas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartroyas1b);
@@ -7451,24 +4322,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 456]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutroyas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartroyas2);
@@ -7481,28 +4338,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutroyas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartroyas2b);
@@ -7531,29 +4370,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutroyas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartroyas3);
@@ -7566,28 +4386,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutroyas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartroyas3b);
@@ -7616,29 +4418,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutroyas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 
     // pie de literatura especies carbones
@@ -7651,24 +4434,10 @@ function showDivGraph(currentElement) {
             ['Representatividad de especies', 71]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcarbones1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(Chartcarbones1b);
@@ -7680,24 +4449,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 71]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcarbones1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(Chartcarbones2);
@@ -7710,28 +4465,10 @@ function showDivGraph(currentElement) {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcarbones2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(Chartcarbones2b);
@@ -7760,29 +4497,10 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcarbones2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(Chartcarbones3);
@@ -7795,28 +4513,10 @@ function showDivGraph(currentElement) {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcarbones3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartcarbones3b);
@@ -7845,35 +4545,16 @@ function showDivGraph(currentElement) {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutcarbones3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 }
 
 //final graficas
 
-//funciones graficas de especies tercer nivel
+//funciones graficas de mamiferos tercer nivel
 $('.mamiferosback').on('click', function () {
     $('.grapharea').css('display', 'none');
     $('.mamiferos').css('display', 'block');
@@ -7893,24 +4574,10 @@ $('.mamiferosm').on('click', function () {
             ['Representatividad de especies', 2582]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmama1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -7923,24 +4590,10 @@ $('.mamiferosm').on('click', function () {
             ['Especies sin datos SiB Colombia', 1299]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmama1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -8018,28 +4671,10 @@ $('.mamiferosm').on('click', function () {
             ['Apéndice III', 11]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmama3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartMama3b);
@@ -8068,18 +4703,78 @@ $('.mamiferosm').on('click', function () {
             ['Especies sin datos SiB Colombia', 21, '']
         ]);
 
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutmama3b')
+        );
+        chart.draw(data, options_graph3b);
+    }
+});
+
+
+//funciones graficas de reptiles tercer nivel
+$('.reptilesback').on('click', function () {
+    $('.grapharea').css('display', 'none');
+    $('.reptiles').css('display', 'block');
+});
+
+$('.reptilesm').on('click', function () {
+    $('.grapharea').css('display', 'none');
+    $('.reptilesmgraph').css('display', 'block');
+
+
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(ChartReptilm1);
+
+    function ChartReptilm1() {
+        var data = google.visualization.arrayToDataTable([
+            ['Especies estimadas', 'Número de especies'],
+            ['Representatividad de especies', 2582]
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutreptilm1')
+        );
+        chart.draw(data, options_graph1);
+    }
+
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(Chartmama1b);
+
+    function Chartmama1b() {
+        var data = google.visualization.arrayToDataTable([
+            ['Titulo', 'SiB'],
+            ['Especies con evidencia en el SiB Colombia', 1283],
+            ['Especies sin datos SiB Colombia', 1299]
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutreptilm1b')
+        );
+        chart.draw(data, options_graph1b);
+    }
+
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(ChartReptilm2);
+
+    function ChartReptilm2() {
+        var data = google.visualization.arrayToDataTable([
+            ['Especies estimadas', 'Número de especies'],
+            ['En peligro crítico', 6],
+            ['En peligro', 7],
+            ['Vulnerable', 43]
+        ]);
+
         var options = {
             titlePosition: 'none',
-            pieHole: 0.9,
+            pieHole: 0.7,
             backgroundColor: 'transparent',
             legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
+            chartArea: {width: '180', height: '180'},
             pieSliceBorderColor: 'none',
             slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
+                0: {color: '#d51920'},
+                1: {color: '#f47d20'},
+                2: {color: '#f9ba1b'}
             },
             sliceVisibilityThreshold: '0',
             fontSize: '12',
@@ -8088,11 +4783,91 @@ $('.mamiferosm').on('click', function () {
         };
 
         var chart = new google.visualization.PieChart(
-            document.getElementById('donutmama3b')
+            document.getElementById('donutreptilm2')
         );
         chart.draw(data, options);
     }
+
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(ChartReptilm2b);
+
+    function ChartReptilm2b() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Título');
+        data.addColumn('number', 'SiB');
+        data.addColumn({type: 'string', role: 'tooltip'});
+        data.addRows([['Sin dato', 100, 'Dato en construcción']]);
+
+        var options = {
+            titlePosition: 'none',
+            pieHole: 0.9,
+            backgroundColor: 'transparent',
+            legend: {position: 'none'},
+            chartArea: {width: '222', height: '222'},
+            pieSliceBorderColor: 'none',
+            slices: {0: {color: '#e7e9ed'}},
+            sliceVisibilityThreshold: '0',
+            fontSize: '12',
+            pieSliceText: 'none',
+            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
+        };
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutreptilm2b')
+        );
+        chart.draw(data, options);
+    }
+
+    google.charts.setOnLoadCallback(ChartMama3);
+
+    function ChartMama3() {
+        var data = google.visualization.arrayToDataTable([
+            ['Especies estimadas', 'Número de especies'],
+            ['Apéndice I', 31],
+            ['Apéndice II', 65],
+            ['Apéndice III', 11]
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutreptilm3')
+        );
+        chart.draw(data, options_graph3);
+    }
+
+    google.charts.setOnLoadCallback(ChartReptilm3b);
+
+    function ChartReptilm3b() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Título');
+        data.addColumn('number', 'Especies');
+        data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
+        data.addRows([
+            [
+                'Apéndice I en SiB',
+                27,
+                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 27</br>Registros: 1.830</div>'
+            ],
+            [
+                'Apéndice II en SiB',
+                48,
+                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 48</br>Registros: 3.504</div>'
+            ],
+            [
+                'Apéndice III en SiB',
+                11,
+                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 11</br>Registros: 2.947</div>'
+            ],
+            ['Especies sin datos SiB Colombia', 21, '']
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutreptilm3b')
+        );
+        chart.draw(data, options_graph3b);
+    }
 });
+
+//funciones graficas de peces tercer nivel
 
 
 $('.pecesback').on('click', function () {
@@ -8115,24 +4890,10 @@ $('.pecesm').on('click', function () {
             ['Representatividad de especies', 2582]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesm1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -8145,24 +4906,10 @@ $('.pecesm').on('click', function () {
             ['Especies sin datos SiB Colombia', 1299]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesm1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -8246,24 +4993,10 @@ $('.pecesd').on('click', function () {
             ['Representatividad de especies', 1494]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesd1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -8276,24 +5009,10 @@ $('.pecesd').on('click', function () {
             ['Especies sin datos SiB Colombia', 199]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesd1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -8358,29 +5077,10 @@ $('.pecesd').on('click', function () {
             ['Especies sin datos SiB Colombia', 6, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesd2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
 
@@ -8394,28 +5094,10 @@ $('.pecesd').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesd3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(Chartpecesd3b);
@@ -8444,34 +5126,12 @@ $('.pecesd').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesd3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
-
-
 });
-
 
 //funciones graficas de insectos tercer nivel
 
@@ -8493,24 +5153,10 @@ $('.escarabajos').on('click', function () {
             ['Representatividad de especies', 7000]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutescarabajos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosEscarabajos1b);
@@ -8522,24 +5168,10 @@ $('.escarabajos').on('click', function () {
             ['Especies sin datos SiB Colombia', 6208]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutescarabajos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosEscarabajos2);
@@ -8552,28 +5184,10 @@ $('.escarabajos').on('click', function () {
             ['Vulnerable', 4]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutescarabajos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosEscarabajos2b);
@@ -8602,29 +5216,10 @@ $('.escarabajos').on('click', function () {
             ['Especies sin datos SiB Colombia', 4, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutescarabajos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosEscarabajos3);
@@ -8637,28 +5232,10 @@ $('.escarabajos').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutescarabajos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosEscarabajos3b);
@@ -8687,29 +5264,10 @@ $('.escarabajos').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutescarabajos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -8726,24 +5284,10 @@ $('.mariposas').on('click', function () {
             ['Representatividad de especies', 3274]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmariposas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosMariposas1b);
@@ -8755,24 +5299,10 @@ $('.mariposas').on('click', function () {
             ['Especies sin datos SiB Colombia', 1742]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmariposas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosMariposas2);
@@ -8785,28 +5315,10 @@ $('.mariposas').on('click', function () {
             ['Vulnerable', 5]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmariposas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosMariposas2b);
@@ -8835,29 +5347,10 @@ $('.mariposas').on('click', function () {
             ['Especies sin datos SiB Colombia', 10, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmariposas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosMariposas3);
@@ -8870,28 +5363,10 @@ $('.mariposas').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmariposas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosMariposas3b);
@@ -8920,29 +5395,10 @@ $('.mariposas').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmariposas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -8959,24 +5415,10 @@ $('.hormigas').on('click', function () {
             ['Representatividad de especies', 923]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthormigas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosHormigas1b);
@@ -8988,24 +5430,10 @@ $('.hormigas').on('click', function () {
             ['Especies sin datos SiB Colombia', 383]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthormigas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosHormigas2);
@@ -9018,28 +5446,10 @@ $('.hormigas').on('click', function () {
             ['Vulnerable', 2]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthormigas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosHormigas2b);
@@ -9068,29 +5478,10 @@ $('.hormigas').on('click', function () {
             ['Especies sin datos SiB Colombia', 2, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthormigas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosHormigas3);
@@ -9103,28 +5494,10 @@ $('.hormigas').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthormigas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosHormigas3b);
@@ -9153,29 +5526,10 @@ $('.hormigas').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donuthormigas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -9192,24 +5546,10 @@ $('.abejas').on('click', function () {
             ['Representatividad de especies', 398]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutabejas1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosAbejas1b);
@@ -9221,24 +5561,10 @@ $('.abejas').on('click', function () {
             ['Especies sin datos SiB Colombia', 346]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutabejas1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosAbejas2);
@@ -9251,28 +5577,10 @@ $('.abejas').on('click', function () {
             ['Vulnerable', 4]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutabejas2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosAbejas2b);
@@ -9301,29 +5609,10 @@ $('.abejas').on('click', function () {
             ['Especies sin datos SiB Colombia', 9, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutabejas2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosAbejas3);
@@ -9336,28 +5625,10 @@ $('.abejas').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutabejas3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosAbejas3b);
@@ -9386,29 +5657,10 @@ $('.abejas').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutabejas3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -9425,24 +5677,10 @@ $('.dipteros').on('click', function () {
             ['Representatividad de especies', 3186]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdipteros1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosDipteros1b);
@@ -9454,24 +5692,10 @@ $('.dipteros').on('click', function () {
             ['Especies sin datos SiB Colombia', 2933]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdipteros1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosDipteros2);
@@ -9484,28 +5708,10 @@ $('.dipteros').on('click', function () {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdipteros2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosDipteros2b);
@@ -9534,29 +5740,10 @@ $('.dipteros').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdipteros2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosDipteros3);
@@ -9569,28 +5756,10 @@ $('.dipteros').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdipteros3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartinsectosDipteros3b);
@@ -9619,29 +5788,10 @@ $('.dipteros').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdipteros3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -9665,24 +5815,10 @@ $('.marinos').on('click', function () {
             ['Representatividad de especies', 1168]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmarinos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosMarinos1b);
@@ -9694,24 +5830,10 @@ $('.marinos').on('click', function () {
             ['Especies sin datos SiB Colombia', 646]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmarinos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosMarinos2);
@@ -9724,28 +5846,10 @@ $('.marinos').on('click', function () {
             ['Vulnerable', 14]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmarinos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosMarinos2b);
@@ -9774,29 +5878,10 @@ $('.marinos').on('click', function () {
             ['Especies sin datos SiB Colombia', 14, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmarinos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosMarinos3);
@@ -9809,28 +5894,10 @@ $('.marinos').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmarinos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosMarinos3b);
@@ -9859,29 +5926,10 @@ $('.marinos').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmarinos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -9898,24 +5946,10 @@ $('.terrestres').on('click', function () {
             ['Representatividad de especies', 650]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutterrestres1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosTerrestres1b);
@@ -9927,24 +5961,10 @@ $('.terrestres').on('click', function () {
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutterrestres1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosTerrestres2);
@@ -9957,28 +5977,10 @@ $('.terrestres').on('click', function () {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutterrestres2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosTerrestres2b);
@@ -10007,29 +6009,10 @@ $('.terrestres').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutterrestres2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosTerrestres3);
@@ -10042,28 +6025,10 @@ $('.terrestres').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutterrestres3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartmoluscosTerrestres3b);
@@ -10092,29 +6057,10 @@ $('.terrestres').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutterrestres3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -10138,24 +6084,10 @@ $('.decapodos_marinos').on('click', function () {
             ['Representatividad de especies', 1057]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosmarinos1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosMarinos1b);
@@ -10167,24 +6099,10 @@ $('.decapodos_marinos').on('click', function () {
             ['Especies sin datos SiB Colombia', 457]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosmarinos1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosMarinos2);
@@ -10197,28 +6115,10 @@ $('.decapodos_marinos').on('click', function () {
             ['Vulnerable', 7]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosmarinos2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosMarinos2b);
@@ -10247,29 +6147,10 @@ $('.decapodos_marinos').on('click', function () {
             ['Especies sin datos SiB Colombia', 4, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosmarinos2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosMarinos3);
@@ -10282,28 +6163,10 @@ $('.decapodos_marinos').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosmarinos3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosMarinos3b);
@@ -10332,29 +6195,10 @@ $('.decapodos_marinos').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosmarinos3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -10371,24 +6215,10 @@ $('.decapodos_terrestres').on('click', function () {
             ['Representatividad de especies', 688]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosterrestres1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosTerrestres1b);
@@ -10400,24 +6230,10 @@ $('.decapodos_terrestres').on('click', function () {
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosterrestres1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosTerrestres2);
@@ -10430,28 +6246,10 @@ $('.decapodos_terrestres').on('click', function () {
             ['Vulnerable', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosterrestres2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosTerrestres2b);
@@ -10480,29 +6278,10 @@ $('.decapodos_terrestres').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosterrestres2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosTerrestres3);
@@ -10515,28 +6294,10 @@ $('.decapodos_terrestres').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosterrestres3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosTerrestres3b);
@@ -10565,29 +6326,10 @@ $('.decapodos_terrestres').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosterrestres3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
@@ -10604,24 +6346,10 @@ $('.decapodos_dulceacuicolas').on('click', function () {
             ['Representatividad de especies', 104]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#4BC0C0'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosdulce1')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosDulce1b);
@@ -10633,24 +6361,10 @@ $('.decapodos_dulceacuicolas').on('click', function () {
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {0: {color: '#2B4143'}, 1: {color: '#e7e9ed'}},
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosdulce1b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph1b);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosDulce2);
@@ -10663,28 +6377,10 @@ $('.decapodos_dulceacuicolas').on('click', function () {
             ['Vulnerable', 1]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosdulce2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosDulce2b);
@@ -10713,29 +6409,10 @@ $('.decapodos_dulceacuicolas').on('click', function () {
             ['Especies sin datos SiB Colombia', 20, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosdulce2b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2b);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosDulce3);
@@ -10748,28 +6425,10 @@ $('.decapodos_dulceacuicolas').on('click', function () {
             ['Apéndice III', 0]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {trigger: 'none'}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosdulce3')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3);
     }
 
     google.charts.setOnLoadCallback(ChartdecapodosDulce3b);
@@ -10798,29 +6457,10 @@ $('.decapodos_dulceacuicolas').on('click', function () {
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.9,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '222', height: '222'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#238ED9'},
-                1: {color: '#A2C754'},
-                2: {color: '#E8702F'},
-                3: {color: '#e7e9ed'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
-
         var chart = new google.visualization.PieChart(
             document.getElementById('donutdecapodosdulce3b')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph3b);
     }
 });
 
