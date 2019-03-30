@@ -2228,9 +2228,6 @@ function showDivGraph(currentElement) {
     }
 
 
-
-
-
     /*----------------------------------------*\
                      PLANTAS
     \*----------------------------------------*/
@@ -4012,8 +4009,6 @@ function showDivGraph(currentElement) {
         chart.draw(data, options_graph3b);
     }
 
-
-
     // pie de literatura especies fenerogamas
 
     google.charts.setOnLoadCallback(Chartfenerogamas1);
@@ -4140,7 +4135,6 @@ function showDivGraph(currentElement) {
         );
         chart.draw(data, options_graph3b);
     }
-
 
     // pie de literatura especies pastos marinos
 
@@ -4522,12 +4516,6 @@ function showDivGraph(currentElement) {
         );
         chart.draw(data, options_graph3b);
     }
-
-
-
-
-
-
 
     // pie de literatura especies algas marinas
 
@@ -5747,7 +5735,6 @@ $('.mamiferosm').on('click', function () {
     }
 });
 
-
 //funciones graficas de reptiles tercer nivel
 $('.reptilesback').on('click', function () {
     $('.grapharea').css('display', 'none');
@@ -5905,7 +5892,6 @@ $('.reptilesm').on('click', function () {
 });
 
 //funciones graficas de peces tercer nivel
-
 
 $('.pecesback').on('click', function () {
     $('.grapharea').css('display', 'none');

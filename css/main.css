@@ -817,8 +817,10 @@ div.google-visualization-tooltip > ul > li  {
 	text-align: center;
 	position: absolute;
 	top: 150px;
-	left: 76px;
+	left: 50%;
 	z-index: 4;
+	width: 200px;
+	margin-left: -100px;
 }
 
 .nodata {
