@@ -220,7 +220,7 @@
 		<div class="grupo">
 			<h2>animales <button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de animales"><img src="img/cifraicon.png" alt=""></button></h2>
 			
-			<div class="grapharea">
+			<div class="grapharea animalesgraphs">
 					<div class="graficas">
 						<div class="titulogra">
 							<p>Animales</p>
@@ -240,7 +240,7 @@
 								</div>
 								<div class="pietext">
 									<h6>18.968</h6>
-									<p>Especies</p>
+									<p>Especies registradas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
@@ -336,11 +336,29 @@
 							<div class="col1">
 								<h3>General
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
+								</h3>
+								<div class="halfpie hprep">
+									<div id="donutmam1b" style="width: 260px; height: 260px;"></div>
+								</div>
+								<div class="fullpie fprep" style="width: 200px; height: 200px;">
+									<div id="donutmam1"></div>
+								</div>
+								<div class="pietext">
+									<h6>528</h6>
+									<p>Especies registradas</p>
+								</div>
+								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+								<div class="clear2"></div>
+								<div class="sibtit relleno">En SiB Colombia</div>
+								<p class="datossib">Especies: <b>528</b></p>
+								<p class="datossib">Registros: <b>88.470</b></p>
+								<hr class="dashed">
+								<div class="footer_estimados">
+									<p class="datossib">Especies estimadas: <b>528</b></p>
 									<input type="button" name="ref" value="2" onclick="showDiv(this)" class="refbtn mt5"/>
 									<input type="button" name="ref" value="3" onclick="showDiv2nd(this)" class="refbtn mt5"/>
 									<input type="button" name="ref" value="4" onclick="showDiv3rd(this)" class="refbtn mt5"/>
-																											
-								</h3>
+								</div>
 								<div class="referencia">
 									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
 									<a href="https://www.researchgate.net/publication/303313338_Cambios_recientes_a_la_lista_de_mamiferos_de_Colombia" target="_blank"><b>2.</b> Ramírez-Chaves, H. E., Suárez-Castro, A. F., & González-Maya, J. F. (2016). Cambios recientes a la lista de los mamíferos de Colombia. Mammalogy Notes, 3(1), 1-9.</a>
@@ -354,21 +372,6 @@
 									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
 									<a href="http://www.wwf.org.co/?210351/Diagnostico-de-los-mamiferos-acuaticos-en-Colombia" target="_blank"><b>4.</b> Trujillo, F., Gärtner, A., Caicedo, D., & Diazgranados, M. C. (2013). Diagnóstico del estado de conocimiento y conservación de los mamíferos acuáticos en Colombia. Ministerio de Ambiente y Desarrollo Sostenible, Fundación Omacha, Conservación Internacional y WWF. Bogotá.</a>
 								</div>
-								<div class="halfpie hprep">
-									<div id="donutmam1b" style="width: 260px; height: 260px;"></div>
-								</div>
-								<div class="fullpie fprep" style="width: 200px; height: 200px;">
-									<div id="donutmam1"></div>
-								</div>
-								<div class="pietext">
-									<h6>528</h6>
-									<p>Especies estimadas</p>
-								</div>
-								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
-								<div class="clear2"></div>
-								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 528</b></p>
-								<p class="datossib">Registros:<b> 88.470</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -459,13 +462,7 @@
                             <div class="col1">
                                 <h3>General
                                     <input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
-                                    <input type="button" name="ref" value="9" onclick="showDiv(this)" class="refbtn mt5"/>
                                 </h3>
-                                <div class="referencia">
-                                    <input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-                                    <a href="http://www.scielo.org.co/pdf/racefn/v41n159/0370-3908-racefn-41-159-00200.pdf" target="_blank"><p><b>9.</b> Acero, P., & Polanco, F. (2017). Biodiversidad íctica de los mares colombianos: riqueza amenazada. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 41(159), 200-212.</p></a>
-                                </div>
-
                                 <div class="halfpie">
                                     <div id="donutmama1b" style="width: 260px; height: 260px;"></div>
                                 </div>
@@ -474,13 +471,22 @@
                                 </div>
                                 <div class="pietext">
                                     <h6>32</h6>
-                                    <p>Especies</p>
+                                    <p>Especies registradas</p>
                                 </div>
                                 <a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
                                 <div class="clear2"></div>
                                 <div class="sibtit relleno">En SiB Colombia</div>
                                 <p class="datossib">Especies: <b>32</b></p>
                                 <p class="datossib">Registros: <b>262</b></p>
+                                <hr class="dashed">
+                                <div class="footer_estimados">
+                                    <p class="datossib">Especies estimadas:<b>????</b></p>
+                                    <input type="button" name="ref" value="9" onclick="showDiv(this)" class="refbtn mt5"/>
+                                </div>
+                                <div class="referencia">
+                                    <input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+                                    <a href="http://www.scielo.org.co/pdf/racefn/v41n159/0370-3908-racefn-41-159-00200.pdf" target="_blank"><p><b>9.</b> Acero, P., & Polanco, F. (2017). Biodiversidad íctica de los mares colombianos: riqueza amenazada. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 41(159), 200-212.</p></a>
+                                </div>
                             </div>
                             <div class="col1">
                                 <h3>Amenaza
@@ -677,7 +683,7 @@
 					<button onclick="showDivGraph(this)">
 						<h5>Anfibios</h5>
 						<img src="img/anfibios.png" alt="">
-						<h6>814</h6>
+						<h6>686</h6>
 					</button>
 				</div>
 
@@ -693,17 +699,9 @@
 							<div class="col1">
 								<h3>General
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
-									<input type="button" name="ref" value="7" onclick="showDiv(this)" class="refbtn mt5"/>
-									<input type="button" name="ref" value="8" onclick="showDiv2nd(this)" class="refbtn mt5"/>
+
 								</h3>
-								<div class="referencia">
-									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://www.batrachia.com" target="_blank"><b>7.</b> Acosta Galvis, A. R. (2017). Lista de los Anfibios de Colombia: Referencia en linea V.07.2017.0 . Pagina web accesible en http://www.batrachia.com; Batrachia, Villa de Leyva, Boyacá, Colombia. Consultado Abril 2018</a>
-								</div>
-								<div class="referencia 2nd">
-									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://research.amnh.org/herpetology/amphibia/index.html" target="_blank"><b>8.</b> Frost, Darrel R. (2018). Amphibian Species of the World: an Online Reference. Version 6.0. Electronic Database accessible at http://research.amnh.org/herpetology/amphibia/index.html. American Museum of Natural History, New York, USA. Consultado Abril 2018</a>
-								</div>
+
 								<div class="halfpie hprep">
 									<div id="donutanfibio1b" style="width: 260px; height: 260px;"></div>
 								</div>
@@ -711,14 +709,30 @@
 									<div id="donutanfibio1"></div>
 								</div>
 								<div class="pietext">
-									<h6>814</h6>
-									<p>Especies estimadas</p>
+									<h6>686</h6>
+									<p>Especies registradas</p>
+
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 657</b></p>
-								<p class="datossib">Registros:<b> 77.458</b></p>
+								<p class="datossib">Especies: <b>686</b></p>
+								<p class="datossib">Registros: <b>93.260</b></p>
+								<hr class="dashed">
+                                <div class="footer_estimados">
+                                    <p class="datossib">Especies estimadas:<b>????</b></p>
+                                    <input type="button" name="ref" value="7" onclick="showDiv(this)" class="refbtn mt5"/>
+                                    <input type="button" name="ref" value="8" onclick="showDiv2nd(this)" class="refbtn mt5"/>
+                                </div>
+                                <div class="referencia">
+                                    <input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+                                    <a href="http://www.batrachia.com" target="_blank"><b>7.</b> Acosta Galvis, A. R. (2017). Lista de los Anfibios de Colombia: Referencia en linea V.07.2017.0 . Pagina web accesible en http://www.batrachia.com; Batrachia, Villa de Leyva, Boyacá, Colombia. Consultado Abril 2018</a>
+                                </div>
+                                <div class="referencia 2nd">
+                                    <input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+                                    <a href="http://research.amnh.org/herpetology/amphibia/index.html" target="_blank"><b>8.</b> Frost, Darrel R. (2018). Amphibian Species of the World: an Online Reference. Version 6.0. Electronic Database accessible at http://research.amnh.org/herpetology/amphibia/index.html. American Museum of Natural History, New York, USA. Consultado Abril 2018</a>
+                                </div>
+
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -744,8 +758,8 @@
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 15">VU</div>
 								<div class="clear"></div>
 								<div class="sibtit relleno2">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 50</b></p>
-								<p class="datossib">Registros:<b> 1.628</b></p>
+								<p class="datossib">Especies: <b>50</b></p>
+								<p class="datossib">Registros: <b>2.048</b></p>
 							</div>
 							<div class="col1">
 								<h3>CITES
@@ -763,7 +777,7 @@
 									<div id="donutanfibio3"></div>
 								</div>
 								<div class="pietext">
-									<h6>38</h6>
+									<h6>39</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
@@ -771,8 +785,8 @@
 								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
 								<div class="clear"></div>
 								<div class="sibtit">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 27</b></p>
-								<p class="datossib">Registros:<b> 2.321</b></p>
+								<p class="datossib">Especies: <b>29</b></p>
+								<p class="datossib">Registros: <b>4.233</b></p>
 							</div>
 							<div class="xtradata">
 								<h3 class="endemicas">Endémicas: <b>367</b>
@@ -814,12 +828,8 @@
 							<div class="col1">
 								<h3>General
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
-									<input type="button" name="ref" value="6" onclick="showDiv(this)" class="refbtn mt5"/>
 								</h3>
-								<div class="referencia">
-									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://www.humboldt.org.co/es/estado-de-los-recursos-naturales/item/905-libro-rojo-reptiles" target="_blank"><b>6.</b> Morales-Betancourt, M. A., Lasso, C. A., Páez, V. P., & Bock, B. C. (Eds.). (2015). Libro rojo de reptiles de Colombia. Instituto de Investigación de Recursos Biológicos Alexander Von Humboldt.</a>
-								</div>
+
 								<div class="halfpie hprep">
 									<div id="donutreptil1b" style="width: 260px; height: 260px;"></div>
 								</div>
@@ -828,13 +838,22 @@
 								</div>
 								<div class="pietext">
 									<h6>632</h6>
-									<p>Especies</p>
+									<p>Especies registradas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
 								<p class="datossib">Especies: <b>632</b></p>
 								<p class="datossib">Registros: <b>41.652</b></p>
+                                <hr class="dashed">
+                                <div class="footer_estimados">
+                                    <p class="datossib">Especies estimadas:<b>????</b></p>
+                                    <input type="button" name="ref" value="6" onclick="showDiv(this)" class="refbtn mt5"/>
+                                </div>
+                                <div class="referencia">
+                                    <input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+                                    <a href="http://www.humboldt.org.co/es/estado-de-los-recursos-naturales/item/905-libro-rojo-reptiles" target="_blank"><b>6.</b> Morales-Betancourt, M. A., Lasso, C. A., Páez, V. P., & Bock, B. C. (Eds.). (2015). Libro rojo de reptiles de Colombia. Instituto de Investigación de Recursos Biológicos Alexander Von Humboldt.</a>
+                                </div>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -925,12 +944,7 @@
 							<div class="col1">
 								<h3>General
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
-									<input type="button" name="ref" value="6" onclick="showDiv(this)" class="refbtn mt5"/>
 								</h3>
-								<div class="referencia">
-									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://www.humboldt.org.co/es/estado-de-los-recursos-naturales/item/905-libro-rojo-reptiles" target="_blank"><b>6.</b> Morales-Betancourt, M. A., Lasso, C. A., Páez, V. P., & Bock, B. C. (Eds.). (2015). Libro rojo de reptiles de Colombia. Instituto de Investigación de Recursos Biológicos Alexander Von Humboldt.</a>
-								</div>
 								<div class="halfpie hprep">
 									<div id="donutreptilm1b" style="width: 260px; height: 260px;"></div>
 								</div>
@@ -939,13 +953,22 @@
 								</div>
 								<div class="pietext">
 									<h6>6</h6>
-									<p>Especies</p>
+									<p>Especies registradas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
 								<p class="datossib">Especies: <b>6</b></p>
 								<p class="datossib">Registros: <b>1.151</b></p>
+                                <hr class="dashed">
+                                <div class="footer_estimados">
+                                    <p class="datossib">Especies estimadas:<b>????</b></p>
+									<input type="button" name="ref" value="6" onclick="showDiv(this)" class="refbtn mt5"/>
+                                </div>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.humboldt.org.co/es/estado-de-los-recursos-naturales/item/905-libro-rojo-reptiles" target="_blank"><b>6.</b> Morales-Betancourt, M. A., Lasso, C. A., Páez, V. P., & Bock, B. C. (Eds.). (2015). Libro rojo de reptiles de Colombia. Instituto de Investigación de Recursos Biológicos Alexander Von Humboldt.</a>
+								</div>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1052,17 +1075,7 @@
 								<h3>General
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?
 								* Sumatoria de los sub-grupos que cuentan con soporte en literatura."/>
-									<input type="button" name="ref" value="9" onclick="showDiv(this)" class="refbtn mt5"/>
-									<input type="button" name="ref" value="10" onclick="showDiv2nd(this)" class="refbtn mt5"/>
 								</h3>
-								<div class="referencia">
-									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://www.scielo.org.co/pdf/racefn/v41n159/0370-3908-racefn-41-159-00200.pdf" target="_blank"><p><b>9.</b> Acero, P., & Polanco, F. (2017). Biodiversidad íctica de los mares colombianos: riqueza amenazada. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 41(159), 200-212.</p></a>
-								</div>
-								<div class="referencia 2nd">
-									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="https://doi.org/10.3897/zookeys.708.13897" target="_blank"><p><b>10.</b> DoNascimiento C, Herrera-Collazos EE, Herrera-R GA, Ortega-Lara A, Villa-Navarro FA, Usma-Oviedo JS, Maldonado-Ocampo JA (2017) Checklist of the freshwater fishes of Colombia: a Darwin Core alternative to the updating problem. ZooKeys 708: 25-138. </p></a>
-								</div>
 								<div class="halfpie">
 									<div id="donutpeces1b" style="width: 260px; height: 260px;"></div>
 								</div>
@@ -1071,13 +1084,27 @@
 								</div>
 								<div class="pietext">
 									<h6>3.834</h6>
-									<p>Especies</p>
+									<p>Especies registradas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
 								<p class="datossib">Especies: <b>3.834</b></p>
 								<p class="datossib">Registros: <b>249.186</b></p>
+                                <hr class="dashed">
+                                <div class="footer_estimados">
+                                    <p class="datossib">Especies estimadas:<b>????</b></p>
+									<input type="button" name="ref" value="9" onclick="showDiv(this)" class="refbtn mt5"/>
+									<input type="button" name="ref" value="10" onclick="showDiv2nd(this)" class="refbtn mt5"/>
+                                </div>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.scielo.org.co/pdf/racefn/v41n159/0370-3908-racefn-41-159-00200.pdf" target="_blank"><p><b>9.</b> Acero, P., & Polanco, F. (2017). Biodiversidad íctica de los mares colombianos: riqueza amenazada. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 41(159), 200-212.</p></a>
+								</div>
+								<div class="referencia 2nd">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="https://doi.org/10.3897/zookeys.708.13897" target="_blank"><p><b>10.</b> DoNascimiento C, Herrera-Collazos EE, Herrera-R GA, Ortega-Lara A, Villa-Navarro FA, Usma-Oviedo JS, Maldonado-Ocampo JA (2017) Checklist of the freshwater fishes of Colombia: a Darwin Core alternative to the updating problem. ZooKeys 708: 25-138. </p></a>
+								</div>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1152,13 +1179,8 @@
 							<div class="col1">
 								<h3>General
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico hay en Colombia?"/>
-									<input type="button" name="ref" value="9" onclick="showDiv(this)" class="refbtn mt5"/>
 								</h3>
-								<div class="referencia">
-									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
-									<a href="http://www.scielo.org.co/pdf/racefn/v41n159/0370-3908-racefn-41-159-00200.pdf" target="_blank"><p><b>9.</b> Acero, P., & Polanco, F. (2017). Biodiversidad íctica de los mares colombianos: riqueza amenazada. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 41(159), 200-212.</p></a>
-								</div>
-							
+
 								<div class="halfpie">
 									<div id="donutpecesm1b" style="width: 260px; height: 260px;"></div>
 								</div>
@@ -1166,14 +1188,23 @@
 									<div id="donutpecesm1"></div>
 								</div>
 								<div class="pietext">
-									<h6>2.582</h6>
-									<p>Especies estimadas</p>
+									<h6>2.493</h6>
+									<p>Especies registradas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.283</b></p>
-								<p class="datossib">Registros:<b> 122.925</b></p>
+								<p class="datossib">Especies: <b>2.493</b></p>
+								<p class="datossib">Registros: <b> 126.964</b></p>
+                                <hr class="dashed">
+                                <div class="footer_estimados">
+                                    <p class="datossib">Especies estimadas:<b>????</b></p>
+									<input type="button" name="ref" value="9" onclick="showDiv(this)" class="refbtn mt5"/>
+                                </div>
+								<div class="referencia">
+									<input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+									<a href="http://www.scielo.org.co/pdf/racefn/v41n159/0370-3908-racefn-41-159-00200.pdf" target="_blank"><p><b>9.</b> Acero, P., & Polanco, F. (2017). Biodiversidad íctica de los mares colombianos: riqueza amenazada. Revista de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales, 41(159), 200-212.</p></a>
+								</div>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1195,19 +1226,46 @@
 								<div class="ame2 masterTooltip" title="Especies estimadas en peligro: 7">EN</div>
 								<div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 43">VU</div>
 								<div class="pietext">
-									<h6>56</h6>
+									<h6>12</h6>
 									<p>Especies estimadas</p>
 								</div>
+                                <a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
+                                <div class="clear2"></div>
+                                <div class="sibtit relleno">En SiB Colombia</div>
+                                <p class="datossib">Especies: <b>10</b></p>
+                                <p class="datossib">Registros: <b>86</b></p>
+
 								
 							</div>
 							<div class="col1">
 								<h3>CITES
 									<input type="button" name="ref" value="i" class="refbtn mt5info masterTooltip" title="¿Cuántas especies de este grupo taxonómico son objeto de comercio en Colombia?"/>
+                                    <input type="button" name="ref" value="7" onclick="showDiv(this)" class="refbtn mt5"/>
 								</h3>
-								<div class="pietext">
-									<h6>Datos</h6>
-									<p>en construcción</p>
-								</div>
+                                <div class="referencia">
+                                    <input type="button" name="close" value="X" onclick="hideDiv(this)" class="refbtn righttop"/>
+                                    <a href="http://checklist.cites.org/" target="_blank"><b>7.</b> UNEP-WCMC (Comps.) 2015. The Checklist of CITES Species Website. CITES Secretariat, Geneva, Switzerland. Compiled by UNEP-WCMC, Cambridge, UK. Consultado marzo 2017.</a>
+                                </div>
+                                <div class="halfpie">
+                                    <div id="donutpecesm3b" style="width: 260px; height: 260px;"></div>
+                                </div>
+                                <div class="fullpie" style="width: 200px; height: 200px;">
+                                    <div id="donutpecesm3"></div>
+                                </div>
+                                <div class="pietext">
+                                    <h6>3</h6>
+                                    <p>Especies estimadas</p>
+                                </div>
+                                <div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 3">I</div>
+                                <div class="cite2 masterTooltip" title="Especies estimadas en apéndice II: 17">II</div>
+                                <div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 3">III</div>
+                                <div class="clear"></div>
+                                <div class="sibtit">En SiB Colombia</div>
+                                <p class="datossib">Especies: <b>3</b></p>
+                                <p class="datossib">Registros: <b>12</b></p>
+
+
+
 							</div>
 							<div class="xtradata">
 								<h3 class="migratorias">Migratorias: <b>63</b>
@@ -1250,14 +1308,14 @@
 									<div id="donutpecesd1"></div>
 								</div>
 								<div class="pietext">
-									<h6>1.494</h6>
+									<h6>1.521</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1.295</b></p>
-								<p class="datossib">Registros:<b> 59.986</b></p>
+								<p class="datossib">Especies:<b> 1.341</b></p>
+								<p class="datossib">Registros:<b> 122.222</b></p>
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -1275,7 +1333,7 @@
 									<div id="donutpecesd2"></div>
 								</div>
                                 <div class="pietext">
-                                    <h6>53</h6>
+                                    <h6>51</h6>
                                     <p>Especies estimadas</p>
                                 </div>
                                 <div class="ame1 masterTooltip" title="Especies estimadas en peligro crítico: 1">CR</div>
@@ -1283,8 +1341,8 @@
                                 <div class="ame3 masterTooltip" title="Especies estimadas vulnerables: 48">VU</div>
                                 <div class="clear"></div>
                                 <div class="sibtit relleno2">En SiB Colombia</div>
-                                <p class="datossib">Especies:<b> 47</b></p>
-                                <p class="datossib">Registros:<b> 4.028</b></p>
+                                <p class="datossib">Especies: <b>51</b></p>
+                                <p class="datossib">Registros: <b>5.577</b></p>
 							</div>
 
 							<div class="col1">
@@ -1302,7 +1360,7 @@
 									<div id="donutpecesd3"></div>
 								</div>
 								<div class="pietext">
-									<h6>1</h6>
+									<h6>5</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<div class="cite1 masterTooltip" title="Especies estimadas en apéndice I: 0">I</div>
@@ -1310,8 +1368,8 @@
 								<div class="cite3 masterTooltip" title="Especies estimadas en apéndice III: 0">III</div>
 								<div class="clear"></div>
 								<div class="sibtit">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 1</b></p>
-								<p class="datossib">Registros:<b> 2</b></p>
+								<p class="datossib">Especies: <b>5</b></p>
+								<p class="datossib">Registros:<b>431</b></p>
 							</div>
 							<div class="xtradata">
 								<h3 class="migratorias">Migratorias: <b>106</b>
@@ -1386,14 +1444,19 @@
 									<div id="donutinsecto1"></div>
 								</div>
 								<div class="pietext">
-									<h6>65.000</h6>
+									<h6>6.457</h6>
 									<p>Especies estimadas</p>
 								</div>
 								<a href="http://datos.biodiversidad.co/" target="_blank" class="linkpd">ir al portal de datos</a>
 								<div class="clear2"></div>
 								<div class="sibtit relleno">En SiB Colombia</div>
-								<p class="datossib">Especies:<b> 4.170</b></p>
-								<p class="datossib">Registros:<b> 250.486</b></p>
+								<p class="datossib">Especies: <b>6.457</b></p>
+								<p class="datossib">Registros: <b>398.273</b></p>
+                                <hr class="dashed">
+                                <div class="footer_estimados">
+                                    <p class="datossib">Especies estimadas:<b>????</b></p>
+                                </div>  
+
 							</div>
 							<div class="col1">
 								<h3>Amenaza
@@ -2923,6 +2986,7 @@
                     </div>
                 </div>
             </div>
+
 
 			<h2>plantas <button onclick="showDivGraph(this)" class="masterTooltip" title="Cifras de plantas"><img src="img/cifraicon.png" alt=""></button></h2>
 			<div class="grapharea">

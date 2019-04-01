@@ -993,3 +993,16 @@ div.google-visualization-tooltip { pointer-events: none;} /* flickering de googl
 }
 
 
+
+hr.dashed{
+	width: 100px;
+	border-top: 0.5px dashed #e3e0e3;
+	margin: 18px auto 10px
+
+}
+
+.footer_estimados{
+	position: relative;
+}
+
+

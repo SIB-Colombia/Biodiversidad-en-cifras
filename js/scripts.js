@@ -5999,6 +5999,53 @@ $('.pecesm').on('click', function () {
         );
         chart.draw(data, options);
     }
+    google.charts.setOnLoadCallback(Chartpecesm3);
+
+    function Chartpecesm3() {
+        var data = google.visualization.arrayToDataTable([
+            ['Especies estimadas', 'Número de especies'],
+            ['Apéndice I', 0],
+            ['Apéndice II', 1],
+            ['Apéndice III', 0]
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutpecesm3')
+        );
+        chart.draw(data, options_graph3);
+    }
+
+    google.charts.setOnLoadCallback(Chartpecesm3b);
+
+    function Chartpecesm3b() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Título');
+        data.addColumn('number', 'Especies');
+        data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
+        data.addRows([
+            [
+                'Apéndice I en SiB',
+                0,
+                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+            ],
+            [
+                'Apéndice II en SiB',
+                1,
+                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 1</br>Registros: 2</div>'
+            ],
+            [
+                'Apéndice III en SiB',
+                0,
+                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+            ],
+            ['Especies sin datos SiB Colombia', 0, '']
+        ]);
+
+        var chart = new google.visualization.PieChart(
+            document.getElementById('donutpecesm3b')
+        );
+        chart.draw(data, options_graph3b);
+    }
 });
 
 $('.pecesd').on('click', function () {
