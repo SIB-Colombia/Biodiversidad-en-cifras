@@ -1627,9 +1627,9 @@ function showDivGraph(currentElement) {
     function Chartcrustaceosm2() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['En peligro crítico', -1],
-            ['En peligro', -1],
-            ['Vulnerable', -1]
+            ['En peligro crítico', 0],
+            ['En peligro', 0],
+            ['Vulnerable', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1648,18 +1648,18 @@ function showDivGraph(currentElement) {
         data.addRows([
             [
                 'En peligro crítico SiB',
-                -1,
-                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'En peligro SiB',
-                -1,
-                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: -1</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'Vulnerable SiB',
-                -1,
-                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: -1</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
@@ -1696,20 +1696,20 @@ function showDivGraph(currentElement) {
         data.addRows([
             [
                 'Apéndice I en SiB',
-                -1,
+                0,
                 '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'Apéndice II en SiB',
-                -1,
+                0,
                 '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'Apéndice III en SiB',
-                -1,
+                0,
                 '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
-            ['Especies sin datos SiB Colombia', 1, '']
+            ['Especies sin datos SiB Colombia', 0, '']
         ]);
 
 
@@ -4501,7 +4501,7 @@ function showDivGraph(currentElement) {
             [
                 'Apéndice II en SiB',
                 0,
-                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
+                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: </div>'
             ],
             [
                 'Apéndice III en SiB',
@@ -6920,9 +6920,9 @@ $('.marinos').on('click', function () {
     function ChartmoluscosMarinos2() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['En peligro crítico', -1],
-            ['En peligro', -1],
-            ['Vulnerable', -1]
+            ['En peligro crítico', 0],
+            ['En peligro', 0],
+            ['Vulnerable', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6941,18 +6941,18 @@ $('.marinos').on('click', function () {
         data.addRows([
             [
                 'En peligro crítico SiB',
-                -3,
-                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: -3</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'En peligro SiB',
-                -2,
-                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: -2</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'Vulnerable SiB',
-                -1,
-                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: -1</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
@@ -6968,9 +6968,9 @@ $('.marinos').on('click', function () {
     function ChartmoluscosMarinos3() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Apéndice I', -1],
-            ['Apéndice II', -1],
-            ['Apéndice III', -1]
+            ['Apéndice I', 0],
+            ['Apéndice II', 0],
+            ['Apéndice III', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6989,18 +6989,18 @@ $('.marinos').on('click', function () {
         data.addRows([
             [
                 'Apéndice I en SiB',
-                -1,
-                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: -1</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'Apéndice II en SiB',
-                -1,
-                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: -1</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             [
                 'Apéndice III en SiB',
-                -1,
-                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: -1</br>Registros: -1</div>'
+                0,
+                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 0</br>Registros: 0</div>'
             ],
             ['Especies sin datos SiB Colombia', 0, '']
         ]);
