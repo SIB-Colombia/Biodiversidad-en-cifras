@@ -85,7 +85,7 @@ var options_graph1 =  {
     pieHole: 0.7,
     backgroundColor: 'transparent',
     legend: {position: 'none'},
-    chartArea: {width: '180', height: '180'},
+    chartArea: {width: '220', height: '220'},
     pieSliceBorderColor: 'none',
     slices: {0: {color: '#4BC0C0'}},
     sliceVisibilityThreshold: '0',
@@ -200,7 +200,7 @@ function showDivGraph(currentElement) {
     function Chartanimales1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 81171]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -214,8 +214,8 @@ function showDivGraph(currentElement) {
     function Chartanimales1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 12277],
-            ['Especies sin datos SiB Colombia', 68894]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -342,6 +342,7 @@ function showDivGraph(currentElement) {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
             ['Especies con evidencia en el SiB Colombia', 528],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -453,7 +454,7 @@ function showDivGraph(currentElement) {
     function Chartplantas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 28000]
+            ['Representatividad de especies', 30033]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -467,8 +468,8 @@ function showDivGraph(currentElement) {
     function Chartplantas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 23036],
-            ['Especies sin datos SiB Colombia', 4964]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -594,8 +595,8 @@ function showDivGraph(currentElement) {
     function Chartave1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1861],
-            ['Especies sin datos SiB Colombia', 48]
+            ['Especies con evidencia en el SiB Colombia', 1909],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -721,8 +722,8 @@ function showDivGraph(currentElement) {
     function Chartanfibio1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 657],
-            ['Especies sin datos SiB Colombia', 157]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -848,8 +849,8 @@ function showDivGraph(currentElement) {
     function Chartreptil1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 534],
-            ['Especies sin datos SiB Colombia', 3]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -975,8 +976,8 @@ function showDivGraph(currentElement) {
     function Chartpeces1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 2759],
-            ['Especies sin datos SiB Colombia', 1317]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1102,8 +1103,8 @@ function showDivGraph(currentElement) {
     function Chartinsecto1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 4170],
-            ['Especies sin datos SiB Colombia', 60830]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1229,8 +1230,8 @@ function showDivGraph(currentElement) {
     function Chartaracnidos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 91],
-            ['Especies sin datos SiB Colombia', 1294]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1356,8 +1357,8 @@ function showDivGraph(currentElement) {
     function Chartmolusco1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 785],
-            ['Especies sin datos SiB Colombia', 1033]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1483,8 +1484,8 @@ function showDivGraph(currentElement) {
     function Chartdecapodo1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 429],
-            ['Especies sin datos SiB Colombia', 1420]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1612,8 +1613,8 @@ function showDivGraph(currentElement) {
     function Chartcrustaceosm1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 429],
-            ['Especies sin datos SiB Colombia', 1420]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1741,8 +1742,8 @@ function showDivGraph(currentElement) {
     function Chartequinodermo1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 330],
-            ['Especies sin datos SiB Colombia', 64]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1868,8 +1869,8 @@ function showDivGraph(currentElement) {
     function Chartesponjamarina1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 134],
-            ['Especies sin datos SiB Colombia', 8]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1995,7 +1996,7 @@ function showDivGraph(currentElement) {
     function Chartcoralesafines1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 153],
+            ['Especies con evidencia en el SiB Colombia', 0],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2122,7 +2123,7 @@ function showDivGraph(currentElement) {
     function Chartmedusas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 153],
+            ['Especies con evidencia en el SiB Colombia', 0],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2253,8 +2254,8 @@ function showDivGraph(currentElement) {
     function Chartangiospermas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1725],
-            ['Especies sin datos SiB Colombia', 2545]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2380,8 +2381,8 @@ function showDivGraph(currentElement) {
     function Chartgimnospermas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1725],
-            ['Especies sin datos SiB Colombia', 2545]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2507,8 +2508,8 @@ function showDivGraph(currentElement) {
     function Charthelechos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1397],
-            ['Especies sin datos SiB Colombia', 137]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2634,8 +2635,8 @@ function showDivGraph(currentElement) {
     function Chartmusgos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1409],
-            ['Especies sin datos SiB Colombia', 283]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2762,8 +2763,8 @@ function showDivGraph(currentElement) {
     function Chartantocerotas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1725],
-            ['Especies sin datos SiB Colombia', 2545]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2890,8 +2891,8 @@ function showDivGraph(currentElement) {
     function Charthepaticas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1725],
-            ['Especies sin datos SiB Colombia', 2545]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3017,8 +3018,8 @@ function showDivGraph(currentElement) {
     function Chartorquideas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1725],
-            ['Especies sin datos SiB Colombia', 2545]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3144,7 +3145,7 @@ function showDivGraph(currentElement) {
     function Chartmagnolias1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 114],
+            ['Especies con evidencia en el SiB Colombia', 0],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3270,8 +3271,8 @@ function showDivGraph(currentElement) {
     function Chartbromelias1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 816],
-            ['Especies sin datos SiB Colombia', 208]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3397,8 +3398,8 @@ function showDivGraph(currentElement) {
     function Chartpalmas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 280],
-            ['Especies sin datos SiB Colombia', 9]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3524,7 +3525,7 @@ function showDivGraph(currentElement) {
     function Chartzamias1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 21],
+            ['Especies con evidencia en el SiB Colombia', 0],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3650,8 +3651,8 @@ function showDivGraph(currentElement) {
     function Chartfrailejones1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 78],
-            ['Especies sin datos SiB Colombia', 9]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3777,8 +3778,8 @@ function showDivGraph(currentElement) {
     function Chartcactus1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 53],
-            ['Especies sin datos SiB Colombia', 5]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3904,7 +3905,7 @@ function showDivGraph(currentElement) {
     function Chartpinos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 23],
+            ['Especies con evidencia en el SiB Colombia', 0],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4030,8 +4031,8 @@ function showDivGraph(currentElement) {
     function Chartfenerogamas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 252],
-            ['Especies sin datos SiB Colombia', 12]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4157,8 +4158,8 @@ function showDivGraph(currentElement) {
     function Chartpastosm1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 27],
-            ['Especies sin datos SiB Colombia', 7]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4284,8 +4285,8 @@ function showDivGraph(currentElement) {
     function Chartmaderables1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 27],
-            ['Especies sin datos SiB Colombia', 7]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4411,8 +4412,8 @@ function showDivGraph(currentElement) {
     function Chartmangles1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 27],
-            ['Especies sin datos SiB Colombia', 7]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4538,8 +4539,8 @@ function showDivGraph(currentElement) {
     function Chartalgasmarinas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 249],
-            ['Especies sin datos SiB Colombia', 224]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4950,7 +4951,7 @@ function showDivGraph(currentElement) {
         data.addColumn('string', 'Título');
         data.addColumn('number', 'SiB');
         data.addColumn({type: 'string', role: 'tooltip'});
-        data.addRows([['Sin dato', 100, 'Dato en construcción']]);
+        data.addRows([['Sin dato', 0, 'Dato en construcción']]);
 
         var options = {
             titlePosition: 'none',
@@ -5089,8 +5090,8 @@ function showDivGraph(currentElement) {
     function Chartliquenes1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 216],
-            ['Especies sin datos SiB Colombia', 1257]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5216,8 +5217,8 @@ function showDivGraph(currentElement) {
     function Chartmacrohongos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 169],
-            ['Especies sin datos SiB Colombia', 1092]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5344,7 +5345,7 @@ function showDivGraph(currentElement) {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
             ['Especies con evidencia en el SiB Colombia', 0],
-            ['Especies sin datos SiB Colombia', 456]
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5471,7 +5472,7 @@ function showDivGraph(currentElement) {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
             ['Especies con evidencia en el SiB Colombia', 0],
-            ['Especies sin datos SiB Colombia', 71]
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5611,8 +5612,8 @@ $('.mamiferosm').on('click', function () {
     function Chartmama1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1283],
-            ['Especies sin datos SiB Colombia', 1299]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5632,28 +5633,12 @@ $('.mamiferosm').on('click', function () {
             ['Vulnerable', 2]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
+          
 
         var chart = new google.visualization.PieChart(
             document.getElementById('donutmama2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -5770,8 +5755,8 @@ $('.reptilesm').on('click', function () {
     function Chartmama1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1283],
-            ['Especies sin datos SiB Colombia', 1299]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5791,28 +5776,12 @@ $('.reptilesm').on('click', function () {
             ['Vulnerable', 1]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
+          
 
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptilm2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -5931,8 +5900,8 @@ $('.pecesm').on('click', function () {
     function Chartpecesm1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1283],
-            ['Especies sin datos SiB Colombia', 1299]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5952,28 +5921,12 @@ $('.pecesm').on('click', function () {
             ['Vulnerable', 9]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
+          
 
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesm2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -6084,8 +6037,8 @@ $('.pecesd').on('click', function () {
     function Chartpecesd1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1295],
-            ['Especies sin datos SiB Colombia', 199]
+            ['Especies con evidencia en el SiB Colombia', 1521],
+            ['Especies sin datos SiB Colombia', 180]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6105,28 +6058,12 @@ $('.pecesd').on('click', function () {
             ['Vulnerable', 49]
         ]);
 
-        var options = {
-            titlePosition: 'none',
-            pieHole: 0.7,
-            backgroundColor: 'transparent',
-            legend: {position: 'none'},
-            chartArea: {width: '180', height: '180'},
-            pieSliceBorderColor: 'none',
-            slices: {
-                0: {color: '#d51920'},
-                1: {color: '#f47d20'},
-                2: {color: '#f9ba1b'}
-            },
-            sliceVisibilityThreshold: '0',
-            fontSize: '12',
-            pieSliceText: 'none',
-            tooltip: {isHtml: true, textStyle: {color: '#fff'}}
-        };
+          
 
         var chart = new google.visualization.PieChart(
             document.getElementById('donutpecesd2')
         );
-        chart.draw(data, options);
+        chart.draw(data, options_graph2);
     }
 
     google.charts.load('current', {packages: ['corechart']});
@@ -6243,8 +6180,8 @@ $('.escarabajos').on('click', function () {
     function ChartinsectosEscarabajos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 792],
-            ['Especies sin datos SiB Colombia', 6208]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6374,8 +6311,8 @@ $('.mariposas').on('click', function () {
     function ChartinsectosMariposas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1532],
-            ['Especies sin datos SiB Colombia', 1742]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6505,8 +6442,8 @@ $('.hormigas').on('click', function () {
     function ChartinsectosHormigas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 540],
-            ['Especies sin datos SiB Colombia', 383]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6636,8 +6573,8 @@ $('.abejas').on('click', function () {
     function ChartinsectosAbejas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 52],
-            ['Especies sin datos SiB Colombia', 346]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6767,8 +6704,8 @@ $('.dipteros').on('click', function () {
     function ChartinsectosDipteros1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 253],
-            ['Especies sin datos SiB Colombia', 2933]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6905,8 +6842,8 @@ $('.marinos').on('click', function () {
     function ChartmoluscosMarinos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 522],
-            ['Especies sin datos SiB Colombia', 646]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -7174,8 +7111,8 @@ $('.decapodos_marinos').on('click', function () {
     function ChartdecapodosMarinos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 600],
-            ['Especies sin datos SiB Colombia', 457]
+            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -7746,39 +7683,39 @@ function showDivmap2() {
     function drawMarkersMap2() {
         var data = google.visualization.arrayToDataTable([
             ['Departament', 'Nombre', 'Registros'],
-            ['CO-DC', 'Bogotá Distrito Capital', 11735],
-            ['CO-AMA', 'Amazonas', 54213],
-            ['CO-ANT', 'Antioquia', 281436],
-            ['CO-ARA', 'Arauca', 13013],
-            ['CO-ATL', 'Atlántico', 3368],
-            ['CO-BOL', 'Bolívar', 22618],
-            ['CO-BOY', 'Boyacá', 90531],
-            ['CO-CAL', 'Caldas', 54264],
-            ['CO-CAQ', 'Caquetá', 36246],
-            ['CO-CAS', 'Casanare', 41689],
-            ['CO-CAU', 'Cauca', 41741],
-            ['CO-CES', 'Cesar', 9764],
-            ['CO-COR', 'Córdoba', 60897],
-            ['CO-CUN', 'Cundinamarca', 26978],
-            ['CO-CHO', 'Chocó', 113668],
-            ['CO-GUA', 'Guainía', 8122],
-            ['CO-GUV', 'Guaviare', 14388],
-            ['CO-HUI', 'Huila', 15904],
-            ['CO-LAG', 'La Guajira', 41931],
-            ['CO-MAG', 'Magdalena', 71195],
-            ['CO-MET', 'Meta', 52169],
-            ['CO-NAR', 'Nariño', 393867],
-            ['CO-NSA', 'Norte de Santander', 9279],
-            ['CO-PUT', 'Putumayo', 11801],
-            ['CO-QUI', 'Quindío', 34469],
-            ['CO-RIS', 'Risaralda', 41979],
-            ['CO-SAP', 'San Andrés, Providencia y Santa Catalina', 9192],
-            ['CO-SAN', 'Santander', 57353],
-            ['CO-SUC', 'Sucre', 50285],
-            ['CO-TOL', 'Tolima', 41646],
-            ['CO-VAC', 'Valle del Cauca', 135589],
-            ['CO-VAU', 'Vaupés', 11272],
-            ['CO-VID', 'Vichada', 18010]
+            ['CO-DC', 'Bogotá Distrito Capital', 123729],
+            ['CO-AMA', 'Amazonas', 137401],
+            ['CO-ANT', 'Antioquia', 779541],
+            ['CO-ARA', 'Arauca', 39093],
+            ['CO-ATL', 'Atlántico', 27325],
+            ['CO-BOL', 'Bolívar', 81830],
+            ['CO-BOY', 'Boyacá', 215423],
+            ['CO-CAL', 'Caldas', 453381],
+            ['CO-CAQ', 'Caquetá', 90642],
+            ['CO-CAS', 'Casanare', 139579],
+            ['CO-CAU', 'Cauca', 140311],
+            ['CO-CES', 'Cesar', 49295],
+            ['CO-COR', 'Córdoba', 67101],
+            ['CO-CUN', 'Cundinamarca', 396832],
+            ['CO-CHO', 'Chocó', 223583],
+            ['CO-GUA', 'Guainía', 56281],
+            ['CO-GUV', 'Guaviare', 46907],
+            ['CO-HUI', 'Huila', 85466],
+            ['CO-LAG', 'La Guajira', 137616],
+            ['CO-MAG', 'Magdalena', 372369],
+            ['CO-MET', 'Meta', 271233],
+            ['CO-NAR', 'Nariño', 488525],
+            ['CO-NSA', 'Norte de Santander', 34243],
+            ['CO-PUT', 'Putumayo', 133293],
+            ['CO-QUI', 'Quindío', 135245],
+            ['CO-RIS', 'Risaralda', 293569],
+            ['CO-ARC', 'San Andrés, Providencia y Santa Catalina', 1823],
+            ['CO-SAN', 'Santander', 220049],
+            ['CO-SUC', 'Sucre', 72474],
+            ['CO-TOL', 'Tolima', 333974],
+            ['CO-VAC', 'Valle del Cauca', 685998],
+            ['CO-VAU', 'Vaupés', 66572],
+            ['CO-VID', 'Vichada', 66045]
         ]);
 
         var options = {
@@ -7996,39 +7933,39 @@ $(document).ready(function () {
     function drawMarkersMap() {
         var data = google.visualization.arrayToDataTable([
             ['Departament', 'Nombre', 'Especies'],
-            ['CO-DC', 'Bogotá Distrito Capital', 126],
-            ['CO-AMA', 'Amazonas', 2363],
-            ['CO-ANT', 'Antioquia', 5020],
-            ['CO-ARA', 'Arauca', 213],
-            ['CO-ATL', 'Atlántico', 388],
-            ['CO-BOL', 'Bolívar', 451],
-            ['CO-BOY', 'Boyacá', 1205],
-            ['CO-CAL', 'Caldas', 439],
-            ['CO-CAQ', 'Caquetá', 1588],
-            ['CO-CAS', 'Casanare', 535],
-            ['CO-CAU', 'Cauca', 1269],
-            ['CO-CES', 'Cesar', 143],
-            ['CO-COR', 'Córdoba', 1794],
-            ['CO-CUN', 'Cundinamarca', 280],
-            ['CO-CHO', 'Chocó', 2214],
-            ['CO-GUA', 'Guainía', 559],
-            ['CO-GUV', 'Guaviare', 365],
-            ['CO-HUI', 'Huila', 400],
-            ['CO-LAG', 'La Guajira', 460],
-            ['CO-MAG', 'Magdalena', 782],
-            ['CO-MET', 'Meta', 1149],
-            ['CO-NAR', 'Nariño', 1637],
-            ['CO-NSA', 'Norte de Santander', 382],
-            ['CO-PUT', 'Putumayo', 621],
-            ['CO-QUI', 'Quindío', 352],
-            ['CO-RIS', 'Risaralda', 632],
-            ['CO-SAP', 'San Andrés, Providencia y Santa Catalina', 467],
-            ['CO-SAN', 'Santander', 1530],
-            ['CO-SUC', 'Sucre', 179],
-            ['CO-TOL', 'Tolima', 498],
-            ['CO-VAC', 'Valle del Cauca', 2618],
-            ['CO-VAU', 'Vaupés', 611],
-            ['CO-VID', 'Vichada', 1700]
+            ['CO-DC', 'Bogotá Distrito Capital', 4180],
+            ['CO-AMA', 'Amazonas', 8348],
+            ['CO-ANT', 'Antioquia', 15199],
+            ['CO-ARA', 'Arauca', 3256],
+            ['CO-ATL', 'Atlántico', 1826],
+            ['CO-BOL', 'Bolívar', 4333],
+            ['CO-BOY', 'Boyacá', 7793],
+            ['CO-CAL', 'Caldas', 6893],
+            ['CO-CAQ', 'Caquetá', 7793],
+            ['CO-CAS', 'Casanare', 4462],
+            ['CO-CAU', 'Cauca', 8195],
+            ['CO-CES', 'Cesar', 2664],
+            ['CO-COR', 'Córdoba', 3211],
+            ['CO-CUN', 'Cundinamarca', 9492],
+            ['CO-CHO', 'Chocó', 9905],
+            ['CO-GUA', 'Guainía', 3309],
+            ['CO-GUV', 'Guaviare', 3544],
+            ['CO-HUI', 'Huila', 4870],
+            ['CO-LAG', 'La Guajira', 2847],
+            ['CO-MAG', 'Magdalena', 6763],
+            ['CO-MET', 'Meta', 15854],
+            ['CO-NAR', 'Nariño', 8292],
+            ['CO-NSA', 'Norte de Santander', 3715],
+            ['CO-PUT', 'Putumayo', 6114],
+            ['CO-QUI', 'Quindío', 3840],
+            ['CO-RIS', 'Risaralda', 5968],
+            ['CO-ARC', 'San Andrés, Providencia y Santa Catalina', 642],
+            ['CO-SAN', 'Santander', 9916],
+            ['CO-SUC', 'Sucre', 2285],
+            ['CO-TOL', 'Tolima', 6700],
+            ['CO-VAC', 'Valle del Cauca', 10847],
+            ['CO-VAU', 'Vaupés', 4409],
+            ['CO-VID', 'Vichada', 3915]
         ]);
 
         var options = {
