@@ -235,13 +235,13 @@ a {
     -webkit-transform: rotate(-135deg);
 }
 
-.textcont a, a.linkpd {
+.textcont a, .linkpd {
 	text-transform: uppercase;
 	padding: 3px 10px;
-	//color: #1d393d;
-	//border: 1px solid #1d393d;
-	color: white;
-	border: 1px solid white;
+	color: #1d393d;
+	border: 1px solid #1d393d;
+	//color: white;
+	//border: 1px solid white;
 }
 
 .textcont a:hover, a.linkpd:hover {
