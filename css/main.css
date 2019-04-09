@@ -149,17 +149,34 @@ a {
 }
 
 .refbtn {
-	background: none;
 	border: 0;
 	outline: 0;
-	background-color: #F04638;
-	color:#fff;
-	padding: 2px 3px;
-	font-size: 11px;
-	vertical-align: top;
-	margin-left: 3px;
+	font-size: 0px;
 	cursor: pointer;
+	border-radius: 5px;
+	vertical-align: top;
+
+	height: 18px;
+	width: 18px;
+	transition: background-color .3s ease;
+	background: #F04638 url(../img/magnifier.svg);
+	background-size: 12px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
+.refbtn:hover {
+	background-color: #d64538;
+}
+.refbtn[name="close"] {
+	background-image: url(../img/close.svg);
+	background-size: 10px;
+}
+
+.refbtn[value="i"] {
+	background-image: url(../img/info.svg);
+	background-size: 10px;
+}
+
 
 .righttop {
 	margin-left: 0;
@@ -611,7 +628,7 @@ a {
 }
 
 .back {
-    border: solid #1d393d;
+	border: solid #1d393d;
     border-width: 0 2px 2px 0;
     float: left;
     padding: 4px;
@@ -621,6 +638,13 @@ a {
   	margin-left: 5px;
   	background-color: #fff;
   	outline: 0;
+	padding: 8px;
+	transition: opacity .3s ease;
+	opacity: .6;
+	cursor: pointer;
+}
+.back:hover {
+	opacity: 1;
 }
 
 .subgroups {
