@@ -181,6 +181,28 @@ var options_graph3b = {
     pieSliceText: 'none',
     tooltip: {isHtml: true, textStyle: {color: '#fff'}}
 };
+var options_graph3bc = {
+    titlePosition: 'none',
+    pieHole: 0.9,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '222', height: '222'},
+    pieSliceBorderColor: 'none',
+    slices: {
+        0: {color: '#238ED9'},
+        1: {color: '#46d9c2'},
+        2: {color: '#A2C754'},
+        3: {color: '#E8702F'},
+        4: {color: '#e7e9ed'}
+    },
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {isHtml: true, textStyle: {color: '#fff'}}
+};
+
+
+
 
 function showDivGraph(currentElement) {
     $('.grapharea').css('display', 'none');
@@ -200,7 +222,7 @@ function showDivGraph(currentElement) {
     function Chartanimales1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 0]
+            ['Representatividad de especies', 18968]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -250,20 +272,20 @@ function showDivGraph(currentElement) {
         data.addRows([
             [
                 'En peligro crítico SiB',
-                46,
-                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 46</br>Registros: 5.103</div>'
+                50,
+                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 50</br>Registros: 8.504</div>'
             ],
             [
                 'En peligro SiB',
-                110,
-                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 110</br>Registros: 4.801</div>'
+                126,
+                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 126</br>Registros: 23.204</div>'
             ],
             [
                 'Vulnerable SiB',
-                204,
-                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 204</br>Registros: 12.877</div>'
+                230,
+                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 230</br>Registros: 54.107</div>'
             ],
-            ['Especies sin datos SiB Colombia', 128, '']
+            ['Especies sin datos SiB Colombia', 82, '']
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -278,8 +300,9 @@ function showDivGraph(currentElement) {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
             ['Apéndice I', 53],
-            ['Apéndice II', 596],
-            ['Apéndice III', 31]
+            ['Apéndice I/II', 1],
+            ['Apéndice II', 587],
+            ['Apéndice III', 32]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -298,18 +321,23 @@ function showDivGraph(currentElement) {
         data.addRows([
             [
                 'Apéndice I en SiB',
-                43,
-                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 43</br>Registros: 3.544</div>'
+                47,
+                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 47</br>Registros: 10.146</div>'
+            ],
+            [
+                'Apéndice I/II en SiB',
+                0,
+                '<div class="pad10"><b>Apéndice I/II en SiB Colombia</b></br>Especies: 0</br>Registros: 19</div>'
             ],
             [
                 'Apéndice II en SiB',
-                436,
-                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 436</br>Registros: 61.784</div>'
+                533,
+                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 533</br>Registros: 569.497</div>'
             ],
             [
                 'Apéndice III en SiB',
-                29,
-                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 29</br>Registros: 8.007</div>'
+                31,
+                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 31</br>Registros: 25.878</div>'
             ],
             ['Especies sin datos SiB Colombia', 172, '']
         ]);
@@ -317,7 +345,7 @@ function showDivGraph(currentElement) {
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales3b')
         );
-        chart.draw(data, options_graph3b);
+        chart.draw(data, options_graph3bc);
     }
 
     // pie de literatura especies mamiferos
