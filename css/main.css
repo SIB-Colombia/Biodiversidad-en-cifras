@@ -131,13 +131,19 @@ a {
 	text-align: center;
 	display: table-cell;
 	text-shadow: 0 0 16px rgba(0,0,0,0.7);
+	display: block;
+	margin: auto;
 }
 
 .boxybig p {
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	font-weight: 400;
 	text-align: center;
+	max-width: 60%;
+	display: block;
+	margin: auto;
+	text-shadow: 10px 0px #0b0b0b;
 }
 
 .counter {
@@ -226,6 +232,16 @@ a {
 	color: #fff;
 	padding-right: 5px;
 	display: inline-block !important;
+}
+
+.referencia a {
+	margin-top: 10px;
+	opacity: 0.8;
+	transition: opacity .3s ease;
+}
+
+.referencia a:hover {
+	opacity: 1;
 }
 
 .greenline {
@@ -867,7 +883,7 @@ div.google-visualization-tooltip > ul > li  {
 	color: #2b4143;
 }
 
-.sibtit, .ame1, .ame2, .ame3, .cite1, .cite2, .cite3 {
+.sibtit, .ame1, .ame2, .ame3, .cite1, .cite12, .cite2, .cite3 {
 	font-size: 16px;
 	font-weight: 400;
 	vertical-align: top;
@@ -901,6 +917,7 @@ div.google-visualization-tooltip > ul > li  {
 .ame2,
 .ame3,
 .cite1,
+.cite12,
 .cite2,
 .cite3 {
 	margin: -5px 5px 0;
@@ -926,6 +943,9 @@ div.google-visualization-tooltip > ul > li  {
 
 .cite1 {
 	background-color: #238ED9;
+}
+.cite12 {
+    background-color: #46d9c2;
 }
 
 .cite2 {
