@@ -532,20 +532,20 @@ function showDivGraph(currentElement) {
         data.addRows([
             [
                 'En peligro crítico SiB',
-                71,
-                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 71</br>Registros: 744</div>'
+                95,
+                '<div class="pad10"><b>En peligro crítico SiB Colombia</b></br>Especies: 95</br>Registros: 1.318</div>'
             ],
             [
                 'En peligro SiB',
-                176,
-                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 176</br>Registros: 4.580</div>'
+                214,
+                '<div class="pad10"><b>En peligro SiB Colombia</b></br>Especies: 214</br>Registros: 7.780</div>'
             ],
             [
                 'Vulnerable SiB',
-                253,
-                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 253</br>Registros: 9.968</div>'
+                318,
+                '<div class="pad10"><b>Vulnerable SiB Colombia</b></br>Especies: 318</br>Registros: 13.992</div>'
             ],
-            ['Especies sin datos SiB Colombia', 314, '']
+            ['Especies sin datos SiB Colombia', 187, '']
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -560,7 +560,7 @@ function showDivGraph(currentElement) {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
             ['Apéndice I', 7],
-            ['Apéndice II', 2868],
+            ['Apéndice II', 2813],
             ['Apéndice III', 3]
         ]);
 
@@ -580,20 +580,20 @@ function showDivGraph(currentElement) {
         data.addRows([
             [
                 'Apéndice I en SiB',
-                5,
-                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 5</br>Registros: 32</div>'
+                6,
+                '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 6</br>Registros: 85</div>'
             ],
             [
                 'Apéndice II en SiB',
-                835,
-                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 835</br>Registros: 27.610</div>'
+                1328,
+                '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 1328</br>Registros: 36.567</div>'
             ],
             [
                 'Apéndice III en SiB',
-                2,
-                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 2</br>Registros: 237</div>'
+                3,
+                '<div class="pad10"><b>Apéndice III en SiB Colombia</b></br>Especies: 3</br>Registros: 478</div>'
             ],
-            ['Especies sin datos SiB Colombia', 2036, '']
+            ['Especies sin datos SiB Colombia', 1486, '']
         ]);
 
         var chart = new google.visualization.PieChart(
