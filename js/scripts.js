@@ -181,6 +181,25 @@ var options_graph3b = {
     pieSliceText: 'none',
     tooltip: {isHtml: true, textStyle: {color: '#fff'}}
 };
+
+var options_graph3 = {
+    titlePosition: 'none',
+    pieHole: 0.7,
+    backgroundColor: 'transparent',
+    legend: {position: 'none'},
+    chartArea: {width: '180', height: '180'},
+    pieSliceBorderColor: 'none',
+    slices: {
+        0: {color: '#238ED9'},
+        1: {color: '#46d9c2'},
+        2: {color: '#A2C754'},
+        3: {color: '#E8702F'}
+    },
+    sliceVisibilityThreshold: '0',
+    fontSize: '12',
+    pieSliceText: 'none',
+    tooltip: {trigger: 'none'}
+};
 var options_graph3bc = {
     titlePosition: 'none',
     pieHole: 0.9,
@@ -308,7 +327,7 @@ function showDivGraph(currentElement) {
         var chart = new google.visualization.PieChart(
             document.getElementById('donutanimales3')
         );
-        chart.draw(data, options_graph3);
+        chart.draw(data, options_graph3c);
     }
 
     google.charts.setOnLoadCallback(Chartanimales3b);
@@ -949,7 +968,7 @@ function showDivGraph(currentElement) {
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil3')
         );
-        chart.draw(data, options_graph3);
+        chart.draw(data, options_graph3c);
     }
 
     google.charts.setOnLoadCallback(Chartreptil3b);
