@@ -326,8 +326,8 @@ function showDivGraph(currentElement) {
             ],
             [
                 'Apéndice I/II en SiB',
-                0,
-                '<div class="pad10"><b>Apéndice I/II en SiB Colombia</b></br>Especies: 0</br>Registros: 19</div>'
+                1,
+                '<div class="pad10"><b>Apéndice I/II en SiB Colombia</b></br>Especies: 1</br>Registros: 19</div>'
             ],
             [
                 'Apéndice II en SiB',
@@ -967,7 +967,7 @@ function showDivGraph(currentElement) {
             ],
             [
                 'Apéndice I/II en SiB',
-                0,
+                1,
                 '<div class="pad10"><b>Apéndice I/II en SiB Colombia</b></br>Especies: 1</br>Registros: 19</div>'
             ],
             [
