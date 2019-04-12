@@ -941,6 +941,7 @@ function showDivGraph(currentElement) {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
             ['Apéndice I', 10],
+            ['Apéndice I/II', 1],
             ['Apéndice II', 25],
             ['Apéndice III', 2]
         ]);
@@ -965,6 +966,11 @@ function showDivGraph(currentElement) {
                 '<div class="pad10"><b>Apéndice I en SiB Colombia</b></br>Especies: 9</br>Registros: 2.165</div>'
             ],
             [
+                'Apéndice I/II en SiB',
+                0,
+                '<div class="pad10"><b>Apéndice I/II en SiB Colombia</b></br>Especies: 1</br>Registros: 19</div>'
+            ],
+            [
                 'Apéndice II en SiB',
                 25,
                 '<div class="pad10"><b>Apéndice II en SiB Colombia</b></br>Especies: 25</br>Registros: 3.503</div>'
@@ -980,7 +986,7 @@ function showDivGraph(currentElement) {
         var chart = new google.visualization.PieChart(
             document.getElementById('donutreptil3b')
         );
-        chart.draw(data, options_graph3b);
+        chart.draw(data, options_graph3bc);
     }
 
     // pie de literatura especies peces
