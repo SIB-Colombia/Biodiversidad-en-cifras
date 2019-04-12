@@ -182,7 +182,7 @@ var options_graph3b = {
     tooltip: {isHtml: true, textStyle: {color: '#fff'}}
 };
 
-var options_graph3 = {
+var options_graph3c = {
     titlePosition: 'none',
     pieHole: 0.7,
     backgroundColor: 'transparent',
