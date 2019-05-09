@@ -1084,3 +1084,10 @@ hr.dashed{
 }
 
 
+.date-disclaimer {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 10px;
+}
+
