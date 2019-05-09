@@ -86,16 +86,18 @@ a {
 }
 
 .imagecont {
-	height: 650px;
+	height: 90vh;
 	margin: 0;
 	margin-bottom: 0;
-	background-image: url(../img/bg-2.jpg);
+	background-image: url(../img/grillo-min.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+    background-attachment: fixed;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-position-x: center;
+    background-position-x: center;
+    background-position-y: -350px;
 	position: relative;
 }
 
