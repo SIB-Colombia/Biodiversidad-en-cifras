@@ -241,7 +241,7 @@ function showDivGraph(currentElement) {
     function Chartanimales1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 18968]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -255,7 +255,7 @@ function showDivGraph(currentElement) {
     function Chartanimales1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 18968],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -388,8 +388,7 @@ function showDivGraph(currentElement) {
     function ChartMam1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 528],
-            ['Especies sin datos SiB Colombia', 0]
+            ['Especies con evidencia en el SiB Colombia', 528]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -501,7 +500,7 @@ function showDivGraph(currentElement) {
     function Chartplantas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 30033]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -515,7 +514,7 @@ function showDivGraph(currentElement) {
     function Chartplantas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 30033],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -755,7 +754,7 @@ function showDivGraph(currentElement) {
     function Chartanfibio1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 814]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -769,7 +768,7 @@ function showDivGraph(currentElement) {
     function Chartanfibio1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 686],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -882,7 +881,7 @@ function showDivGraph(currentElement) {
     function Chartreptil1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 537]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -896,7 +895,7 @@ function showDivGraph(currentElement) {
     function Chartreptil1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 632],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1015,7 +1014,7 @@ function showDivGraph(currentElement) {
     function Chartpeces1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 4076]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1029,7 +1028,7 @@ function showDivGraph(currentElement) {
     function Chartpeces1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 3834],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1142,7 +1141,7 @@ function showDivGraph(currentElement) {
     function Chartinsecto1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 65000]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1156,7 +1155,7 @@ function showDivGraph(currentElement) {
     function Chartinsecto1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 6457],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1269,7 +1268,7 @@ function showDivGraph(currentElement) {
     function Chartaracnidos1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1385]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1283,7 +1282,7 @@ function showDivGraph(currentElement) {
     function Chartaracnidos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 509],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1396,7 +1395,7 @@ function showDivGraph(currentElement) {
     function Chartmolusco1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1818]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1410,7 +1409,7 @@ function showDivGraph(currentElement) {
     function Chartmolusco1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1920],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1523,7 +1522,7 @@ function showDivGraph(currentElement) {
     function Chartdecapodo1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1849]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1537,7 +1536,7 @@ function showDivGraph(currentElement) {
     function Chartdecapodo1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 767],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1652,7 +1651,7 @@ function showDivGraph(currentElement) {
     function Chartcrustaceosm1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1849]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1666,7 +1665,7 @@ function showDivGraph(currentElement) {
     function Chartcrustaceosm1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 676],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1781,7 +1780,7 @@ function showDivGraph(currentElement) {
     function Chartequinodermo1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 394]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1795,7 +1794,7 @@ function showDivGraph(currentElement) {
     function Chartequinodermo1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 325],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -1908,7 +1907,7 @@ function showDivGraph(currentElement) {
     function Chartesponjamarina1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 142]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -1922,7 +1921,7 @@ function showDivGraph(currentElement) {
     function Chartesponjamarina1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 406],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -2035,7 +2034,7 @@ function showDivGraph(currentElement) {
     function Chartcoralesafines1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 153]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2049,7 +2048,7 @@ function showDivGraph(currentElement) {
     function Chartcoralesafines1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 166]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2162,7 +2161,7 @@ function showDivGraph(currentElement) {
     function Chartmedusas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 153]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2176,7 +2175,7 @@ function showDivGraph(currentElement) {
     function Chartmedusas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 43],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2293,7 +2292,7 @@ function showDivGraph(currentElement) {
     function Chartangiospermas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 4270]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2307,7 +2306,7 @@ function showDivGraph(currentElement) {
     function Chartangiospermas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 25648],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -2420,7 +2419,7 @@ function showDivGraph(currentElement) {
     function Chartgimnospermas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 4270]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2434,7 +2433,7 @@ function showDivGraph(currentElement) {
     function Chartgimnospermas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 89],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -2547,7 +2546,7 @@ function showDivGraph(currentElement) {
     function Charthelechos1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1534]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2561,7 +2560,7 @@ function showDivGraph(currentElement) {
     function Charthelechos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1842],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -2674,7 +2673,7 @@ function showDivGraph(currentElement) {
     function Chartmusgos1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1692]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2688,7 +2687,7 @@ function showDivGraph(currentElement) {
     function Chartmusgos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1221],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -2802,7 +2801,7 @@ function showDivGraph(currentElement) {
     function Chartantocerotas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 4270]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2816,7 +2815,7 @@ function showDivGraph(currentElement) {
     function Chartantocerotas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 9],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -2930,7 +2929,7 @@ function showDivGraph(currentElement) {
     function Charthepaticas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 4270]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -2944,7 +2943,7 @@ function showDivGraph(currentElement) {
     function Charthepaticas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 818],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -3057,7 +3056,7 @@ function showDivGraph(currentElement) {
     function Chartorquideas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 4270]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3071,7 +3070,7 @@ function showDivGraph(currentElement) {
     function Chartorquideas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 2368],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -3184,7 +3183,7 @@ function showDivGraph(currentElement) {
     function Chartmagnolias1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 114]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3198,7 +3197,7 @@ function showDivGraph(currentElement) {
     function Chartmagnolias1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 126],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3310,7 +3309,7 @@ function showDivGraph(currentElement) {
     function Chartbromelias1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1024]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3324,7 +3323,7 @@ function showDivGraph(currentElement) {
     function Chartbromelias1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1040],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -3437,7 +3436,7 @@ function showDivGraph(currentElement) {
     function Chartpalmas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 289]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3451,7 +3450,7 @@ function showDivGraph(currentElement) {
     function Chartpalmas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 321],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -3564,7 +3563,7 @@ function showDivGraph(currentElement) {
     function Chartzamias1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 21]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3578,7 +3577,7 @@ function showDivGraph(currentElement) {
     function Chartzamias1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 23],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3690,7 +3689,7 @@ function showDivGraph(currentElement) {
     function Chartfrailejones1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 87]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3704,7 +3703,7 @@ function showDivGraph(currentElement) {
     function Chartfrailejones1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 98],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -3817,7 +3816,7 @@ function showDivGraph(currentElement) {
     function Chartcactus1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 58]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3831,7 +3830,7 @@ function showDivGraph(currentElement) {
     function Chartcactus1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 62],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -3944,7 +3943,7 @@ function showDivGraph(currentElement) {
     function Chartpinos1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 23]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -3958,7 +3957,7 @@ function showDivGraph(currentElement) {
     function Chartpinos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 51],
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4070,7 +4069,7 @@ function showDivGraph(currentElement) {
     function Chartfenerogamas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 264]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4084,7 +4083,7 @@ function showDivGraph(currentElement) {
     function Chartfenerogamas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 288],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -4197,7 +4196,7 @@ function showDivGraph(currentElement) {
     function Chartpastosm1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 34]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4211,7 +4210,7 @@ function showDivGraph(currentElement) {
     function Chartpastosm1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 6],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -4324,7 +4323,7 @@ function showDivGraph(currentElement) {
     function Chartmaderables1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 34]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4338,7 +4337,7 @@ function showDivGraph(currentElement) {
     function Chartmaderables1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 28],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -4451,7 +4450,7 @@ function showDivGraph(currentElement) {
     function Chartmangles1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 34]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4465,7 +4464,7 @@ function showDivGraph(currentElement) {
     function Chartmangles1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 7],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -4578,7 +4577,7 @@ function showDivGraph(currentElement) {
     function Chartalgasmarinas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 473]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -4592,7 +4591,7 @@ function showDivGraph(currentElement) {
     function Chartalgasmarinas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 292],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -5129,7 +5128,7 @@ function showDivGraph(currentElement) {
     function Chartliquenes1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1473]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5143,7 +5142,7 @@ function showDivGraph(currentElement) {
     function Chartliquenes1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1242],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -5256,7 +5255,7 @@ function showDivGraph(currentElement) {
     function Chartmacrohongos1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1261]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5270,7 +5269,7 @@ function showDivGraph(currentElement) {
     function Chartmacrohongos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1758],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -5650,7 +5649,7 @@ $('.mamiferosm').on('click', function () {
     function Chartmama1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 2582]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5665,7 +5664,7 @@ $('.mamiferosm').on('click', function () {
     function Chartmama1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 32],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -5793,7 +5792,7 @@ $('.reptilesm').on('click', function () {
     function ChartReptilm1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 2582]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5803,12 +5802,12 @@ $('.reptilesm').on('click', function () {
     }
 
     google.charts.load('current', {packages: ['corechart']});
-    google.charts.setOnLoadCallback(Chartmama1b);
+    google.charts.setOnLoadCallback(ChartReptil1b);
 
-    function Chartmama1b() {
+    function ChartReptil1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 6],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -5938,7 +5937,7 @@ $('.pecesm').on('click', function () {
     function Chartpecesm1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 2582]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -5953,7 +5952,7 @@ $('.pecesm').on('click', function () {
     function Chartpecesm1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 2493],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -6075,7 +6074,7 @@ $('.pecesd').on('click', function () {
     function Chartpecesd1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1494]
+            ['Representatividad de especies', 1341]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6090,8 +6089,8 @@ $('.pecesd').on('click', function () {
     function Chartpecesd1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 1521],
-            ['Especies sin datos SiB Colombia', 180]
+            ['Especies con evidencia en el SiB Colombia', 1341],
+            ['Especies sin datos SiB Colombia', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6219,7 +6218,7 @@ $('.escarabajos').on('click', function () {
     function ChartinsectosEscarabajos1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 7000]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6233,7 +6232,7 @@ $('.escarabajos').on('click', function () {
     function ChartinsectosEscarabajos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1192],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -6350,7 +6349,7 @@ $('.mariposas').on('click', function () {
     function ChartinsectosMariposas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 3274]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6364,7 +6363,7 @@ $('.mariposas').on('click', function () {
     function ChartinsectosMariposas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 1905],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -6481,7 +6480,7 @@ $('.hormigas').on('click', function () {
     function ChartinsectosHormigas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 923]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6495,7 +6494,7 @@ $('.hormigas').on('click', function () {
     function ChartinsectosHormigas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 774],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -6612,7 +6611,7 @@ $('.abejas').on('click', function () {
     function ChartinsectosAbejas1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 398]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6626,7 +6625,7 @@ $('.abejas').on('click', function () {
     function ChartinsectosAbejas1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 166],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -6743,7 +6742,7 @@ $('.dipteros').on('click', function () {
     function ChartinsectosDipteros1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 3186]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6757,7 +6756,7 @@ $('.dipteros').on('click', function () {
     function ChartinsectosDipteros1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 793],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
@@ -6881,7 +6880,7 @@ $('.marinos').on('click', function () {
     function ChartmoluscosMarinos1() {
         var data = google.visualization.arrayToDataTable([
             ['Especies estimadas', 'Número de especies'],
-            ['Representatividad de especies', 1168]
+            ['Representatividad de especies', 0]
         ]);
 
         var chart = new google.visualization.PieChart(
@@ -6895,7 +6894,7 @@ $('.marinos').on('click', function () {
     function ChartmoluscosMarinos1b() {
         var data = google.visualization.arrayToDataTable([
             ['Titulo', 'SiB'],
-            ['Especies con evidencia en el SiB Colombia', 0],
+            ['Especies con evidencia en el SiB Colombia', 531],
             ['Especies sin datos SiB Colombia', 0]
         ]);
 
