@@ -1048,6 +1048,30 @@ div.google-visualization-tooltip > ul > li  {
 	background-color: #00292b;
 }
 
+.footer-version {
+	background-color: #00191a;
+	transition: background-color .3s ease;
+}
+
+.footer-version a {
+	color: white;
+	text-align: center;
+	display: block;
+	padding: 6px 0;
+	font-size: 12px;
+	opacity: 0.7;
+	text-decoration: underline;
+	transition: opacity .3s ease;
+}
+
+.footer-version:hover {
+	background-color: #000;
+}
+
+.footer-version:hover a{
+	opacity: 1;
+}
+
 svg > g > g:last-child { pointer-events: none } /* flickering de google charts */
 div.google-visualization-tooltip { pointer-events: none;} /* flickering de google charts */
 
